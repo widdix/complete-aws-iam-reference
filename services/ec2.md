@@ -1,5 +1,5 @@
 | Action | Description | Resource | Condition |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | [ec2:DeleteCustomerGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteCustomerGateway.html) | Deletes the specified customer gateway. | arn:aws:ec2:region:account:customer-gateway/*, arn:aws:ec2:region:account:customer-gateway/cgw-id | ec2:Region, ec2:ResourceTag/tag-key |
 | [ec2:DeleteDhcpOptions](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteDhcpOptions.html) | Deletes the specified set of DHCP options. | arn:aws:ec2:region:account:dhcp-options/*, arn:aws:ec2:region:account:dhcp-options/dhcp-options-id | ec2:Region, ec2:ResourceTag/tag-key |
 | [ec2:AttachClassicLinkVpc](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachClassicLinkVpc.html) | Links an EC2-Classic instance to a ClassicLink-enabled VPC through one or more of the VPC's security groups. | arn:aws:ec2:region:account:instance/*, arn:aws:ec2:region:account:instance/instance-id | ec2:AvailabilityZone, ec2:EbsOptimized, ec2:InstanceProfile, ec2:InstanceType, ec2:PlacementGroup, ec2:Region, ec2:ResourceTag/tag-key, ec2:RootDeviceType, ec2:Tenancy |

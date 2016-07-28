@@ -1,6 +1,7 @@
 # Complete AWS IAM Reference
 
-* [EC2](services/ec2.md)
+* [Amazon Elastic Compute Cloud (EC2)](services/ec2.md)
+* [Elastic Load Balancing (ELB)](services/elasticloadbalancing.md)
 
 ## Contributing
 
