@@ -1,5 +1,6 @@
 # Complete AWS IAM Reference
 
+* [Auto Scaling](services/autoscaling.md)
 * [Amazon Elastic Compute Cloud (EC2)](services/ec2.md)
 * [Elastic Load Balancing (ELB)](services/elasticloadbalancing.md)
 
