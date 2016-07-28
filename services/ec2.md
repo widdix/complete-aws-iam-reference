@@ -98,21 +98,21 @@
 [ec2:DeleteSnapshot](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSnapshot.html) | Deletes the specified snapshot. | * | - |
 [ec2:DeleteSpotDatafeedSubscription](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSpotDatafeedSubscription.html) | Deletes the data feed for Spot instances. | * | - |
 [ec2:DeleteSubnet](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSubnet.html) | Deletes the specified subnet. | * | - |
-[ec2:DeleteTags](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTags.html) | ... | * | - |
-[ec2:DeleteVpc](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpc.html) | ... | * | - |
-[ec2:DeleteVpcEndpoints](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpcEndpoints.html) | ... | * | - |
-[ec2:DeleteVpnConnection](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpnConnection.html) | ... | * | - |
-[ec2:DeleteVpnConnectionRoute](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpnConnectionRoute.html) | ... | * | - |
-[ec2:DeleteVpnGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpnGateway.html) | ... | * | - |
-[ec2:DeregisterImage](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeregisterImage.html) | ... | * | - |
-[ec2:DescribeAccountAttributes](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAccountAttributes.html) | ... | * | - |
-[ec2:DescribeAddresses](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAddresses.html) | ... | * | - |
-[ec2:DescribeAvailabilityZones](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAvailabilityZones.html) | ... | * | - |
-[ec2:DescribeBundleTasks](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeBundleTasks.html) | ... | * | - |
+[ec2:DeleteTags](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTags.html) | Deletes the specified set of tags from the specified set of resources. | * | - |
+[ec2:DeleteVpc](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpc.html) | Deletes the specified VPC. | * | - |
+[ec2:DeleteVpcEndpoints](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpcEndpoints.html) | Deletes one or more specified VPC endpoints. | * | - |
+[ec2:DeleteVpnConnection](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpnConnection.html) | Deletes the specified VPN connection. | * | - |
+[ec2:DeleteVpnConnectionRoute](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpnConnectionRoute.html) | Deletes the specified static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway. | * | - |
+[ec2:DeleteVpnGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpnGateway.html) | Deletes the specified virtual private gateway. | * | - |
+[ec2:DeregisterImage](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeregisterImage.html) | Deregisters the specified AMI. | * | - |
+[ec2:DescribeAccountAttributes](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAccountAttributes.html) | Describes attributes of your AWS account. | * | - |
+[ec2:DescribeAddresses](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAddresses.html) | Describes one or more of your Elastic IP addresses. | * | - |
+[ec2:DescribeAvailabilityZones](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAvailabilityZones.html) | Describes one or more of the Availability Zones that are available to you. | * | - |
+[ec2:DescribeBundleTasks](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeBundleTasks.html) | Describes one or more of your bundling tasks. | * | - |
 [ec2:DescribeClassicLinkInstances](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeClassicLinkInstances.html) | ... | * | - |
-[ec2:DescribeConversionTasks](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeConversionTasks.html) | ... | * | - |
+[ec2:DescribeConversionTasks](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeConversionTasks.html) | Describes one or more of your linked EC2-Classic instances.. | * | - |
 [ec2:DescribeCustomerGateways](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCustomerGateways.html) | ... | * | - |
-[ec2:DescribeDhcpOptions](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeDhcpOptions.html) | ... | * | - |
+[ec2:DescribeDhcpOptions](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeDhcpOptions.html) | Describes one or more of your VPN customer gateways. | * | - |
 [ec2:DescribeExportTasks](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeExportTasks.html) | ... | * | - |
 [ec2:DescribeHosts](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeHosts.html) | ... | * | - |
 [ec2:DescribeIdentityIdFormat](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeIdentityIdFormat.html) | ... | * | - |
