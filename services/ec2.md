@@ -53,51 +53,51 @@
 [ec2:AttachInternetGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachInternetGateway.html) | Attaches an Internet gateway to a VPC, enabling connectivity between the Internet and the VPC. | * | - |
 [ec2:AttachNetworkInterface](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachNetworkInterface.html) | Attaches a network interface to an instance. | * | - |
 [ec2:AttachVpnGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachVpnGateway.html) | Attaches a virtual private gateway to a VPC. | * | - |
-[ec2:BundleInstance](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BundleInstance.html) | ... | * | - |
-[ec2:CancelBundleTask](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelBundleTask.html) | ... | * | - |
-[ec2:CancelConversionTask](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelConversionTask.html) | ... | * | - |
-[ec2:CancelExportTask](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelExportTask.html) | ... | * | - |
-[ec2:CancelImportTask](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelImportTask.html) | ... | * | - |
-[ec2:CancelReservedInstancesListing](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelReservedInstancesListing.html) | ... | * | - |
-[ec2:CancelSpotFleetRequests](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelSpotFleetRequests.html) | ... | * | - |
-[ec2:CancelSpotInstanceRequests](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelSpotInstanceRequests.html) | ... | * | - |
-[ec2:ConfirmProductInstance](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ConfirmProductInstance.html) | ... | * | - |
-[ec2:CopyImage](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CopyImage.html) | ... | * | - |
-[ec2:CopySnapshot](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CopySnapshot.html) | ... | * | - |
-[ec2:CreateCustomerGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCustomerGateway.html) | ... | * | - |
-[ec2:CreateDhcpOptions](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateDhcpOptions.html) | ... | * | - |
-[ec2:CreateFlowLogs](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFlowLogs.html) | ... | * | - |
-[ec2:CreateImage](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateImage.html) | ... | * | - |
-[ec2:CreateInstanceExportTask](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateInstanceExportTask.html) | ... | * | - |
-[ec2:CreateInternetGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateInternetGateway.html) | ... | * | - |
-[ec2:CreateKeyPair](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateKeyPair.html) | ... | * | - |
-[ec2:CreateNatGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNatGateway.html) | ... | * | - |
-[ec2:CreateNetworkAcl](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkAcl.html) | ... | * | - |
-[ec2:CreateNetworkAclEntry](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkAclEntry.html) | ... | * | - |
-[ec2:CreateNetworkInterface](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkInterface.html) | ... | * | - |
-[ec2:CreatePlacementGroup](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreatePlacementGroup.html) | ... | * | - |
-[ec2:CreateReservedInstancesListing](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateReservedInstancesListing.html) | ... | * | - |
-[ec2:CreateRoute](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRoute.html) | ... | * | - |
-[ec2:CreateRouteTable](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRouteTable.html) | ... | * | - |
-[ec2:CreateSecurityGroup](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSecurityGroup.html) | ... | * | - |
-[ec2:CreateSnapshot](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSnapshot.html) | ... | * | - |
-[ec2:CreateSpotDatafeedSubscription](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSpotDatafeedSubscription.html) | ... | * | - |
-[ec2:CreateSubnet](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSubnet.html) | ... | * | - |
-[ec2:CreateTags](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTags.html) | ... | * | - |
-[ec2:CreateVolume](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVolume.html) | ... | * | - |
-[ec2:CreateVpc](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpc.html) | ... | * | - |
-[ec2:CreateVpcEndpoint](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcEndpoint.html) | ... | * | - |
-[ec2:CreateVpnConnection](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpnConnection.html) | ... | * | - |
-[ec2:CreateVpnConnectionRoute](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpnConnectionRoute.html) | ... | * | - |
-[ec2:CreateVpnGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpnGateway.html) | ... | * | - |
-[ec2:DeleteFlowLogs](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteFlowLogs.html) | ... | * | - |
-[ec2:DeleteKeyPair](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteKeyPair.html) | ... | * | - |
-[ec2:DeleteNatGateways](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNatGateways.html) | ... | * | - |
-[ec2:DeleteNetworkInterface](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkInterface.html) | ... | * | - |
-[ec2:DeletePlacementGroup](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeletePlacementGroup.html) | ... | * | - |
-[ec2:DeleteSnapshot](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSnapshot.html) | ... | * | - |
-[ec2:DeleteSpotDatafeedSubscription](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSpotDatafeedSubscription.html) | ... | * | - |
-[ec2:DeleteSubnet](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSubnet.html) | ... | * | - |
+[ec2:BundleInstance](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BundleInstance.html) | Bundles an Amazon instance store-backed Windows instance. | * | - |
+[ec2:CancelBundleTask](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelBundleTask.html) | Cancels a bundling operation for an instance store-backed Windows instance. | * | - |
+[ec2:CancelConversionTask](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelConversionTask.html) | Cancels an active conversion task. | * | - |
+[ec2:CancelExportTask](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelExportTask.html) | Cancels an active export task.  | * | - |
+[ec2:CancelImportTask](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelImportTask.html) | Cancels an in-process import virtual machine or import snapshot task. | * | - |
+[ec2:CancelReservedInstancesListing](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelReservedInstancesListing.html) | Cancels the specified Reserved Instance listing in the Reserved Instance Marketplace. | * | - |
+[ec2:CancelSpotFleetRequests](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelSpotFleetRequests.html) | Cancels the specified Spot fleet requests. | * | - |
+[ec2:CancelSpotInstanceRequests](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelSpotInstanceRequests.html) | Cancels one or more Spot instance requests. | * | - |
+[ec2:ConfirmProductInstance](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ConfirmProductInstance.html) | Determines whether a product code is associated with an instance. | * | - |
+[ec2:CopyImage](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CopyImage.html) | Initiates the copy of an AMI from the specified source region to the current region. | * | - |
+[ec2:CopySnapshot](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CopySnapshot.html) | Copies a point-in-time snapshot of an EBS volume and stores it in Amazon S3. | * | - |
+[ec2:CreateCustomerGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCustomerGateway.html) | Provides information to AWS about your VPN customer gateway device. | * | - |
+[ec2:CreateDhcpOptions](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateDhcpOptions.html) | Creates a set of DHCP options for your VPC. | * | - |
+[ec2:CreateFlowLogs](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFlowLogs.html) | Creates one or more flow logs to capture IP traffic for a specific network interface, subnet, or VPC. | * | - |
+[ec2:CreateImage](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateImage.html) | Creates an Amazon EBS-backed AMI from an Amazon EBS-backed instance that is either running or stopped. | * | - |
+[ec2:CreateInstanceExportTask](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateInstanceExportTask.html) | Exports a running or stopped instance to an S3 bucket. | * | - |
+[ec2:CreateInternetGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateInternetGateway.html) | Creates an Internet gateway for use with a VPC. | * | - |
+[ec2:CreateKeyPair](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateKeyPair.html) | Creates a 2048-bit RSA key pair with the specified name. | * | - |
+[ec2:CreateNatGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNatGateway.html) | Creates a NAT gateway in the specified subnet. | * | - |
+[ec2:CreateNetworkAcl](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkAcl.html) | Creates a network ACL in a VPC. | * | - |
+[ec2:CreateNetworkAclEntry](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkAclEntry.html) | Creates an entry (a rule) in a network ACL with the specified rule number. | * | - |
+[ec2:CreateNetworkInterface](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkInterface.html) | Creates a network interface in the specified subnet.. | * | - |
+[ec2:CreatePlacementGroup](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreatePlacementGroup.html) | Creates a placement group that you launch cluster instances into. | * | - |
+[ec2:CreateReservedInstancesListing](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateReservedInstancesListing.html) | Creates a listing for Amazon EC2 Reserved Instances to be sold in the Reserved Instance Marketplace. | * | - |
+[ec2:CreateRoute](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRoute.html) | Creates a route in a route table within a VPC. | * | - |
+[ec2:CreateRouteTable](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRouteTable.html) | Creates a route table for the specified VPC. | * | - |
+[ec2:CreateSecurityGroup](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSecurityGroup.html) | Creates a security group. | * | - |
+[ec2:CreateSnapshot](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSnapshot.html) | Creates a snapshot of an EBS volume and stores it in Amazon S3. | * | - |
+[ec2:CreateSpotDatafeedSubscription](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSpotDatafeedSubscription.html) | Creates a data feed for Spot instances, enabling you to view Spot instance usage logs. | * | - |
+[ec2:CreateSubnet](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSubnet.html) | CreateSubnet | * | - |
+[ec2:CreateTags](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTags.html) | Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources. | * | - |
+[ec2:CreateVolume](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVolume.html) | Creates an EBS volume that can be attached to an instance in the same Availability Zone. | * | - |
+[ec2:CreateVpc](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpc.html) | Creates a VPC with the specified CIDR block. | * | - |
+[ec2:CreateVpcEndpoint](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcEndpoint.html) | Creates a VPC endpoint for a specified AWS service. | * | - |
+[ec2:CreateVpnConnection](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpnConnection.html) | Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway | * | - |
+[ec2:CreateVpnConnectionRoute](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpnConnectionRoute.html) | Creates a static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway. | * | - |
+[ec2:CreateVpnGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpnGateway.html) | Creates a virtual private gateway. | * | - |
+[ec2:DeleteFlowLogs](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteFlowLogs.html) | Deletes one or more flow logs. | * | - |
+[ec2:DeleteKeyPair](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteKeyPair.html) | Deletes the specified key pair, by removing the public key from Amazon EC2. | * | - |
+[ec2:DeleteNatGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNatGateway.html) | Deletes the specified NAT gateway. | * | - |
+[ec2:DeleteNetworkInterface](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkInterface.html) | Deletes the specified network interface. | * | - |
+[ec2:DeletePlacementGroup](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeletePlacementGroup.html) | Deletes the specified placement group. | * | - |
+[ec2:DeleteSnapshot](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSnapshot.html) | Deletes the specified snapshot. | * | - |
+[ec2:DeleteSpotDatafeedSubscription](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSpotDatafeedSubscription.html) | Deletes the data feed for Spot instances. | * | - |
+[ec2:DeleteSubnet](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSubnet.html) | Deletes the specified subnet. | * | - |
 [ec2:DeleteTags](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTags.html) | ... | * | - |
 [ec2:DeleteVpc](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpc.html) | ... | * | - |
 [ec2:DeleteVpcEndpoints](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpcEndpoints.html) | ... | * | - |

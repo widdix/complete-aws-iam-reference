@@ -1,3 +1,4 @@
+A good starting point in the AWS IAM documentation can be found here: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actionsconditions.html
 
 ## Extend a service
 
