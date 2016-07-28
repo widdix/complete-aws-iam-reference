@@ -24,3 +24,11 @@ body > .container {
   padding-right: 15px;
   padding-left: 15px;
 }
+
+div.scrollable {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
