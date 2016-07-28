@@ -1,0 +1,30 @@
+<table class="table table-striped" ng-controller="List">
+  <thead>
+    <tr>
+      <th style="width: 20%;"><form style="display: inline" class="form-inline"><div class="form-group"><div class="input-group"><span class="input-group-addon">Action</span><input type="text" ng-model="action" class="form-control input-sm" placeholder="Search"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span></div></div></form></th>
+      <th style="width: 25%;"><form style="display: inline" class="form-inline"><div class="form-group"><div class="input-group"><span class="input-group-addon">Description</span><input type="text" ng-model="description" class="form-control input-sm" placeholder="Search"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span></div></div></form></th>
+      <th style="width: 25%;"><form style="display: inline" class="form-inline"><div class="form-group"><div class="input-group"><span class="input-group-addon">Resources</span><input type="text" ng-model="resource" class="form-control input-sm" placeholder="Search"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span></div></div></form></th>
+      <th style="width: 25%;"><form style="display: inline" class="form-inline"><div class="form-group"><div class="input-group"><span class="input-group-addon">Conditions</span><input type="text" ng-model="condition" class="form-control input-sm" placeholder="Search"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span></div></div></form></th>
+      <th style="width: 5%;">&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="row in rows | filter: search | orderBy: sort">
+      <td>{{row.service}}:{{row.action}}</td>
+      <td>{{row.description}}</td>
+      <td>
+        <ul>
+          <li ng-repeat="resource in row.resources">{{resource}}</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li ng-repeat="condition in row.conditions">{{condition}}</li>
+        </ul>
+      </td>
+      <td>
+        <a href="{{row.doc}}" target="_blank" class="btn btn-default"><i class="glyphicon glyphicon-book"></i></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
