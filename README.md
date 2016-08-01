@@ -1,7 +1,7 @@
 # Complete AWS IAM Reference
 
-- [ ] Amazon API Gateway
-- [ ] AWS Application Discovery Service
+- [x] [Amazon API Gateway](services/apigateway.md) and [Execute API](services/execute-api.md)
+- [x] [AWS Application Discovery Service](services/discovery.md)
 - [ ] Amazon AppStream
 - [x] [Auto Scaling](services/autoscaling.md)
 - [x] [AWS Billing](services/aws-portal.md)
