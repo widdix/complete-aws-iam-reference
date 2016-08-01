@@ -16,7 +16,7 @@ function cleanupDescription(description) {
 }
 
 function processLine(line, cb) {
-  // [ec2:DetachInternetGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachInternetGateway.html) | ... | * | - |
+  // | [ec2:DetachInternetGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachInternetGateway.html) | ... | * | - |
   var cell = line.split("|");
   if (cell.length !== 6) {
     return cb(null, line);
