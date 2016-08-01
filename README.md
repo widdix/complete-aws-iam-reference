@@ -9,7 +9,7 @@
 - [x] [AWS CloudFormation](services/cloudformation.md)
 - [x] [Amazon CloudFront](services/cloudfront.md)
 - [x] [AWS CloudHSM](services/cloudhsm.md)
-- [ ] Amazon CloudSearch
+- [x] [Amazon CloudSearch](services/cloudsearch.md)
 - [ ] AWS CloudTrail
 - [ ] Amazon CloudWatch
 - [ ] Amazon CloudWatch Events
