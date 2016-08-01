@@ -8,7 +8,7 @@
 - [x] [AWS Certificate Manager](services/acm.md)
 - [x] [AWS CloudFormation](services/cloudformation.md)
 - [x] [Amazon CloudFront](services/cloudfront.md)
-- [ ] AWS CloudHSM
+- [x] [AWS CloudHSM](services/cloudhsm.md)
 - [ ] Amazon CloudSearch
 - [ ] AWS CloudTrail
 - [ ] Amazon CloudWatch
