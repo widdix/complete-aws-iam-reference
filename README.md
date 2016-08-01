@@ -5,7 +5,7 @@
 - [x] [Amazon AppStream](services/appstream.md)
 - [x] [Auto Scaling](services/autoscaling.md)
 - [x] [AWS Billing](services/aws-portal.md)
-- [ ] AWS Certificate Manager
+- [x] [AWS Certificate Manager](services/acm.md)
 - [x] [AWS CloudFormation](services/cloudformation.md)
 - [ ] Amazon CloudFront
 - [ ] AWS CloudHSM
