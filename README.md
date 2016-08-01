@@ -7,7 +7,7 @@
 - [x] [AWS Billing](services/aws-portal.md)
 - [x] [AWS Certificate Manager](services/acm.md)
 - [x] [AWS CloudFormation](services/cloudformation.md)
-- [ ] Amazon CloudFront
+- [x] [Amazon CloudFront](services/cloudfront.md)
 - [ ] AWS CloudHSM
 - [ ] Amazon CloudSearch
 - [ ] AWS CloudTrail

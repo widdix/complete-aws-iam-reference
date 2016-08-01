@@ -30,7 +30,8 @@ function processLine(line, cb) {
       if (err) {
         cb(err);
       } else {
-        var description = $('p.simpara').first().text()
+        //var description = $('p.simpara').first().text();
+        var description = $('div.section > p').first().text();
         cb(null, '|' + cell[1] + '| ' + cleanupDescription(description) + ' |' + cell[3] + '|' + cell[4] + '|');
       }
     });
