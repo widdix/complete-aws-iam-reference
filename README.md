@@ -2,7 +2,7 @@
 
 - [x] [Amazon API Gateway](services/apigateway.md) and [Execute API](services/execute-api.md)
 - [x] [AWS Application Discovery Service](services/discovery.md)
-- [ ] Amazon AppStream
+- [x] [Amazon AppStream](services/appstream.md)
 - [x] [Auto Scaling](services/autoscaling.md)
 - [x] [AWS Billing](services/aws-portal.md)
 - [ ] AWS Certificate Manager
