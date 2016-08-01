@@ -1,117 +1,120 @@
 | Action | Description | Resource | Condition |
 | --- | --- | --- | --- |
-| [iam:AddRoleToInstanceProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_AddRoleToInstanceProfile.html) | ... | ... | ... |
-| [iam:AddUserToGroup](http://docs.aws.amazon.com/IAM/latest/APIReference/API_AddUserToGroup.html) | ... | ... | ... |
-| [iam:AddClientIDToOpenIDConnectProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_AddClientIDToOpenIDConnectProvider.html) | ... | ... | ... |
-| [iam:AttachGroupPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachGroupPolicy.html) | ... | arn:aws:iam::$account-id:group/$group-name | iam:PolicyArn |
-| [iam:AttachRolePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachRolePolicy.html) | ... | arn:aws:iam::$account-id:role/$role-name | iam:PolicyArn |
-| [iam:AttachUserPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachUserPolicy.html) | ... | arn:aws:iam::$account-id:user/$user-name | iam:PolicyArn |
-| [iam:ChangePassword](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ChangePassword.html) | ... | ... | ... |
-| [iam:CreateAccessKey](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateAccessKey.html) | ... | ... | ... |
-| [iam:CreateAccountAlias](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateAccountAlias.html) | ... | ... | ... |
-| [iam:CreateGroup](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateGroup.html) | ... | ... | ... |
-| [iam:CreateInstanceProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateInstanceProfile.html) | ... | ... | ... |
-| [iam:CreateLoginProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateLoginProfile.html) | ... | ... | ... |
-| [iam:CreateOpenIDConnectProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateOpenIDConnectProvider.html) | ... | ... | ... |
-| [iam:CreatePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreatePolicy.html) | ... | arn:aws:iam::$account-id:policy/$policy-name | - |
-| [iam:CreatePolicyVersion](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreatePolicyVersion.html) | ... | arn:aws:iam::$account-id:policy/$policy-name | - |
-| [iam:CreateRole](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html) | ... | ... | ... |
-| [iam:CreateSAMLProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateSAMLProvider.html) | ... | ... | ... |
-| [iam:CreateUser](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateUser.html) | ... | ... | ... |
-| [iam:CreateVirtualMFADevice](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateVirtualMFADevice.html) | ... | ... | ... |
-| [iam:DeactivateMFADevice](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeactivateMFADevice.html) | ... | ... | ... |
-| [iam:DeleteAccessKey](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccessKey.html) | ... | ... | ... |
-| [iam:DeleteAccountAlias](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccountAlias.html) | ... | ... | ... |
-| [iam:DeleteAccountPasswordPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccountPasswordPolicy.html) | ... | ... | ... |
-| [iam:DeleteGroup](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteGroup.html) | ... | ... | ... |
-| [iam:DeleteGroupPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteGroupPolicy.html) | ... | ... | ... |
-| [iam:DeleteInstanceProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteInstanceProfile.html) | ... | ... | ... |
-| [iam:DeleteLoginProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteLoginProfile.html) | ... | ... | ... |
-| [iam:DeleteOpenIDConnectProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteOpenIDConnectProvider.html) | ... | ... | ... |
-| [iam:DeletePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeletePolicy.html) | ... | arn:aws:iam::$account-id:policy/$policy-name | - |
-| [iam:DeletePolicyVersion](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeletePolicyVersion.html) | ... | arn:aws:iam::$account-id:policy/$policy-name | - |
-| [iam:DeleteRole](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteRole.html) | ... | ... | ... |
-| [iam:DeleteRolePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteRolePolicy.html) | ... | ... | ... |
-| [iam:DeleteSAMLProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteSAMLProvider.html) | ... | ... | ... |
-| [iam:DeleteSSHPublicKey](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteSSHPublicKey.html) | ... | ... | ... |
-| [iam:DeleteServerCertificate](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteServerCertificate.html) | ... | ... | ... |
-| [iam:DeleteSigningCertificate](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteSigningCertificate.html) | ... | ... | ... |
-| [iam:DeleteUser](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteUser.html) | ... | ... | ... |
-| [iam:DeleteUserPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteUserPolicy.html) | ... | ... | ... |
-| [iam:DeleteVirtualMFADevice](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteVirtualMFADevice.html) | ... | ... | ... |
-| [iam:DetachGroupPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachGroupPolicy.html) | ... | arn:aws:iam::$account-id:group/$group-name | iam:PolicyArn |
-| [iam:DetachRolePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachRolePolicy.html) | ... | arn:aws:iam::$account-id:group/$role-name | iam:PolicyArn |
-| [iam:DetachUserPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachUserPolicy.html) | ... | rn:aws:iam::$account-id:group/$user-name | iam:PolicyArn |
-| [iam:EnableMFADevice](http://docs.aws.amazon.com/IAM/latest/APIReference/API_EnableMFADevice.html) | ... | ... | ... |
-| [iam:GenerateCredentialReport](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GenerateCredentialReport.html) | ... | ... | ... |
-| [iam:GetAccessKeyLastUsed](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccessKeyLastUsed.html) | ... | ... | ... |
-| [iam:GetAccountAuthorizationDetails](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccountAuthorizationDetails.html) | ... | ... | ... |
-| [iam:GetAccountPasswordPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccountPasswordPolicy.html) | ... | ... | ... |
-| [iam:GetAccountSummary](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccountSummary.html) | ... | ... | ... |
-| [iam:GetContextKeysForCustomPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetContextKeysForCustomPolicy.html) | ... | ... | ... |
-| [iam:GetContextKeysForPrincipalPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetContextKeysForPrincipalPolicy.html) | ... | ... | ... |
-| [iam:GetCredentialReport](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetCredentialReport.html) | ... | ... | ... |
-| [iam:GetGroup](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetGroup.html) | ... | ... | ... |
-| [iam:GetGroupPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetGroupPolicy.html) | ... | ... | ... |
-| [iam:GetInstanceProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetInstanceProfile.html) | ... | ... | ... |
-| [iam:GetLoginProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetLoginProfile.html) | ... | ... | ... |
-| [iam:GetOpenIDConnectProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetOpenIDConnectProvider.html) | ... | ... | ... |
-| [iam:GetPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetPolicy.html) | ... | arn:aws:iam::$account-id:policy/$policy-name | - |
-| [iam:GetPolicyVersion](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetPolicyVersion.html) | ... | arn:aws:iam::$account-id:policy/$policy-name | - |
-| [iam:GetRole](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRole.html) | ... | ... | ... |
-| [iam:GetRolePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRolePolicy.html) | ... | ... | ... |
-| [iam:GetSAMLProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetSAMLProvider.html) | ... | ... | ... |
-| [iam:GetSSHPublicKey](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetSSHPublicKey.html) | ... | ... | ... |
-| [iam:GetServerCertificate](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetServerCertificate.html) | ... | ... | ... |
-| [iam:GetServiceLastAccessedDetailsWithEntities](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetServiceLastAccessedDetailsWithEntities.html) | ... | ... | ... |
-| [iam:GetUser](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetUser.html) | ... | ... | ... |
-| [iam:GetUserPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetUserPolicy.html) | ... | ... | ... |
-| [iam:ListAccessKeys](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAccessKeys.html) | ... | ... | ... |
-| [iam:ListAccountAliases](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAccountAliases.html) | ... | ... | ... |
-| [iam:ListAttachedGroupPolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAttachedGroupPolicies.html) | ... | ... | ... |
-| [iam:ListAttachedRolePolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAttachedRolePolicies.html) | ... | ... | ... |
-| [iam:ListAttachedUserPolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAttachedUserPolicies.html) | ... | ... | ... |
-| [iam:ListEntitiesForPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListEntitiesForPolicy.html) | ... | arn:aws:iam::$account-id:policy/$policy-name | - |
-| [iam:ListGroupPolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListGroupPolicies.html) | ... | ... | ... |
-| [iam:ListGroups](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListGroups.html) | ... | ... | ... |
-| [iam:ListGroupsForUser](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListGroupsForUser.html) | ... | ... | ... |
-| [iam:ListInstanceProfiles](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListInstanceProfiles.html) | ... | ... | ... |
-| [iam:ListInstanceProfilesForRole](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListInstanceProfilesForRole.html) | ... | ... | ... |
-| [iam:ListMFADevices](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListMFADevices.html) | ... | ... | ... |
-| [iam:ListOpenIDConnectProviders](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListOpenIDConnectProviders.html) | ... | ... | ... |
-| [iam:ListPolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListPolicies.html) | ... | ... | ... |
-| [iam:ListPoliciesGrantingServiceAccess](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListPoliciesGrantingServiceAccess.html) | ... | ... | ... |
-| [iam:ListPolicyVersions](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListPolicyVersions.html) | ... | arn:aws:iam::$account-id:policy/$policy-name | - |
-| [iam:ListRolePolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListRolePolicies.html) | ... | ... | ... |
-| [iam:ListRoles](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListRoles.html) | ... | ... | ... |
-| [iam:ListSAMLProviders](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListSAMLProviders.html) | ... | ... | ... |
-| [iam:ListSSHPublicKeys](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListSSHPublicKeys.html) | ... | ... | ... |
-| [iam:ListServerCertificates](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListServerCertificates.html) | ... | ... | ... |
-| [iam:ListSigningCertificates](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListSigningCertificates.html) | ... | ... | ... |
-| [iam:ListUserPolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListUserPolicies.html) | ... | ... | ... |
-| [iam:ListUsers](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListUsers.html) | ... | ... | ... |
-| [iam:ListVirtualMFADevices](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListVirtualMFADevices.html) | ... | ... | ... |
-| [iam:PutGroupPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_PutGroupPolicy.html) | ... | ... | ... |
-| [iam:PutRolePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_PutRolePolicy.html) | ... | ... | ... |
-| [iam:PutUserPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_PutUserPolicy.html) | ... | ... | ... |
-| [iam:RemoveClientIDFromOpenIDConnectProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_RemoveClientIDFromOpenIDConnectProvider.html) | ... | ... | ... |
-| [iam:RemoveRoleFromInstanceProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_RemoveRoleFromInstanceProfile.html) | ... | ... | ... |
-| [iam:RemoveUserFromGroup](http://docs.aws.amazon.com/IAM/latest/APIReference/API_RemoveUserFromGroup.html) | ... | ... | ... |
-| [iam:ResyncMFADevice](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ResyncMFADevice.html) | ... | ... | ... |
-| [iam:SetDefaultPolicyVersion](http://docs.aws.amazon.com/IAM/latest/APIReference/API_SetDefaultPolicyVersion.html) | ... | arn:aws:iam::$account-id:policy/$policy-name | - |
-| [iam:SimulateCustomPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_SimulateCustomPolicy.html) | ... | ... | ... |
-| [iam:SimulatePrincipalPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_SimulatePrincipalPolicy.html) | ... | ... | ... |
-| [iam:UpdateAccessKey](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccessKey.html) | ... | ... | ... |
-| [iam:UpdateAccountPasswordPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccountPasswordPolicy.html) | ... | ... | ... |
-| [iam:UpdateAssumeRolePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAssumeRolePolicy.html) | ... | ... | ... |
-| [iam:UpdateGroup](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateGroup.html) | ... | ... | ... |
-| [iam:UpdateLoginProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateLoginProfile.html) | ... | ... | ... |
-| [iam:UpdateOpenIDConnectProviderThumbprint](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateOpenIDConnectProviderThumbprint.html) | ... | ... | ... |
-| [iam:UpdateSAMLProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateSAMLProvider.html) | ... | ... | ... |
-| [iam:UpdateSSHPublicKey](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateSSHPublicKey.html) | ... | ... | ... |
-| [iam:UpdateServerCertificate](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateServerCertificate.html) | ... | ... | ... |
-| [iam:UpdateSigningCertificate](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateSigningCertificate.html) | ... | ... | ... |
-| [iam:UpdateUser](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateUser.html) | ... | ... | ... |
-| [iam:UploadSSHPublicKey](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UploadSSHPublicKey.html) | ... | ... | ... |
-| [iam:UploadServerCertificate](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UploadServerCertificate.html) | ... | ... | ... |
-| [iam:UploadSigningCertificate](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UploadSigningCertificate.html) | ... | ... | ... |
+| [iam:AddRoleToInstanceProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_AddRoleToInstanceProfile.html) | Adds the specified IAM role to the specified instance profile. | arn:aws:iam::$account-id:instance-profile/$instance-profile-name | - |
+| [iam:AddUserToGroup](http://docs.aws.amazon.com/IAM/latest/APIReference/API_AddUserToGroup.html) | Adds the specified user to the specified group. | arn:aws:iam::$account-id:group/$group-name | - |
+| [iam:AddClientIDToOpenIDConnectProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_AddClientIDToOpenIDConnectProvider.html) | Adds a new client ID (also known as audience) to the list of client IDs already registered for the specified IAM OpenID Connect (OIDC) provider resource. | arn:aws:iam::$account-id:oidc-provider/$provider-name | - |
+| [iam:AttachGroupPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachGroupPolicy.html) | Attaches the specified managed policy to the specified IAM group. | arn:aws:iam::$account-id:group/$group-name | iam:PolicyArn |
+| [iam:AttachRolePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachRolePolicy.html) | Attaches the specified managed policy to the specified IAM role. | arn:aws:iam::$account-id:role/$role-name | iam:PolicyArn |
+| [iam:AttachUserPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachUserPolicy.html) | Attaches the specified managed policy to the specified user. | arn:aws:iam::$account-id:user/$user-name | iam:PolicyArn |
+| [iam:ChangePassword](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ChangePassword.html) | Changes the password of the IAM user who is calling this action. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:CreateAccessKey](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateAccessKey.html) | Creates a new AWS secret access key and corresponding AWS access key ID for the specified user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:CreateAccountAlias](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateAccountAlias.html) | Creates an alias for your AWS account. | * | - |
+| [iam:CreateGroup](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateGroup.html) | Creates a new group. | arn:aws:iam::$account-id:group/$group-name | - |
+| [iam:CreateInstanceProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateInstanceProfile.html) | Creates a new instance profile. | arn:aws:iam::$account-id:instance-profile/$instance-profile-name | - |
+| [iam:CreateLoginProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateLoginProfile.html) | Creates a password for the specified user, giving the user the ability to access AWS services through the AWS Management Console. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:CreateOpenIDConnectProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateOpenIDConnectProvider.html) | Creates an IAM entity to describe an identity provider (IdP) that supports OpenID Connect (OIDC). | arn:aws:iam::$account-id:oidc-provider/$provider-name | - |
+| [iam:CreatePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreatePolicy.html) | Creates a new managed policy for your AWS account. | arn:aws:iam::$account-id:policy/$policy-name | - |
+| [iam:CreatePolicyVersion](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreatePolicyVersion.html) | Creates a new version of the specified managed policy. | arn:aws:iam::$account-id:policy/$policy-name | - |
+| [iam:CreateRole](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html) | Creates a new role for your AWS account. | arn:aws:iam::$account-id:role/$role-name | - |
+| [iam:CreateSAMLProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateSAMLProvider.html) | Creates an IAM resource that describes an identity provider (IdP) that supports SAML 2. | arn:aws:iam::$account-id:saml-provider/$provider-name | - |
+| [iam:CreateUser](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateUser.html) | Creates a new IAM user for your AWS account. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:CreateVirtualMFADevice](http://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateVirtualMFADevice.html) | Creates a new virtual MFA device for the AWS account. | arn:aws:iam::$account-id:mfa/$virtual-device-name | - |
+| [iam:DeactivateMFADevice](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeactivateMFADevice.html) | Deactivates the specified MFA device and removes it from association with the user name for which it was originally enabled. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:DeleteAccessKey](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccessKey.html) | Deletes the access key pair associated with the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:DeleteAccountAlias](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccountAlias.html) | Deletes the specified AWS account alias. | * | - |
+| [iam:DeleteAccountPasswordPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccountPasswordPolicy.html) | Deletes the password policy for the AWS account. | * | - |
+| [iam:DeleteGroup](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteGroup.html) | Deletes the specified IAM group. | arn:aws:iam::$account-id:group/$group-name | - |
+| [iam:DeleteGroupPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteGroupPolicy.html) | Deletes the specified inline policy that is embedded in the specified IAM group. | arn:aws:iam::$account-id:group/$group-name | - |
+| [iam:DeleteInstanceProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteInstanceProfile.html) | Deletes the specified instance profile. | arn:aws:iam::$account-id:instance-profile/$instance-profile-name | - |
+| [iam:DeleteLoginProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteLoginProfile.html) | Deletes the password for the specified IAM user, which terminates the user's ability to access AWS services through the AWS Management Console. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:DeleteOpenIDConnectProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteOpenIDConnectProvider.html) | Deletes an OpenID Connect identity provider (IdP) resource object in IAM. | arn:aws:iam::$account-id:oidc-provider/$provider-name | - |
+| [iam:DeletePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeletePolicy.html) | Deletes the specified managed policy. | arn:aws:iam::$account-id:policy/$policy-name | - |
+| [iam:DeletePolicyVersion](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeletePolicyVersion.html) | Deletes the specified version from the specified managed policy. | arn:aws:iam::$account-id:policy/$policy-name | - |
+| [iam:DeleteRole](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteRole.html) | Deletes the specified role. | arn:aws:iam::$account-id:role/$role-name | - |
+| [iam:DeleteRolePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteRolePolicy.html) | Deletes the specified inline policy that is embedded in the specified IAM role. | arn:aws:iam::$account-id:role/$role-name | - |
+| [iam:DeleteSAMLProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteSAMLProvider.html) | Deletes a SAML provider resource in IAM. | arn:aws:iam::$account-id:saml-provider/$provider-name | - |
+| [iam:DeleteSSHPublicKey](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteSSHPublicKey.html) | Deletes the specified SSH public key. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:DeleteServerCertificate](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteServerCertificate.html) | Deletes the specified server certificate. | arn:aws:iam::$account-id:server-certificate/$certificate-name | - |
+| [iam:DeleteSigningCertificate](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteSigningCertificate.html) | Deletes a signing certificate associated with the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:DeleteUser](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteUser.html) | Deletes the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:DeleteUserPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteUserPolicy.html) | Deletes the specified inline policy that is embedded in the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:DeleteVirtualMFADevice](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteVirtualMFADevice.html) | Deletes a virtual MFA device. | * | - |
+| [iam:DetachGroupPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachGroupPolicy.html) | Removes the specified managed policy from the specified IAM group. | arn:aws:iam::$account-id:group/$group-name | iam:PolicyArn |
+| [iam:DetachRolePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachRolePolicy.html) | Removes the specified managed policy from the specified role. | arn:aws:iam::$account-id:group/$role-name | iam:PolicyArn |
+| [iam:DetachUserPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachUserPolicy.html) | Removes the specified managed policy from the specified user. | arn:aws:iam::$account-id:group/$user-name | iam:PolicyArn |
+| [iam:EnableMFADevice](http://docs.aws.amazon.com/IAM/latest/APIReference/API_EnableMFADevice.html) | Enables the specified MFA device and associates it with the specified IAM user. | arn:aws:iam::$account-id:group/$user-nam | - |
+| [iam:GenerateCredentialReport](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GenerateCredentialReport.html) | Generates a credential report for the AWS account. | * | - |
+| [iam:GetAccessKeyLastUsed](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccessKeyLastUsed.html) | Retrieves information about when the specified access key was last used. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:GetAccountAuthorizationDetails](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccountAuthorizationDetails.html) | Retrieves information about all IAM users, groups, roles, and policies in your AWS account, including their relationships to one another. | * | - |
+| [iam:GetAccountPasswordPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccountPasswordPolicy.html) | Retrieves the password policy for the AWS account. | * | - |
+| [iam:GetAccountSummary](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccountSummary.html) | Retrieves information about IAM entity usage and IAM quotas in the AWS account. | * | - |
+| [iam:GetContextKeysForCustomPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetContextKeysForCustomPolicy.html) | Gets a list of all of the context keys referenced in the input policies. | * | - |
+| [iam:GetContextKeysForPrincipalPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetContextKeysForPrincipalPolicy.html) | Gets a list of all of the context keys referenced in all of the IAM policies attached to the specified IAM entity. | * | - |
+| [iam:GetCredentialReport](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetCredentialReport.html) | Retrieves a credential report for the AWS account. | * | - |
+| [iam:GetGroup](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetGroup.html) | Returns a list of IAM users that are in the specified IAM group. | arn:aws:iam::$account-id:group/$group-name | - |
+| [iam:GetGroupPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetGroupPolicy.html) | Retrieves the specified inline policy document that is embedded in the specified IAM group. | arn:aws:iam::$account-id:group/$group-name | - |
+| [iam:GetInstanceProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetInstanceProfile.html) | Retrieves information about the specified instance profile, including the instance profile's path, GUID, ARN, and role. | arn:aws:iam::$account-id:instance-profile/$instance-profile-name | - |
+| [iam:GetLoginProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetLoginProfile.html) | Retrieves the user name and password-creation date for the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:GetOpenIDConnectProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetOpenIDConnectProvider.html) | Returns information about the specified OpenID Connect (OIDC) provider resource object in IAM. | arn:aws:iam::$account-id:oidc-provider/$provider-name | - |
+| [iam:GetPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetPolicy.html) | Retrieves information about the specified managed policy, including the policy's default version and the total number of IAM users, groups, and roles to which the policy is attached. | arn:aws:iam::$account-id:policy/$policy-name | - |
+| [iam:GetPolicyVersion](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetPolicyVersion.html) | Retrieves information about the specified version of the specified managed policy, including the policy document. | arn:aws:iam::$account-id:policy/$policy-name | - |
+| [iam:GetRole](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRole.html) | Retrieves information about the specified role, including the role's path, GUID, ARN, and the role's trust policy that grants permission to assume the role. | arn:aws:iam::$account-id:role/$role-name | - |
+| [iam:GetRolePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRolePolicy.html) | Retrieves the specified inline policy document that is embedded with the specified IAM role. | arn:aws:iam::$account-id:role/$role-name | - |
+| [iam:GetSAMLProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetSAMLProvider.html) | Returns the SAML provider metadocument that was uploaded when the IAM SAML provider resource object was created or updated. | arn:aws:iam::$account-id:saml-provider/$provider-name | - |
+| [iam:GetSSHPublicKey](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetSSHPublicKey.html) | Retrieves the specified SSH public key, including metadata about the key. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:GetServerCertificate](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetServerCertificate.html) | Retrieves information about the specified server certificate stored in IAM. | arn:aws:iam::$account-id:server-certificate/$certificate-name | - |
+| [iam:GetServiceLastAccessedDetailsWithEntities](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetServiceLastAccessedDetailsWithEntities.html) | ... | * | - |
+| [iam:GetUser](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetUser.html) | Retrieves information about the specified IAM user, including the user's creation date, path, unique ID, and ARN. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:GetUserPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetUserPolicy.html) | Retrieves the specified inline policy document that is embedded in the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:ListAccessKeys](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAccessKeys.html) | Returns information about the access key IDs associated with the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:ListAccountAliases](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAccountAliases.html) | Lists the account alias associated with the AWS account (Note: you can have only one). | * | - |
+| [iam:ListAttachedGroupPolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAttachedGroupPolicies.html) | Lists all managed policies that are attached to the specified IAM group. | arn:aws:iam::$account-id:group/$group-name | - |
+| [iam:ListAttachedRolePolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAttachedRolePolicies.html) | Lists all managed policies that are attached to the specified IAM role. | arn:aws:iam::$account-id:role/$role-name | - |
+| [iam:ListAttachedUserPolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAttachedUserPolicies.html) | Lists all managed policies that are attached to the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:ListEntitiesForPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListEntitiesForPolicy.html) | Lists all IAM users, groups, and roles that the specified managed policy is attached to. | arn:aws:iam::$account-id:policy/$policy-name | - |
+| [iam:ListGroupPolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListGroupPolicies.html) | Lists the names of the inline policies that are embedded in the specified IAM group. | arn:aws:iam::$account-id:group/$group-name | - |
+| [iam:ListGroups](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListGroups.html) | Lists the IAM groups that have the specified path prefix. | * | - |
+| [iam:ListGroupsForUser](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListGroupsForUser.html) | Lists the IAM groups that the specified IAM user belongs to. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:ListInstanceProfiles](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListInstanceProfiles.html) | Lists the instance profiles that have the specified path prefix. | arn:aws:iam::$account-id:instance-profile/$instance-profile-name | - |
+| [iam:ListInstanceProfilesForRole](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListInstanceProfilesForRole.html) | Lists the instance profiles that have the specified associated IAM role. | arn:aws:iam::$account-id:role/$role-name | - |
+| [iam:ListMFADevices](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListMFADevices.html) | Lists the MFA devices for an IAM user. | * | - |
+| [iam:ListOpenIDConnectProviders](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListOpenIDConnectProviders.html) | Lists information about the IAM OpenID Connect (OIDC) provider resource objects defined in the AWS account. | * | - |
+| [iam:ListPolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListPolicies.html) | Lists all the managed policies that are available in your AWS account, including your own customer-defined managed policies and all AWS managed policies. | * | - |
+| [iam:ListPoliciesGrantingServiceAccess](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListPoliciesGrantingServiceAccess.html) | ... | * | - |
+| [iam:ListPolicyVersions](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListPolicyVersions.html) | Lists information about the versions of the specified managed policy, including the version that is currently set as the policy's default version. | arn:aws:iam::$account-id:policy/$policy-name | - |
+| [iam:ListRolePolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListRolePolicies.html) | Lists the names of the inline policies that are embedded in the specified IAM role. | arn:aws:iam::$account-id:role/$role-name | - |
+| [iam:ListRoles](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListRoles.html) | Lists the IAM roles that have the specified path prefix. | * | - |
+| [iam:ListSAMLProviders](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListSAMLProviders.html) | Lists the SAML provider resource objects defined in IAM in the account. | *| - |
+| [iam:ListSSHPublicKeys](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListSSHPublicKeys.html) | Returns information about the SSH public keys associated with the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:ListServerCertificates](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListServerCertificates.html) | Lists the server certificates stored in IAM that have the specified path prefix. | * | - |
+| [iam:ListSigningCertificates](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListSigningCertificates.html) | Returns information about the signing certificates associated with the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:ListUserPolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListUserPolicies.html) | Lists the names of the inline policies embedded in the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:ListUsers](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListUsers.html) | Lists the IAM users that have the specified path prefix. | * | - |
+| [iam:ListVirtualMFADevices](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListVirtualMFADevices.html) | Lists the virtual MFA devices defined in the AWS account by assignment status. | * | - |
+| [iam:PutGroupPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_PutGroupPolicy.html) | Adds or updates an inline policy document that is embedded in the specified IAM group. | arn:aws:iam::$account-id:group/$group-name | - |
+| [iam:PutRolePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_PutRolePolicy.html) | Adds or updates an inline policy document that is embedded in the specified IAM role. | arn:aws:iam::$account-id:role/$role-name | - |
+| [iam:PutUserPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_PutUserPolicy.html) | Adds or updates an inline policy document that is embedded in the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:RemoveClientIDFromOpenIDConnectProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_RemoveClientIDFromOpenIDConnectProvider.html) | Removes the specified client ID (also known as audience) from the list of client IDs registered for the specified IAM OpenID Connect (OIDC) provider resource object. | arn:aws:iam::$account-id:oidc-provider/$provider-name | - |
+| [iam:RemoveRoleFromInstanceProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_RemoveRoleFromInstanceProfile.html) | Removes the specified IAM role from the specified EC2 instance profile. | arn:aws:iam::$account-id:instance-profile/$instance-profile-name | - |
+| [iam:RemoveUserFromGroup](http://docs.aws.amazon.com/IAM/latest/APIReference/API_RemoveUserFromGroup.html) | Removes the specified user from the specified group. | arn:aws:iam::$account-id:group/$group-name | - |
+| [iam:ResyncMFADevice](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ResyncMFADevice.html) | Synchronizes the specified MFA device with its IAM resource object on the AWS servers. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:SetDefaultPolicyVersion](http://docs.aws.amazon.com/IAM/latest/APIReference/API_SetDefaultPolicyVersion.html) | Sets the specified version of the specified policy as the policy's default (operative) version. | arn:aws:iam::$account-id:policy/$policy-name | - |
+| [iam:SimulateCustomPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_SimulateCustomPolicy.html) | Simulate how a set of IAM policies and optionally a resource-based policy works with a list of API actions and AWS resources to determine the policies' effective permissions. | * | - |
+| [iam:SimulatePrincipalPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_SimulatePrincipalPolicy.html) | Simulate how a set of IAM policies attached to an IAM entity works with a list of API actions and AWS resources to determine the policies' effective permissions. | * | - |
+| [iam:UpdateAccessKey](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccessKey.html) | Changes the status of the specified access key from Active to Inactive, or vice versa. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:UpdateAccountPasswordPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccountPasswordPolicy.html) | Updates the password policy settings for the AWS account. | * | - |
+| [iam:UpdateAssumeRolePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAssumeRolePolicy.html) | Updates the policy that grants an IAM entity permission to assume a role. | arn:aws:iam::$account-id:role/$role-name | - |
+| [iam:UpdateGroup](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateGroup.html) | Updates the name and/or the path of the specified IAM group. | arn:aws:iam::$account-id:group/$group-name | - |
+| [iam:UpdateLoginProfile](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateLoginProfile.html) | Changes the password for the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:UpdateOpenIDConnectProviderThumbprint](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateOpenIDConnectProviderThumbprint.html) | Replaces the existing list of server certificate thumbprints associated with an OpenID Connect (OIDC) provider resource object with a new list of thumbprints. | arn:aws:iam::$account-id:oidc-provider/$provider-name | - |
+| [iam:UpdateSAMLProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateSAMLProvider.html) | Updates the metadata document for an existing SAML provider resource object. | arn:aws:iam::$account-id:saml-provider/$provider-name | - |
+| [iam:UpdateSSHPublicKey](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateSSHPublicKey.html) | Sets the status of an IAM user's SSH public key to active or inactive. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:UpdateServerCertificate](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateServerCertificate.html) | Updates the name and/or the path of the specified server certificate stored in IAM. | arn:aws:iam::$account-id:server-certificate/$certificate-name | - |
+| [iam:UpdateSigningCertificate](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateSigningCertificate.html) | Changes the status of the specified user signing certificate from active to disabled, or vice versa. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:UpdateUser](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateUser.html) | Updates the name and/or the path of the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:UploadSSHPublicKey](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UploadSSHPublicKey.html) | Uploads an SSH public key and associates it with the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:UploadServerCertificate](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UploadServerCertificate.html) | Uploads a server certificate entity for the AWS account. | arn:aws:iam::$account-id:server-certificate/$certificate-name | - |
+| [iam:UploadSigningCertificate](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UploadSigningCertificate.html) | Uploads an X.509 signing certificate and associates it with the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
+| [iam:GenerateServiceLastAccessedDetails](http://docs.aws.amazon.com/IAM/latest/UserGuide/list_iam.html) | this is an IAM policy permission only, not an API action that can be called. | * | - |
+| [iam:GetServiceLastAccessedDetails](http://docs.aws.amazon.com/IAM/latest/UserGuide/list_iam.html) | this is an IAM policy permission only, not an API action that can be called. | * | - |
+| [iam:PassRole](https://blogs.aws.amazon.com/security/post/Tx3M0IFB5XBOCQX/Granting-Permission-to-Launch-EC2-Instances-with-IAM-Roles-PassRole-Permission) | This is an IAM policy permission only, not an API action that can be called. | arn:aws:iam::$account-id:role/$role-name | - |
