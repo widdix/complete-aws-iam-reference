@@ -1,4 +1,5 @@
-var request = require('request');
+var loader = require('./lib/loader.js');
+var parser = require('./lib/parser.js');
 var async = require('neo-async');
 var fs = require('fs');
 
@@ -7,20 +8,12 @@ if (process.argv[2].length === 0) {
   process.exit(1);
 }
 
-function parseLink(cell) {
-  if (cell.indexOf('](') === -1) {
-    return null;
-  }
-  // [ec2:DetachInternetGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachInternetGateway.html)
-  var s = cell.slice(1, -1).split('](');
-  var s2 = s[0].split(':');
-  return {
-    service: s2[0],
-    action: s2[1],
-    doc: s[1]
-  }
+function cleanupDescription(description) {
+  description = description.substring(0, description.indexOf('.'));
+  description += '.';
+  description = description.replace(/\s\s+/g, ' ');
+  return description.trim();
 }
-
 
 function processLine(line, cb) {
   // [ec2:DetachInternetGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachInternetGateway.html) | ... | * | - |
@@ -28,25 +21,17 @@ function processLine(line, cb) {
   if (cell.length !== 6) {
     return cb(null, line);
   }
-  var link = parseLink(cell[1].trim());
+  var link = parser.parseLink(cell[1].trim());
   if (link === null) {
     return cb(null, line);
   }
   if (cell[2].trim() === '...') {
-    request({
-      url: link.doc,
-      method: 'GET'
-    }, function(err, res, body) {
+    loader.load(link.doc, function(err, $) {
       if (err) {
         cb(err);
       } else {
-        var description = body.substring(body.indexOf('<h1 class="topictitle">' + link.action + '</h1>'));
-        description = description.substring(description.indexOf('<p class="simpara">') + 19);
-        description = description.substring(0, description.indexOf('.'));
-        description += '.';
-        description = description.replace(/\s\s+/g, ' ');
-        description = description.trim();
-        cb(null, '|' + cell[1] + '| ' + description + ' |' + cell[3] + '|' + cell[4] + '|')
+        var description = $('p.simpara').first().text()
+        cb(null, '|' + cell[1] + '| ' + cleanupDescription(description) + ' |' + cell[3] + '|' + cell[4] + '|');
       }
     });
   } else {

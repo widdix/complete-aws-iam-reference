@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "neo-async": "2.0.0",
-    "request": "2.74.0"
+    "request": "2.74.0",
+    "cheerio": "0.20.0"
   },
   "private": true
 }

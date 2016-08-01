@@ -1,18 +1,5 @@
 var fs = require('fs');
-
-function parseLink(cell) {
-  if (cell.indexOf('](') === -1) {
-    return null;
-  }
-  // [ec2:DetachInternetGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachInternetGateway.html)
-  var s = cell.slice(1, -1).split('](');
-  var s2 = s[0].split(':');
-  return {
-    service: s2[0],
-    action: s2[1],
-    doc: s[1]
-  }
-}
+var parser = require('./lib/parser.js');
 
 function parseLine(line) {
   // [ec2:DetachInternetGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachInternetGateway.html) | ... | * | - |
@@ -20,7 +7,7 @@ function parseLine(line) {
   if (cell.length !== 6) {
     return null;
   }
-  var link = parseLink(cell[1].trim());
+  var link = parser.parseLink(cell[1].trim());
   if (link === null) {
     return null;
   }
