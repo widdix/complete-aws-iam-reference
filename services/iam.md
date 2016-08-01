@@ -63,7 +63,7 @@
 | [iam:GetSAMLProvider](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetSAMLProvider.html) | Returns the SAML provider metadocument that was uploaded when the IAM SAML provider resource object was created or updated. | arn:aws:iam::$account-id:saml-provider/$provider-name | - |
 | [iam:GetSSHPublicKey](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetSSHPublicKey.html) | Retrieves the specified SSH public key, including metadata about the key. | arn:aws:iam::$account-id:user/$user-name | - |
 | [iam:GetServerCertificate](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetServerCertificate.html) | Retrieves information about the specified server certificate stored in IAM. | arn:aws:iam::$account-id:server-certificate/$certificate-name | - |
-| [iam:GetServiceLastAccessedDetailsWithEntities](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetServiceLastAccessedDetailsWithEntities.html) | ... | * | - |
+| [iam:GetServiceLastAccessedDetailsWithEntities](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetServiceLastAccessedDetailsWithEntities.html) | ??? | * | - |
 | [iam:GetUser](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetUser.html) | Retrieves information about the specified IAM user, including the user's creation date, path, unique ID, and ARN. | arn:aws:iam::$account-id:user/$user-name | - |
 | [iam:GetUserPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetUserPolicy.html) | Retrieves the specified inline policy document that is embedded in the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
 | [iam:ListAccessKeys](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAccessKeys.html) | Returns information about the access key IDs associated with the specified IAM user. | arn:aws:iam::$account-id:user/$user-name | - |
@@ -80,7 +80,7 @@
 | [iam:ListMFADevices](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListMFADevices.html) | Lists the MFA devices for an IAM user. | * | - |
 | [iam:ListOpenIDConnectProviders](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListOpenIDConnectProviders.html) | Lists information about the IAM OpenID Connect (OIDC) provider resource objects defined in the AWS account. | * | - |
 | [iam:ListPolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListPolicies.html) | Lists all the managed policies that are available in your AWS account, including your own customer-defined managed policies and all AWS managed policies. | * | - |
-| [iam:ListPoliciesGrantingServiceAccess](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListPoliciesGrantingServiceAccess.html) | ... | * | - |
+| [iam:ListPoliciesGrantingServiceAccess](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListPoliciesGrantingServiceAccess.html) | ??? | * | - |
 | [iam:ListPolicyVersions](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListPolicyVersions.html) | Lists information about the versions of the specified managed policy, including the version that is currently set as the policy's default version. | arn:aws:iam::$account-id:policy/$policy-name | - |
 | [iam:ListRolePolicies](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListRolePolicies.html) | Lists the names of the inline policies that are embedded in the specified IAM role. | arn:aws:iam::$account-id:role/$role-name | - |
 | [iam:ListRoles](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListRoles.html) | Lists the IAM roles that have the specified path prefix. | * | - |

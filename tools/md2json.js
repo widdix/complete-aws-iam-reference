@@ -2,7 +2,7 @@ var fs = require('fs');
 var parser = require('./lib/parser.js');
 
 function parseLine(line) {
-  // [ec2:DetachInternetGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachInternetGateway.html) | ... | * | - |
+  // [ec2:DetachInternetGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachInternetGateway.html) | ??? | * | - |
   var cell = line.split("|");
   if (cell.length !== 6) {
     return null;

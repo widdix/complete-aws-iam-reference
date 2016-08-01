@@ -12,7 +12,7 @@ if (process.argv[3].length === 0) {
 }
 
 function processLine(data, line) {
-  // | [ec2:DetachInternetGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachInternetGateway.html) | ... | * | - |
+  // | [ec2:DetachInternetGateway](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachInternetGateway.html) | ??? | * | - |
   var cell = line.split("|");
   if (cell.length !== 6) {
     return line;

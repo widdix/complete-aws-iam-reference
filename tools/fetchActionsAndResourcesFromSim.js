@@ -11,5 +11,5 @@ var data = JSON.parse(content);
 
 data.forEach(function(row) {
   var resources = (row.requiredResourceNames || []).map((name) => 'arn:aws:' + row.prefix + ':$region:$account-id:' + name + '/$' + name).join(',');
-  process.stdout.write('| [' + row.prefix + ':' + row.name + ']() | ... | ' + (resources || '*') + ' | ... |\n');
+  process.stdout.write('| [' + row.prefix + ':' + row.name + ']() | ??? | ' + (resources || '*') + ' | ??? |\n');
 });

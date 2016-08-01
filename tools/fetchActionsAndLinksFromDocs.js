@@ -11,7 +11,7 @@ loader.load(process.argv[2], function(err, $) {
   } else {
     $('ul.itemizedlist').first().find('li a').each(function() {
       var t = $(this);
-      process.stdout.write('| [' + t.text() + '](' + t.attr("href") + ') | ... | ... | ... |\n');
+      process.stdout.write('| [' + t.text() + '](' + t.attr("href") + ') | ??? | ??? | ??? |\n');
     });
   }
 });
