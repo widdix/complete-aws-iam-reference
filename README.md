@@ -37,7 +37,7 @@
 - [x] [Amazon Elastic MapReduce](services/elasticmapreduce.md)
 - [ ] Amazon Elastic Transcoder
 - [x] [Amazon ElastiCache](services/elasticache.md)
-- [ ] Amazon Elasticsearch Service*
+- [x] [Amazon Elasticsearch Service](services/es.md)
 - [ ] Amazon GameLift
 - [x] [Amazon Glacier](services/glacier.md)
 - [x] [AWS Identity and Access Management](services/iam.md)
