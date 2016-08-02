@@ -53,7 +53,7 @@
 - [ ] Amazon Mobile Analytics
 - [ ] AWS Mobile Hub
 - [ ] AWS OpsWorks
-- [ ] Amazon RDS**
+- [x] [Amazon RDS](services/rds.md)
 - [ ] Amazon Redshift*
 - [ ] Amazon Route 53*
 - [ ] Amazon Route53 Domains*
