@@ -1,5 +1,7 @@
 # Complete AWS IAM Reference
 
+## Service Coverage
+
 - [x] [Amazon API Gateway](services/execute-api.md) and [Manage](services/apigateway.md)
 - [x] [AWS Application Discovery Service](services/discovery.md)
 - [x] [Amazon AppStream](services/appstream.md)
@@ -10,7 +12,7 @@
 - [x] [Amazon CloudFront](services/cloudfront.md)
 - [x] [AWS CloudHSM](services/cloudhsm.md)
 - [x] [Amazon CloudSearch](services/cloudsearch.md)
-- [ ] AWS CloudTrail*
+- [x] [AWS CloudTrail](services/cloudtrail.md)
 - [x] [Amazon CloudWatch](services/cloudwatch.md)
 - [ ] Amazon CloudWatch Events*
 - [ ] Amazon CloudWatch Logs*
@@ -72,9 +74,9 @@
 - [ ] Amazon WorkMail
 - [ ] Amazon WorkSpaces
 
-TODO
+## TODO
 
-- [ ] add all services marked with an * before public announcement
+- [ ] add all services marked with an `*` before public announcement
 - [ ] add examples for how conditions and resources can be used
 
 ## Contributing
