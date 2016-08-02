@@ -1,0 +1,27 @@
+| Action | Description | Resource | Condition |
+| --- | --- | --- | --- |
+| [logs:CancelExportTask](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CancelExportTask.html) | Cancels an export task if it is in PENDING or RUNNING state. | ??? | - |
+| [logs:CreateExportTask](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateExportTask.html) | Creates an ExportTask which allows you to efficiently export data from a Log Group to your Amazon S3 bucket. | ??? | - |
+| [logs:CreateLogGroup](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogGroup.html) | Creates a new log group with the specified name. | ??? | - |
+| [logs:CreateLogStream](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogStream.html) | Creates a new log stream in the specified log group. | ??? | - |
+| [logs:DeleteDestination](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeleteDestination.html) | Deletes the destination with the specified name and eventually disables all the subscription filters that publish to it. | ??? | - |
+| [logs:DeleteLogGroup](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeleteLogGroup.html) | Deletes the log group with the specified name and permanently deletes all the archived log events associated with it. | ??? | - |
+| [logs:DeleteLogStream](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeleteLogStream.html) | Deletes a log stream and permanently deletes all the archived log events associated with it. | ??? | - |
+| [logs:DeleteMetricFilter](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeleteMetricFilter.html) | Deletes a metric filter associated with the specified log group. | ??? | - |
+| [logs:DeleteRetentionPolicy](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeleteRetentionPolicy.html) | Deletes the retention policy of the specified log group. | ??? | - |
+| [logs:DeleteSubscriptionFilter](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeleteSubscriptionFilter.html) | Deletes a subscription filter associated with the specified log group. | ??? | - |
+| [logs:DescribeDestinations](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeDestinations.html) | Returns all the destinations that are associated with the AWS account making the request. | ??? | - |
+| [logs:DescribeExportTasks](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeExportTasks.html) | Returns all the export tasks that are associated with the AWS account making the request. | ??? | - |
+| [logs:DescribeLogGroups](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeLogGroups.html) | Returns all the log groups that are associated with the AWS account making the request. | ??? | - |
+| [logs:DescribeLogStreams](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeLogStreams.html) | Returns all the log streams that are associated with the specified log group. | ??? | - |
+| [logs:DescribeMetricFilters](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeMetricFilters.html) | Returns all the metrics filters associated with the specified log group. | ??? | - |
+| [logs:DescribeSubscriptionFilters](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeSubscriptionFilters.html) | Returns all the subscription filters associated with the specified log group. | ??? | - |
+| [logs:FilterLogEvents](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_FilterLogEvents.html) | Retrieves log events, optionally filtered by a filter pattern from the specified log group. | ??? | - |
+| [logs:GetLogEvents](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_GetLogEvents.html) | Retrieves log events from the specified log stream. | ??? | - |
+| [logs:PutDestination](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDestination.html) | Creates or updates a Destination. | ??? | - |
+| [logs:PutDestinationPolicy](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDestinationPolicy.html) | Creates or updates an access policy associated with an existing Destination. | ??? | - |
+| [logs:PutLogEvents](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html) | Uploads a batch of log events to the specified log stream. | ??? | - |
+| [logs:PutMetricFilter](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutMetricFilter.html) | Creates or updates a metric filter and associates it with the specified log group. | ??? | - |
+| [logs:PutRetentionPolicy](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutRetentionPolicy.html) | Sets the retention of the specified log group. | ??? | - |
+| [logs:PutSubscriptionFilter](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutSubscriptionFilter.html) | Creates or updates a subscription filter and associates it with the specified log group. | ??? | - |
+| [logs:TestMetricFilter](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_TestMetricFilter.html) | Tests the filter pattern of a metric filter against a sample of log event messages. | ??? | - |

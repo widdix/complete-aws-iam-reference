@@ -15,7 +15,7 @@
 - [x] [AWS CloudTrail](services/cloudtrail.md)
 - [x] [Amazon CloudWatch](services/cloudwatch.md)
 - [x] [Amazon CloudWatch Events](services/events.md)
-- [ ] Amazon CloudWatch Logs*
+- [x] [Amazon CloudWatch Logs](services/logs.md)
 - [ ] AWS CodeCommit
 - [ ] AWS CodeDeploy
 - [ ] AWS CodePipeline
