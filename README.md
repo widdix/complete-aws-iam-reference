@@ -29,7 +29,7 @@
 - [ ] AWS Directory Service
 - [x] [Amazon DynamoDB](services/dynamodb.md)
 - [x] [Amazon EC2](services/ec2.md)
-- [ ] Amazon EC2 Container Registry*
+- [x] [Amazon EC2 Container Registry](services/ecr.md)
 - [ ] Amazon EC2 Container Service*
 - [ ] AWS Elastic Beanstalk*
 - [ ] Amazon Elastic File System*
