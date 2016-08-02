@@ -32,7 +32,7 @@
 - [x] [Amazon EC2 Container Registry](services/ecr.md)
 - [x] [Amazon EC2 Container Service]/services/ecs.md
 - [x] [AWS Elastic Beanstalk](services/elasticbeanstalk.md)
-- [ ] Amazon Elastic File System*
+- [x] [Amazon Elastic File System](services/elasticfilesystem.md)
 - [x] [Elastic Load Balancing](services/elasticloadbalancing.md)
 - [ ] Amazon Elastic MapReduce*
 - [ ] Amazon Elastic Transcoder
