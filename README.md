@@ -19,8 +19,8 @@
 - [ ] AWS CodeCommit
 - [ ] AWS CodeDeploy
 - [ ] AWS CodePipeline
-- [ ] Amazon Cognito Identity*
-- [ ] Amazon Cognito Sync*
+- [x] [Amazon Cognito Identity](services/cognito-identity.md)
+- [x] [Amazon Cognito Sync](services/cognito-sync.md)
 - [ ] AWS Config
 - [ ] Data Pipeline
 - [ ] AWS Database Migration Service
