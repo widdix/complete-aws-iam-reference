@@ -17,8 +17,8 @@
 - [ ] AWS CodeCommit
 - [ ] AWS CodeDeploy
 - [ ] AWS CodePipeline
-- [ ] Amazon Cognito Identity
-- [ ] Amazon Cognito Sync
+- [ ] Amazon Cognito Identity*
+- [ ] Amazon Cognito Sync*
 - [ ] AWS Config
 - [ ] Data Pipeline
 - [ ] AWS Database Migration Service
@@ -32,7 +32,7 @@
 - [ ] AWS Elastic Beanstalk*
 - [ ] Amazon Elastic File System*
 - [x] [Elastic Load Balancing](services/elasticloadbalancing.md)
-- [ ] Amazon Elastic MapReduce
+- [ ] Amazon Elastic MapReduce*
 - [ ] Amazon Elastic Transcoder
 - [ ] Amazon ElastiCache*
 - [ ] Amazon Elasticsearch Service*
@@ -47,12 +47,12 @@
 - [ ] Amazon Kinesis Firehose*
 - [ ] AWS Lambda*
 - [ ] Amazon Machine Learning
-- [ ] AWS Marketplace
-- [ ] AWS Marketplace Management Portal
+- [ ] AWS Marketplace*
+- [ ] AWS Marketplace Management Portal*
 - [ ] Amazon Mechanical Turk
 - [ ] Amazon Mobile Analytics
 - [ ] AWS Mobile Hub
-- [ ] AWS OpsWorks
+- [ ] AWS OpsWorks*
 - [x] [Amazon RDS](services/rds.md)
 - [ ] Amazon Redshift*
 - [ ] Amazon Route 53*
@@ -61,16 +61,21 @@
 - [ ] AWS Security Token Service*
 - [ ] Amazon SES*
 - [ ] Amazon Simple Systems Manager
-- [ ] Amazon Simple Workflow Service
-- [ ] Amazon SimpleDB
+- [ ] Amazon Simple Workflow Service*
+- [ ] Amazon SimpleDB*
 - [x] [Amazon SNS](services/sns.md)
 - [x] [Amazon SQS](services/sqs.md)
 - [ ] Amazon Storage Gateway
-- [ ] AWS Trusted Advisor
+- [ ] AWS Trusted Advisor*
 - [ ] AWS WAF*
 - [ ] Amazon WorkDocs
 - [ ] Amazon WorkMail
 - [ ] Amazon WorkSpaces
+
+TODO
+
+- [ ] add all services marked with an * before public announcement
+- [ ] add examples for how conditions and resources can be used
 
 ## Contributing
 
