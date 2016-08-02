@@ -36,7 +36,7 @@
 - [x] [Elastic Load Balancing](services/elasticloadbalancing.md)
 - [x] [Amazon Elastic MapReduce](services/elasticmapreduce.md)
 - [ ] Amazon Elastic Transcoder
-- [ ] Amazon ElastiCache*
+- [x] [Amazon ElastiCache](services/elasticache.md)
 - [ ] Amazon Elasticsearch Service*
 - [ ] Amazon GameLift
 - [x] [Amazon Glacier](services/glacier.md)
