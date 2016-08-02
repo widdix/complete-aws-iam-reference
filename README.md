@@ -30,7 +30,7 @@
 - [x] [Amazon DynamoDB](services/dynamodb.md)
 - [x] [Amazon EC2](services/ec2.md)
 - [x] [Amazon EC2 Container Registry](services/ecr.md)
-- [ ] Amazon EC2 Container Service*
+- [x] [Amazon EC2 Container Service]/services/ecs.md
 - [ ] AWS Elastic Beanstalk*
 - [ ] Amazon Elastic File System*
 - [x] [Elastic Load Balancing](services/elasticloadbalancing.md)
