@@ -34,7 +34,7 @@
 - [x] [AWS Elastic Beanstalk](services/elasticbeanstalk.md)
 - [x] [Amazon Elastic File System](services/elasticfilesystem.md)
 - [x] [Elastic Load Balancing](services/elasticloadbalancing.md)
-- [ ] Amazon Elastic MapReduce*
+- [x] [Amazon Elastic MapReduce](services/elasticmapreduce.md)
 - [ ] Amazon Elastic Transcoder
 - [ ] Amazon ElastiCache*
 - [ ] Amazon Elasticsearch Service*
