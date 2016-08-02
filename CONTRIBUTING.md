@@ -1,4 +1,4 @@
-A good starting point in the AWS IAM documentation can be found here: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actionsconditions.html
+A good starting point in the AWS IAM documentation can be found here: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actionsconditions.html and the [IAM Policy Simulator](https://policysim.aws.amazon.com)
 
 ## Extend a service
 

@@ -11,7 +11,7 @@
 - [x] [AWS CloudHSM](services/cloudhsm.md)
 - [x] [Amazon CloudSearch](services/cloudsearch.md)
 - [ ] AWS CloudTrail*
-- [ ] Amazon CloudWatch**
+- [x] [Amazon CloudWatch](services/cloudwatch.md)
 - [ ] Amazon CloudWatch Events*
 - [ ] Amazon CloudWatch Logs*
 - [ ] AWS CodeCommit
@@ -25,7 +25,7 @@
 - [ ] AWS Device Farm
 - [ ] AWS Direct Connect
 - [ ] AWS Directory Service
-- [ ] Amazon DynamoDB**
+- [x] [Amazon DynamoDB](services/dynamodb.md)
 - [x] [Amazon EC2](services/ec2.md)
 - [ ] Amazon EC2 Container Registry*
 - [ ] Amazon EC2 Container Service*
