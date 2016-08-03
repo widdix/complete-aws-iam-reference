@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Complete AWS IAM Reference</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.min.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">IAM</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown" ng-class="section === 'reference' ? 'active' : ''">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/#/reference">Complete</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/#/reference/autoscaling">Auto Scaling</a></li>
+                <li><a href="/#/reference/cloudformation">CloudFormation</a></li>
+                <li><a href="/#/reference/cloudfront">CloudFront</a></li>
+                <li><a href="/#/reference/cloudwatch">CloudWatch</a></li>
+                <li><a href="/#/reference/dynamodb">DynamoDB</a></li>
+                <li><a href="/#/reference/ec2">EC2</a></li>
+                <li><a href="/#/reference/elasticloadbalancing">ELB</a></li>
+                <li><a href="/#/reference/glacier">Glacier</a></li>
+                <li><a href="/#/reference/iam">IAM</a></li>
+                <li><a href="/#/reference/rds">RDS</a></li>
+                <li><a href="/#/reference/s3">S3</a></li>
+                <li><a href="/#/reference/sns">SNS</a></li>
+                <li><a href="/#/reference/sqs">SQS</a></li>
+              </ul>
+            </li>
+            <li ng-class="section === 'global_conditions' ? 'active' : ''"><a href="/#/global_conditions">Global Conditions</a></li>
+            <li ng-class="section === 'about' ? 'active' : ''"><a href="/#/about">About</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li style="padding-top: 14px;">
+              <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="Complete AWS IAM Reference" data-url="https://iam.cloudonaut.io" data-count="horizontal">Vote on Hacker News</a>
+              <script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
+            </li>
+            <li style="padding-top: 14px;">
+              <div class="fb-share-button" data-href="https://iam.cloudonaut.io" data-layout="button_count" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fiam.cloudonaut.io%2F&amp;src=sdkpreparse">Teilen</a></div>
+            </li>
+            <li style="padding-top: 14px;">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://iam.cloudonaut.io" data-text="Complete #AWS #IAM Reference" data-via="hellomichibye">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+            <li><a href="https://cloudonaut.io" target="_blank"><i class="glyphicon glyphicon-new-window"></i> cloudonaut.io</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    
+<div class="row">
+  <ol class="breadcrumb">
+    <li><a href="/reference/index.html">Complete AWS IAM Reference</a></li>
+    <li class="active">s3</li>
+  </ol>
+
+  <div class="table-responsive">
+    <table class="table table-striped" style="table-layout: fixed;">
+      <thead>
+        <tr>
+          <th style="width: 25%;">
+            Action <a href="/#/reference/s3" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 25%;">
+            Description <a href="/#/reference/s3" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 20%;">
+            Resources <a href="/#/reference/s3" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 20%;">
+            Conditions <a href="/#/reference/s3" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 10%;">&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:AbortMultipartUpload
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This operation aborts a multipart upload.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;mpUploadAbort.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:CreateBucket
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the PUT operation creates a new bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketPUT.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:DeleteBucket
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the DELETE operation deletes the bucket named in the URI.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketDELETE.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:DeleteBucketPolicy
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the DELETE operation uses the policy subresource to delete the policy on a specified bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketDELETEpolicy.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:DeleteBucketWebsite
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This operation removes the website configuration for a bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketDELETEwebsite.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:DeleteObject
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            The DELETE operation removes the null version (if there is one) of an object and inserts a delete marker, which becomes the current version of the object.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTObjectDELETE.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:DeleteObjectVersion
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            The DELETE operation removes the null version (if there is one) of an object and inserts a delete marker, which becomes the current version of the object.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTObjectDELETE.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetAccelerateConfiguration
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation uses the accelerate subresource to return the Transfer Acceleration state of a bucket, which is either Enabled or Suspended.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketGETaccelerate.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetBucketAcl
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation uses the acl subresource to return the access control list (ACL) of a bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketGETacl.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetBucketCORS
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns the cors configuration information set for the bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketGETcors.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetBucketLocation
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation uses the location subresource to return a bucket&#39;s region.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketGETlocation.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetBucketLogging
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation uses the logging subresource to return the logging status of a bucket and the permissions users have to view and modify that status.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketGETlogging.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetBucketNotification
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation uses the notification subresource to return the notification configuration of a bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketGETnotification.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetBucketPolicy
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation uses the policy subresource to return the policy of a specified bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketGETpolicy.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetBucketRequestPayment
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation uses the requestPayment subresource to return the request payment configuration of a bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTrequestPaymentGET.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetBucketTagging
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation uses the tagging subresource to return the tag set associated with the bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketGETtagging.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetBucketVersioning
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation uses the versioning subresource to return the versioning state of a bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketGETversioningStatus.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetBucketWebsite
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation returns the website configuration associated with a bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketGETwebsite.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetLifecycleConfiguration
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns the lifecycle configuration information set on the bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketGETlifecycle.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetObject
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation retrieves objects from Amazon S3.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTObjectGET.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetObjectAcl
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation uses the acl subresource to return the access control list (ACL) of an object.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTObjectGETacl.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetObjectTorrent
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation uses the torrent subresource to return torrent files from a bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTObjectGETtorrent.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetObjectVersion
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation retrieves objects from Amazon S3.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTObjectGET.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetObjectVersionAcl
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            By default, GET returns ACL information about the current version of an object.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;objectGetAclVersions.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetObjectVersionTorrent
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation uses the torrent subresource to return torrent files from a bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTObjectGETtorrent.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:GetReplicationConfiguration
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="https:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;IAM&#x2F;latest&#x2F;UserGuide&#x2F;list_s3.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:ListAllMyBuckets
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the GET operation returns a list of all buckets owned by the authenticated sender of the request.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTServiceGET.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:ListBucket
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This API has been revised. We recommend that you use the newer version, GET Bucket (List Objects) version 2, when developing applications.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketGET.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:ListBucketMultipartUploads
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This operation lists in-progress multipart uploads.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;mpUploadListMPUpload.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:ListBucketVersions
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            You can use the versions subresource to list metadata about all of the versions of objects in a bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketGETVersion.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:ListMultipartUploadParts
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This operation lists the parts that have been uploaded for a specific multipart upload.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;mpUploadListParts.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:PutAccelerateConfiguration
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the PUT operation uses the accelerate subresource to set the Transfer Acceleration state of an existing bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketPUTaccelerate.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:PutBucketAcl
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the PUT operation uses the acl subresource to set the permissions on an existing bucket using access control lists (ACL).
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketPUTacl.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:PutBucketCORS
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Sets the cors configuration for your bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketPUTcors.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:PutBucketLogging
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the PUT operation uses the logging subresource to set the logging parameters for a bucket and to specify permissions for who can view and modify the logging parameters.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketPUTlogging.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:PutBucketNotification
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            The Amazon S3 notification feature enables you to receive notifications when certain events happen in your bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketPUTnotification.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:PutBucketPolicy
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the PUT operation uses the policy subresource to add to or replace a policy on a bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketPUTpolicy.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:PutBucketRequestPayment
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the PUT operation uses the requestPayment subresource to set the request payment configuration of a bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTrequestPaymentPUT.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:PutBucketTagging
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the PUT operation uses the tagging subresource to add a set of tags to an existing bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketPUTtagging.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:PutBucketVersioning
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the PUT operation uses the versioning subresource to set the versioning state of an existing bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketPUTVersioningStatus.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:PutBucketWebsite
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Sets the configuration of the website that is specified in the website subresource.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketPUTwebsite.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:PutLifecycleConfiguration
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Creates a new lifecycle configuration for the bucket or replaces an existing lifecycle configuration.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTBucketPUTlifecycle.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:PutReplicationConfiguration
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="https:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;IAM&#x2F;latest&#x2F;UserGuide&#x2F;list_s3.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:PutObject
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the PUT operation adds an object to a bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTObjectPUT.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:PutObjectAcl
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the PUT operation uses the acl subresource to set the access control list (ACL) permissions for an object that already exists in a bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTObjectPUTacl.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:PutObjectVersionAcl
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            This implementation of the PUT operation uses the acl subresource to set the access control list (ACL) permissions for an object that already exists in a bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTObjectPUTacl.html#objectPutAclVersions" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:ReplicateDelete
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="https:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;IAM&#x2F;latest&#x2F;UserGuide&#x2F;list_s3.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:ReplicateObject
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="https:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;IAM&#x2F;latest&#x2F;UserGuide&#x2F;list_s3.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              s3:RestoreObject
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Restores a temporary copy of an archived object.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="#/global_conditions">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;AmazonS3&#x2F;latest&#x2F;API&#x2F;RESTObjectPOSTrestore.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/s3.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+      </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">A <a href="https://cloudonaut.io" target="_blank">cloudonaut.io</a> project - <a href="/#/about">About</a> - <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/CONTRIBUTING.md" target="_blank">Contributing</a> - <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/LICENSE.md" target="_blank">CC BY-NC-SA 4.0</a></p>
+      </div>
+    </footer>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.7";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35685929-10', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

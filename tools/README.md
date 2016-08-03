@@ -24,3 +24,9 @@ node fetchActionsAndLinksFromDocs.js "https://docs.aws.amazon.com/IAM/latest/Use
 ```
 node fetchDocLink.js "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_cloudformation.html" ../services/cloudformation.md
 ```
+
+## Render static pages
+
+```
+node render.js
+```
