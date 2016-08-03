@@ -113,6 +113,8 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:application&#x2F;$applicationname</li>
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
               </ul>
             </div>
           </td>
@@ -144,6 +146,7 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
               </ul>
             </div>
           </td>
@@ -175,6 +178,7 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:application&#x2F;$applicationname</li>
               </ul>
             </div>
           </td>
@@ -206,6 +210,7 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:application&#x2F;$applicationname</li>
               </ul>
             </div>
           </td>
@@ -237,12 +242,14 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:applicationversion&#x2F;$applicationname&#x2F;$versionlabel</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -268,12 +275,19 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:configurationtemplate&#x2F;$applicationname&#x2F;$templatename</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li>elasticbeanstalk:FromApplication</li>
+                <li>elasticbeanstalk:FromApplicationVersion</li>
+                <li>elasticbeanstalk:FromConfigurationTemplate</li>
+                <li>elasticbeanstalk:FromEnvironment</li>
+                <li>elasticbeanstalk:FromSolutionStack</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -299,12 +313,17 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li>elasticbeanstalk:FromApplicationVersion</li>
+                <li>elasticbeanstalk:FromConfigurationTemplate</li>
+                <li>elasticbeanstalk:FromSolutionStack</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -330,6 +349,7 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
               </ul>
             </div>
           </td>
@@ -361,6 +381,7 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:application&#x2F;$applicationname</li>
               </ul>
             </div>
           </td>
@@ -392,12 +413,14 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:applicationversion&#x2F;$applicationname&#x2F;$versionlabel</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -423,12 +446,14 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:configurationtemplate&#x2F;$applicationname&#x2F;$templatename</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -454,12 +479,14 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -485,12 +512,14 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:applicationversion&#x2F;$applicationname&#x2F;$versionlabel</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -516,6 +545,7 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:application&#x2F;$applicationname</li>
               </ul>
             </div>
           </td>
@@ -547,12 +577,16 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:configurationtemplate&#x2F;$applicationname&#x2F;$templatename</li>
+                <li>arn:aws:elasticbeanstalk:$region::solutionstack&#x2F;$solutionstackname</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -578,12 +612,15 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:configurationtemplate&#x2F;$applicationname&#x2F;$templatename</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -609,6 +646,7 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
               </ul>
             </div>
           </td>
@@ -640,12 +678,14 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -671,12 +711,14 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -702,12 +744,17 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:application&#x2F;$applicationname</li>
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:applicationversion&#x2F;$applicationname&#x2F;$versionlabel</li>
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:configurationtemplate&#x2F;$applicationname&#x2F;$templatename</li>
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -733,6 +780,7 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
               </ul>
             </div>
           </td>
@@ -764,6 +812,7 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region::solutionstack&#x2F;$solutionstackname</li>
               </ul>
             </div>
           </td>
@@ -795,12 +844,14 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -826,12 +877,14 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -857,12 +910,14 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -888,12 +943,14 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -919,12 +976,15 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li>elasticbeanstalk:FromEnvironment</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -950,12 +1010,14 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -981,6 +1043,7 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:application&#x2F;$applicationname</li>
               </ul>
             </div>
           </td>
@@ -1012,12 +1075,14 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:applicationversion&#x2F;$applicationname&#x2F;$versionlabel</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -1043,12 +1108,14 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:configurationtemplate&#x2F;$applicationname&#x2F;$templatename</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -1074,12 +1141,16 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li>elasticbeanstalk:FromApplicationVersion</li>
+                <li>elasticbeanstalk:FromConfigurationTemplate</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
@@ -1105,12 +1176,15 @@
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:configurationtemplate&#x2F;$applicationname&#x2F;$templatename</li>
               </ul>
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
                 <li><a href="/global-conditions.html">Global Conditions</a></li>
               </ul>
             </div>
