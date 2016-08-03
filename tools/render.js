@@ -8,13 +8,13 @@ function renderSitemap(services) {
   fs.writeFileSync('../app/sitemap.xml', output);
 }
 
-function renderReferenceIndex(services) {
+function renderIndex(services) {
    var template = fs.readFileSync('./template/index.mustache', {encoding: 'utf8'});
    var output = Mustache.render(template, {services: services}, {
     header: fs.readFileSync('./template/header.mustache', {encoding: 'utf8'}),
     footer: fs.readFileSync('./template/footer.mustache', {encoding: 'utf8'})
   });
-  fs.writeFileSync('../app/reference/index.html', output);
+  fs.writeFileSync('../app/index.html', output);
 }
 
 function renderReferenceService(rows) {
@@ -36,5 +36,5 @@ files
   })
   .forEach((rows) => renderReferenceService(rows));
 
-renderReferenceIndex(files.map((file) => file.replace('.md', '')));
+renderIndex(files.map((file) => file.replace('.md', '')));
 renderSitemap(files.map((file) => file.replace('.md', '')));
