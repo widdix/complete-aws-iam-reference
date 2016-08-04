@@ -45,7 +45,7 @@
 - [ ] Amazon Inspector
 - [ ] AWS IoT
 - [x] [AWS Key Management Service](services/kms.md)
-- [ ] Amazon Kinesis*
+- [x] [Amazon Kinesis](services/kinesis.md)
 - [ ] Amazon Kinesis Firehose*
 - [ ] AWS Lambda*
 - [ ] Amazon Machine Learning
