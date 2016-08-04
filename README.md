@@ -46,7 +46,7 @@
 - [ ] AWS IoT
 - [x] [AWS Key Management Service](services/kms.md)
 - [x] [Amazon Kinesis](services/kinesis.md)
-- [ ] Amazon Kinesis Firehose*
+- [x] [Amazon Kinesis Firehose](services/firehose.md)
 - [ ] AWS Lambda*
 - [ ] Amazon Machine Learning
 - [ ] AWS Marketplace*
