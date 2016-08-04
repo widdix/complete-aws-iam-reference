@@ -79,8 +79,8 @@
           <table class="table table-striped" ng-controller="ConditionsList" style="table-layout: fixed;">
             <thead>
               <tr>
-                <th style="width: 25%;"><form style="display: inline;" class="form-inline"><div class="form-group"><div class="input-group"><span class="input-group-addon">Key</span><input type="text" ng-model="key" class="form-control input-sm" placeholder="Search"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span></div></div></form></th>
-                <th style="width: 70%;"><form style="display: inline;" class="form-inline"><div class="form-group"><div class="input-group"><span class="input-group-addon">Description</span><input type="text" ng-model="description" class="form-control input-sm" placeholder="Search"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span></div></div></form></th>
+                <th style="width: 25%;"><form style="display: inline;" class="form-inline"><div class="form-group"><div class="input-group"><span class="input-group-addon">Key</span><input type="text" ng-model="key" ng-model-options="{debounce: 250}" class="form-control input-sm" placeholder="Search"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span></div></div></form></th>
+                <th style="width: 70%;"><form style="display: inline;" class="form-inline"><div class="form-group"><div class="input-group"><span class="input-group-addon">Description</span><input type="text" ng-model="description" ng-model-options="{debounce: 250}" class="form-control input-sm" placeholder="Search"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span></div></div></form></th>
                 <th style="width: 5%;">&nbsp;</th>
               </tr>
             </thead>

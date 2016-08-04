@@ -54,7 +54,7 @@
 - [ ] Amazon Mechanical Turk
 - [ ] Amazon Mobile Analytics
 - [ ] AWS Mobile Hub
-- [ ] AWS OpsWorks*
+- [x] [AWS OpsWorks](services/opsworks.md)
 - [x] [Amazon RDS](services/rds.md)
 - [ ] Amazon Redshift*
 - [ ] Amazon Route 53*
