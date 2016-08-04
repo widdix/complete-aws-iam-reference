@@ -56,7 +56,7 @@
 - [ ] AWS Mobile Hub
 - [x] [AWS OpsWorks](services/opsworks.md)
 - [x] [Amazon RDS](services/rds.md)
-- [ ] Amazon Redshift*
+- [x] [Amazon Redshift](services/redshift.md)
 - [ ] Amazon Route 53*
 - [ ] Amazon Route53 Domains*
 - [x] [Amazon S3](services/s3.md)

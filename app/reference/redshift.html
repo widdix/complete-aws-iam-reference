@@ -1,0 +1,2239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Complete AWS IAM Reference</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.min.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">IAM</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown" class="active">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/reference/index.html">Complete</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/reference/autoscaling.html">Auto Scaling</a></li>
+                <li><a href="/reference/cloudformation.html">CloudFormation</a></li>
+                <li><a href="/reference/cloudfront.html">CloudFront</a></li>
+                <li><a href="/reference/cloudwatch.html">CloudWatch</a></li>
+                <li><a href="/reference/dynamodb.html">DynamoDB</a></li>
+                <li><a href="/reference/ec2.html">EC2</a></li>
+                <li><a href="/reference/elasticloadbalancing.html">ELB</a></li>
+                <li><a href="/reference/glacier.html">Glacier</a></li>
+                <li><a href="/reference/iam.html">IAM</a></li>
+                <li><a href="/reference/rds.html">RDS</a></li>
+                <li><a href="/reference/s3.html">S3</a></li>
+                <li><a href="/reference/sns.html">SNS</a></li>
+                <li><a href="/reference/sqs.html">SQS</a></li>
+              </ul>
+            </li>
+            <li><a href="/global-conditions.html">Global Conditions</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li style="padding-top: 14px;">
+              <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="Complete AWS IAM Reference" data-url="https://iam.cloudonaut.io" data-count="horizontal">Vote on Hacker News</a>
+              <script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
+            </li>
+            <li style="padding-top: 14px;">
+              <div class="fb-share-button" data-href="https://iam.cloudonaut.io" data-layout="button_count" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fiam.cloudonaut.io%2F&amp;src=sdkpreparse">Teilen</a></div>
+            </li>
+            <li style="padding-top: 14px;">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://iam.cloudonaut.io" data-text="Complete #AWS #IAM Reference" data-via="hellomichibye">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+            <li><a href="https://cloudonaut.io" target="_blank"><i class="glyphicon glyphicon-new-window"></i> cloudonaut.io</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    
+<div class="row">
+  <ol class="breadcrumb">
+    <li><a href="/reference/index.html">Complete AWS IAM Reference</a></li>
+    <li class="active">redshift</li>
+  </ol>
+
+  <div class="table-responsive">
+    <table class="table table-striped" style="table-layout: fixed;">
+      <thead>
+        <tr>
+          <th style="width: 25%;">
+            Action <a href="/reference/index.html#/redshift" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 25%;">
+            Description <a href="/reference/index.html#/redshift" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 20%;">
+            Resources <a href="/reference/index.html#/redshift" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 20%;">
+            Conditions <a href="/reference/index.html#/redshift" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 10%;">&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:AuthorizeClusterSecurityGroupIngress
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:securitygroup:$security-group-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_AuthorizeClusterSecurityGroupIngress.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:AuthorizeSnapshotAccess
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$cluster-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_AuthorizeSnapshotAccess.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:AuthorizeSnapshotAccess
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:snapshot:$cluster-name&#x2F;$snapshot-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_AuthorizeSnapshotAccess.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:CancelQuerySession
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_CancelQuerySession.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:CopyClusterSnapshot
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:snapshot:$cluster-name&#x2F;$source-snapshot-name</li>
+                <li>arn:aws:redshift:$region:$account-id:snapshot:$cluster-name&#x2F;$target-snapshot-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_CopyClusterSnapshot.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:CreateCluster
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$cluster-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:RequestTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_CreateCluster.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:CreateClusterParameterGroup
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:parametergroup:$parameter-group-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:RequestTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_CreateClusterParameterGroup.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:CreateClusterSecurityGroup
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:securitygroup:$security-group-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:RequestTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_CreateClusterSecurityGroup.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:CreateClusterSnapshot
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:snapshot:$cluster-name&#x2F;$snapshot-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:RequestTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_CreateClusterSnapshot.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:CreateClusterSubnetGroup
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:subnetgroup:$subnet-group-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:RequestTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_CreateClusterSubnetGroup.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:CreateEventSubscription
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:eventsubscription:$event-subscription-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_CreateEventSubscription.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:CreateHsmClientCertificate
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:hsmclientcertificate:$hsm-client-certificate-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:RequestTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_CreateHsmClientCertificate.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:CreateHsmConfiguration
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:hsmconfiguration:$hsm-configuration-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:RequestTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_CreateHsmConfiguration.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:CreateSnapshotCopyGrant
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:snapshotcopygrant:$snapshot-copy-grant-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:RequestTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_CreateSnapshotCopyGrant.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:CreateTags
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$cluster-name</li>
+                <li>arn:aws:redshift:$region:$account-id:securitygroup:$security-group-name</li>
+                <li>arn:aws:redshift:$region:$account-id:hsmclientcertificate:$hsm-client-certificate-id</li>
+                <li>arn:aws:redshift:$region:$account-id:hsmconfiguration:$hsm-configuration-id</li>
+                <li>arn:aws:redshift:$region:$account-id:parametergroup:$parameter-group-name</li>
+                <li>arn:aws:redshift:$region:$account-id:snapshot:$cluster-name&#x2F;$snapshot-name</li>
+                <li>arn:aws:redshift:$region:$account-id:snapshotcopygrant:$snapshot-copy-grant-name</li>
+                <li>arn:aws:redshift:$region:$account-id:subnetgroup:$subnet-group-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:RequestTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_CreateTags.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DeleteCluster
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$cluster-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteCluster.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DeleteClusterParameterGroup
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:parametergroup:$parameter-group-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteClusterParameterGroup.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DeleteClusterSecurityGroup
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:securitygroup:$security-group-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteClusterSecurityGroup.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DeleteClusterSnapshot
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:snapshot:$cluster-name&#x2F;$snapshot-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteClusterSnapshot.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DeleteClusterSubnetGroup
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:subnetgroup:$subnet-group-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteClusterSubnetGroup.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DeleteEventSubscription
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:eventsubscription:$event-subscription-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteEventSubscription.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DeleteHsmClientCertificate
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:hsmclientcertificate:$hsm-client-certificate-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteHsmClientCertificate.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DeleteHsmConfiguration
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:hsmconfiguration:$hsm-configuration-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteHsmConfiguration.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DeleteTags
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$cluster-name</li>
+                <li>arn:aws:redshift:$region:$account-id:securitygroup:$security-group-name</li>
+                <li>arn:aws:redshift:$region:$account-id:hsmclientcertificate:$hsm-client-certificate-id</li>
+                <li>arn:aws:redshift:$region:$account-id:hsmconfiguration:$hsm-configuration-id</li>
+                <li>arn:aws:redshift:$region:$account-id:parametergroup:$parameter-group-name</li>
+                <li>arn:aws:redshift:$region:$account-id:snapshot:$cluster-name&#x2F;$snapshot-name</li>
+                <li>arn:aws:redshift:$region:$account-id:snapshotcopygrant:$snapshot-copy-grant-name</li>
+                <li>arn:aws:redshift:$region:$account-id:subnetgroup:$subnet-group-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteTags.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DeleteCluster
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$cluster-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteCluster.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeClusterParameterGroups
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeClusterParameterGroups.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeClusterParameters
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:parametergroup:$parameter-group-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeClusterParameters.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeClusterSecurityGroups
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeClusterSecurityGroups.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeClusterSnapshots
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeClusterSnapshots.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeClusterSubnetGroups
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeClusterSubnetGroups.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeClusterVersions
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeClusterVersions.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeClusters
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeClusters.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeDefaultClusterParameters
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeDefaultClusterParameters.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeEventCategories
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeEventCategories.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeEventSubscriptions
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeEventSubscriptions.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeEvents
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeEvents.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeHsmClientCertificates
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeHsmClientCertificates.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeHsmConfigurations
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeHsmConfigurations.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeLoggingStatus
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeLoggingStatus.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeOrderableClusterOptions
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeOrderableClusterOptions.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeReservedNodeOfferings
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeReservedNodeOfferings.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeReservedNodes
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeReservedNodes.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeResize
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeResize.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeSnapshotCopyGrants
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeSnapshotCopyGrants.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeTableRestoreStatus
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeTableRestoreStatus.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DescribeTags
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeTags.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DisableLogging
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$cluster-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DisableLogging.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:DisableSnapshotCopy
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$cluster-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_DisableSnapshotCopy.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:EnableLogging
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$cluster-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_EnableLogging.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:EnableSnapshotCopy
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$cluster-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_EnableSnapshotCopy.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:ModifyCluster
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$cluster-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_ModifyCluster.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:ModifyClusterIamRoles
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$cluster-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_ModifyClusterIamRoles.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:ModifyClusterParameterGroup
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:parametergroup:$parameter-group-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_ModifyClusterParameterGroup.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:ModifyClusterSubnetGroup
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:subnetgroup:$subnet-group-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_ModifyClusterSubnetGroup.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:ModifyEventSubscription
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:eventsubscription:$event-subscription-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_ModifyEventSubscription.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:ModifySnapshotCopyRetentionPeriod
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$cluster-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_ModifySnapshotCopyRetentionPeriod.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:PurchaseReservedNodeOffering
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_PurchaseReservedNodeOffering.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:RebootCluster
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$cluster-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_RebootCluster.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:ResetClusterParameterGroup
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:parametergroup:$parameter-group-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_ResetClusterParameterGroup.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:RestoreFromClusterSnapshot
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$target-cluster-name</li>
+                <li>arn:aws:redshift:$region:$account-id:snapshot:$snapshot-cluster-name&#x2F;$snapshot-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_RestoreFromClusterSnapshot.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:RevokeClusterSecurityGroupIngress
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:securitygroup:$security-group-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_RevokeClusterSecurityGroupIngress.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:RevokeSnapshotAccess
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:snapshot:$cluster-name&#x2F;$snapshot-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_RevokeSnapshotAccess.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:RotateEncryptionKey
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:redshift:$region:$account-id:cluster:$cluster-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>redshift:ResourceTag</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_RotateEncryptionKey.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              redshift:ViewQueriesInConsole
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;redshift&#x2F;latest&#x2F;APIReference&#x2F;API_ViewQueriesInConsole.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/redshift.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+      </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">A <a href="https://cloudonaut.io" target="_blank">cloudonaut.io</a> project - <a href="/about.html">About</a> - <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/CONTRIBUTING.md" target="_blank">Contributing</a> - <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/LICENSE.md" target="_blank">CC BY-NC-SA 4.0</a></p>
+      </div>
+    </footer>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.7";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35685929-10', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
