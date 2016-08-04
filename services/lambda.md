@@ -13,6 +13,7 @@
 | [lambda:GetFunctionConfiguration](http://docs.aws.amazon.com/lambda/latest/dg/API_GetFunctionConfiguration.html) | Returns the configuration information of the Lambda function. | arn:aws:lambda:$region:$account-id:function:$function-name | - |
 | [lambda:GetPolicy](http://docs.aws.amazon.com/lambda/latest/dg/API_GetPolicy.html) | Returns the resource policy associated with the specified Lambda function. | arn:aws:lambda:$region:$account-id:function:$function-name | - |
 | [lambda:InvokeFunction](http://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html) | Invokes a specific Lambda function. | arn:aws:lambda:$region:$account-id:function:$function-name | - |
+| [lambda:InvokeAsync](http://docs.aws.amazon.com/lambda/latest/dg/API_InvokeAsync.html) This API is deprecated. We recommend you use Invoke API | arn:aws:lambda:$region:$account-id:function:$function-name | - |
 | [lambda:ListAliases](http://docs.aws.amazon.com/lambda/latest/dg/API_ListAliases.html) | Returns list of aliases created for a Lambda function. | arn:aws:lambda:$region:$account-id:function:$function-name | - |
 | [lambda:ListEventSourceMappings](http://docs.aws.amazon.com/lambda/latest/dg/API_ListEventSourceMappings.html) | Returns a list of event source mappings you created using the CreateEventSourceMapping (see CreateEventSourceMapping). |* | - |
 | [lambda:ListFunctions](http://docs.aws.amazon.com/lambda/latest/dg/API_ListFunctions.html) | Returns a list of your Lambda functions. | * | - |

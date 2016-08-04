@@ -49,8 +49,8 @@
 - [x] [Amazon Kinesis Firehose](services/firehose.md)
 - [x] [AWS Lambda](services/lambda.md)
 - [ ] Amazon Machine Learning
-- [ ] AWS Marketplace*
-- [ ] AWS Marketplace Management Portal*
+- [x] [AWS Marketplace](services/aws-marketplace.md)
+- [x] [AWS Marketplace Management Portal](services/aws-marketplace-management.md)
 - [ ] Amazon Mechanical Turk
 - [ ] Amazon Mobile Analytics
 - [ ] AWS Mobile Hub
