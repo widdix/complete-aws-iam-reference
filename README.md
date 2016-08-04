@@ -47,7 +47,7 @@
 - [x] [AWS Key Management Service](services/kms.md)
 - [x] [Amazon Kinesis](services/kinesis.md)
 - [x] [Amazon Kinesis Firehose](services/firehose.md)
-- [ ] AWS Lambda*
+- [x] [AWS Lambda](services/lambda.md)
 - [ ] Amazon Machine Learning
 - [ ] AWS Marketplace*
 - [ ] AWS Marketplace Management Portal*
