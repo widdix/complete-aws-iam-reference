@@ -44,7 +44,7 @@
 - [ ] AWS Import Export
 - [ ] Amazon Inspector
 - [ ] AWS IoT
-- [ ] AWS Key Management Service*
+- [x] [AWS Key Management Service](services/kms.md)
 - [ ] Amazon Kinesis*
 - [ ] Amazon Kinesis Firehose*
 - [ ] AWS Lambda*
