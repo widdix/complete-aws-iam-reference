@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Complete AWS IAM Reference</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.min.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">IAM</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown" class="active">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/reference/index.html">Complete</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/reference/autoscaling.html">Auto Scaling</a></li>
+                <li><a href="/reference/cloudformation.html">CloudFormation</a></li>
+                <li><a href="/reference/cloudfront.html">CloudFront</a></li>
+                <li><a href="/reference/cloudwatch.html">CloudWatch</a></li>
+                <li><a href="/reference/dynamodb.html">DynamoDB</a></li>
+                <li><a href="/reference/ec2.html">EC2</a></li>
+                <li><a href="/reference/elasticloadbalancing.html">ELB</a></li>
+                <li><a href="/reference/glacier.html">Glacier</a></li>
+                <li><a href="/reference/iam.html">IAM</a></li>
+                <li><a href="/reference/rds.html">RDS</a></li>
+                <li><a href="/reference/s3.html">S3</a></li>
+                <li><a href="/reference/sns.html">SNS</a></li>
+                <li><a href="/reference/sqs.html">SQS</a></li>
+              </ul>
+            </li>
+            <li><a href="/global-conditions.html">Global Conditions</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li style="padding-top: 14px;">
+              <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="Complete AWS IAM Reference" data-url="https://iam.cloudonaut.io" data-count="horizontal">Vote on Hacker News</a>
+              <script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
+            </li>
+            <li style="padding-top: 14px;">
+              <div class="fb-share-button" data-href="https://iam.cloudonaut.io" data-layout="button_count" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fiam.cloudonaut.io%2F&amp;src=sdkpreparse">Teilen</a></div>
+            </li>
+            <li style="padding-top: 14px;">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://iam.cloudonaut.io" data-text="Complete #AWS #IAM Reference" data-via="hellomichibye">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+            <li><a href="https://cloudonaut.io" target="_blank"><i class="glyphicon glyphicon-new-window"></i> cloudonaut.io</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    
+<div class="row">
+  <ol class="breadcrumb">
+    <li><a href="/reference/index.html">Complete AWS IAM Reference</a></li>
+    <li class="active">ses</li>
+  </ol>
+
+  <div class="table-responsive">
+    <table class="table table-striped" style="table-layout: fixed;">
+      <thead>
+        <tr>
+          <th style="width: 25%;">
+            Action <a href="/reference/index.html#/ses" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 25%;">
+            Description <a href="/reference/index.html#/ses" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 20%;">
+            Resources <a href="/reference/index.html#/ses" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 20%;">
+            Conditions <a href="/reference/index.html#/ses" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 10%;">&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:CloneReceiptRuleSet
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Creates a receipt rule set by cloning an existing one.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_CloneReceiptRuleSet.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:CreateReceiptFilter
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Creates a new IP address filter.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_CreateReceiptFilter.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:CreateReceiptRule
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Creates a receipt rule.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_CreateReceiptRule.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:CreateReceiptRuleSet
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Creates an empty receipt rule set.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_CreateReceiptRuleSet.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:DeleteIdentity
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes the specified identity (an email address or a domain) from the list of verified identities.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteIdentity.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:DeleteIdentityPolicy
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes the specified sending authorization policy for the given identity (an email address or a domain).
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteIdentityPolicy.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:DeleteReceiptFilter
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes the specified IP address filter.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteReceiptFilter.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:DeleteReceiptRule
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes the specified receipt rule.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteReceiptRule.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:DeleteReceiptRuleSet
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes the specified receipt rule set and all of the receipt rules it contains.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteReceiptRuleSet.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:DeleteVerifiedEmailAddress
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes the specified email address from the list of verified addresses.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteVerifiedEmailAddress.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:DescribeActiveReceiptRuleSet
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns the metadata and receipt rules for the receipt rule set that is currently active.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeActiveReceiptRuleSet.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:DescribeReceiptRule
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns the details of the specified receipt rule.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeReceiptRule.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:DescribeReceiptRuleSet
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns the details of the specified receipt rule set.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeReceiptRuleSet.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:GetIdentityDkimAttributes
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns the current status of Easy DKIM signing for an entity.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_GetIdentityDkimAttributes.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:GetIdentityNotificationAttributes
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Given a list of verified identities (email addresses and&#x2F;or domains), returns a structure describing identity notification attributes.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_GetIdentityNotificationAttributes.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:GetIdentityPolicies
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns the requested sending authorization policies for the given identity (an email address or a domain).
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_GetIdentityPolicies.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:GetIdentityVerificationAttributes
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Given a list of identities (email addresses and&#x2F;or domains), returns the verification status and (for domain identities) the verification token for each identity.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_GetIdentityVerificationAttributes.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:GetSendQuota
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns the user&#39;s current sending limits.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_GetSendQuota.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:GetSendStatistics
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns the user&#39;s sending statistics.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_GetSendStatistics.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:ListIdentities
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns a list containing all of the identities (email addresses and domains) for your AWS account, regardless of verification status.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_ListIdentities.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:ListIdentityPolicies
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns a list of sending authorization policies that are attached to the given identity (an email address or a domain).
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_ListIdentityPolicies.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:ListReceiptFilters
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Lists the IP address filters associated with your AWS account.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_ListReceiptFilters.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:ListReceiptRuleSets
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Lists the receipt rule sets that exist under your AWS account.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_ListReceiptRuleSets.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:ListVerifiedEmailAddresses
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns a list containing all of the email addresses that have been verified.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_ListVerifiedEmailAddresses.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:PutIdentityPolicy
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Adds or updates a sending authorization policy for the specified identity (an email address or a domain).
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_PutIdentityPolicy.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:ReorderReceiptRuleSet
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Reorders the receipt rules within a receipt rule set.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_ReorderReceiptRuleSet.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:SendBounce
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Generates and sends a bounce message to the sender of an email you received through Amazon SES.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>ses:FromAddress</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_SendBounce.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:SendEmail
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Composes an email message based on input data, and then immediately queues the message for sending.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:ses:$region:$account-id:identity&#x2F;$identity</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>ses:Recipients</li>
+                <li>ses:FromAddress</li>
+                <li>ses:FromDisplayName</li>
+                <li>ses:FeedbackAddress</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_SendEmail.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:SendRawEmail
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Sends an email message, with header and content specified by the client.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:ses:$region:$account-id:identity&#x2F;$identity</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>ses:Recipients</li>
+                <li>ses:FromAddress</li>
+                <li>ses:FromDisplayName</li>
+                <li>ses:FeedbackAddress</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_SendRawEmail.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:SetActiveReceiptRuleSet
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Sets the specified receipt rule set as the active receipt rule set.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_SetActiveReceiptRuleSet.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:SetIdentityDkimEnabled
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            ???
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_SetIdentityDkimEnabled.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:SetIdentityNotificationTopic
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Given an identity (an email address or a domain), sets the Amazon Simple Notification Service (Amazon SNS) topic to which Amazon SES will publish bounce, complaint, and&#x2F;or delivery notifications for emails sent with that identity as the Source.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_SetIdentityNotificationTopic.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:SetIdentityFeedbackForwardingEnabled
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Given an identity (an email address or a domain), enables or disables whether Amazon SES forwards bounce and complaint notifications as email.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_SetIdentityFeedbackForwardingEnabled.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:SetReceiptRulePosition
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Sets the position of the specified receipt rule in the receipt rule set.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_SetReceiptRulePosition.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:UpdateReceiptRule
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Updates a receipt rule.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_UpdateReceiptRule.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:VerifyDomainDkim
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns a set of DKIM tokens for a domain.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_VerifyDomainDkim.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:VerifyDomainIdentity
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Verifies a domain.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_VerifyDomainIdentity.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:VerifyEmailAddress
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Verifies an email address.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_VerifyEmailAddress.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              ses:VerifyEmailIdentity
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Verifies an email address.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;ses&#x2F;latest&#x2F;APIReference&#x2F;API_VerifyEmailIdentity.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/ses.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+      </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">A <a href="https://cloudonaut.io" target="_blank">cloudonaut.io</a> project - <a href="/about.html">About</a> - <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/CONTRIBUTING.md" target="_blank">Contributing</a> - <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/LICENSE.md" target="_blank">CC BY-NC-SA 4.0</a></p>
+      </div>
+    </footer>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.7";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35685929-10', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
