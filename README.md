@@ -60,7 +60,7 @@
 - [x] [Amazon Route 53](services/route53.md)
 - [x] [Amazon Route53 Domains](services/route53domains.md)
 - [x] [Amazon S3](services/s3.md)
-- [ ] AWS Security Token Service*
+- [x] [AWS Security Token Service](services/sts.md)
 - [ ] Amazon SES*
 - [ ] Amazon Simple Systems Manager
 - [ ] Amazon Simple Workflow Service*
