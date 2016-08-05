@@ -63,7 +63,7 @@
 - [x] [AWS Security Token Service](services/sts.md)
 - [x] [Amazon SES](services/ses.md)
 - [ ] Amazon Simple Systems Manager
-- [ ] Amazon Simple Workflow Service*
+- [x] [Amazon Simple Workflow Service](services/swf.md)
 - [ ] Amazon SimpleDB*
 - [x] [Amazon SNS](services/sns.md)
 - [x] [Amazon SQS](services/sqs.md)
