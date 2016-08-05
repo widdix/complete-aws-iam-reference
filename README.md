@@ -69,7 +69,7 @@
 - [x] [Amazon SQS](services/sqs.md)
 - [ ] Amazon Storage Gateway
 - [x] [AWS Trusted Advisor](services/trustedadvisor.md)
-- [ ] AWS WAF*
+- [x] [AWS WAF](services/waf.md)
 - [ ] Amazon WorkDocs
 - [ ] Amazon WorkMail
 - [ ] Amazon WorkSpaces
@@ -77,7 +77,6 @@
 
 ## TODO
 
-- [ ] add all services marked with an `*` before public announcement
 - [ ] add examples for how conditions and resources can be used
 
 ## Contributing
