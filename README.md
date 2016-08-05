@@ -57,8 +57,8 @@
 - [x] [AWS OpsWorks](services/opsworks.md)
 - [x] [Amazon RDS](services/rds.md)
 - [x] [Amazon Redshift](services/redshift.md)
-- [ ] Amazon Route 53*
-- [ ] Amazon Route53 Domains*
+- [x] [Amazon Route 53](services/route53.md)
+- [x] [Amazon Route53 Domains](services/route53domains.md)
 - [x] [Amazon S3](services/s3.md)
 - [ ] AWS Security Token Service*
 - [ ] Amazon SES*
