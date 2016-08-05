@@ -64,7 +64,7 @@
 - [x] [Amazon SES](services/ses.md)
 - [ ] Amazon Simple Systems Manager
 - [x] [Amazon Simple Workflow Service](services/swf.md)
-- [ ] Amazon SimpleDB*
+- [x] [Amazon SimpleDB](services/sdb.md)
 - [x] [Amazon SNS](services/sns.md)
 - [x] [Amazon SQS](services/sqs.md)
 - [ ] Amazon Storage Gateway
