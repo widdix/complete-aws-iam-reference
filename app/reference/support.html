@@ -74,55 +74,66 @@
     <div class="container">
     
 <div class="row">
-  <h1>Complete AWS IAM Reference</h1>
-  <p>Creating IAM policies is hard. We collect information from the AWS Documentation to make writing IAM policies easier.</p>
-  <ul>
-    <li><a href="/reference/acm.html">acm</a></li>
-    <li><a href="/reference/apigateway.html">apigateway</a></li>
-    <li><a href="/reference/appstream.html">appstream</a></li>
-    <li><a href="/reference/autoscaling.html">autoscaling</a></li>
-    <li><a href="/reference/aws-marketplace-management.html">aws-marketplace-management</a></li>
-    <li><a href="/reference/aws-marketplace.html">aws-marketplace</a></li>
-    <li><a href="/reference/aws-portal.html">aws-portal</a></li>
-    <li><a href="/reference/cloudformation.html">cloudformation</a></li>
-    <li><a href="/reference/cloudfront.html">cloudfront</a></li>
-    <li><a href="/reference/cloudhsm.html">cloudhsm</a></li>
-    <li><a href="/reference/cloudsearch.html">cloudsearch</a></li>
-    <li><a href="/reference/cloudtrail.html">cloudtrail</a></li>
-    <li><a href="/reference/cloudwatch.html">cloudwatch</a></li>
-    <li><a href="/reference/cognito-identity.html">cognito-identity</a></li>
-    <li><a href="/reference/cognito-sync.html">cognito-sync</a></li>
-    <li><a href="/reference/discovery.html">discovery</a></li>
-    <li><a href="/reference/dynamodb.html">dynamodb</a></li>
-    <li><a href="/reference/ec2-reports.html">ec2-reports</a></li>
-    <li><a href="/reference/ec2.html">ec2</a></li>
-    <li><a href="/reference/ecr.html">ecr</a></li>
-    <li><a href="/reference/ecs.html">ecs</a></li>
-    <li><a href="/reference/elasticache.html">elasticache</a></li>
-    <li><a href="/reference/elasticbeanstalk.html">elasticbeanstalk</a></li>
-    <li><a href="/reference/elasticfilesystem.html">elasticfilesystem</a></li>
-    <li><a href="/reference/elasticloadbalancing.html">elasticloadbalancing</a></li>
-    <li><a href="/reference/elasticmapreduce.html">elasticmapreduce</a></li>
-    <li><a href="/reference/es.html">es</a></li>
-    <li><a href="/reference/events.html">events</a></li>
-    <li><a href="/reference/execute-api.html">execute-api</a></li>
-    <li><a href="/reference/firehose.html">firehose</a></li>
-    <li><a href="/reference/glacier.html">glacier</a></li>
-    <li><a href="/reference/iam.html">iam</a></li>
-    <li><a href="/reference/kinesis.html">kinesis</a></li>
-    <li><a href="/reference/kms.html">kms</a></li>
-    <li><a href="/reference/lambda.html">lambda</a></li>
-    <li><a href="/reference/logs.html">logs</a></li>
-    <li><a href="/reference/opsworks.html">opsworks</a></li>
-    <li><a href="/reference/rds.html">rds</a></li>
-    <li><a href="/reference/redshift.html">redshift</a></li>
-    <li><a href="/reference/s3.html">s3</a></li>
-    <li><a href="/reference/sns.html">sns</a></li>
-    <li><a href="/reference/sqs.html">sqs</a></li>
-    <li><a href="/reference/support.html">support</a></li>
-    <li><a href="/reference/trustedadvisor.html">trustedadvisor</a></li>
-  </ul>
-  <p>Send us feedback to <a href="mailto:team@widdix.de">team@widdix.de</a>.</p>
+  <ol class="breadcrumb">
+    <li><a href="/reference/index.html">Complete AWS IAM Reference</a></li>
+    <li class="active">support</li>
+  </ol>
+
+  <div class="table-responsive">
+    <table class="table table-striped" style="table-layout: fixed;">
+      <thead>
+        <tr>
+          <th style="width: 25%;">
+            Action <a href="/reference/index.html#/support" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 25%;">
+            Description <a href="/reference/index.html#/support" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 20%;">
+            Resources <a href="/reference/index.html#/support" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 20%;">
+            Conditions <a href="/reference/index.html#/support" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 10%;">&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="scrollable">
+              support:*
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Support does not let you allow or deny access to individual actions; therefore, the Action element of a policy is always set to support:*. Similarly, Support does not provide resource-level access, so the Resource element is always set to *. An IAM user with Support permissions has access to all Support operations and resources.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;awssupport&#x2F;latest&#x2F;user&#x2F;getting-started.html#accessing-support" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/support.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
       </div>

@@ -68,11 +68,12 @@
 - [x] [Amazon SNS](services/sns.md)
 - [x] [Amazon SQS](services/sqs.md)
 - [ ] Amazon Storage Gateway
-- [ ] AWS Trusted Advisor*
+- [x] [AWS Trusted Advisor](services/trustedadvisor.md)
 - [ ] AWS WAF*
 - [ ] Amazon WorkDocs
 - [ ] Amazon WorkMail
 - [ ] Amazon WorkSpaces
+- [x] [AWS Support](services/support.md)
 
 ## TODO
 
