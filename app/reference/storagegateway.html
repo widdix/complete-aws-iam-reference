@@ -1,0 +1,1851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Complete AWS IAM Reference</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.min.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">IAM</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown" class="active">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/reference/index.html">Complete</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/reference/autoscaling.html">Auto Scaling</a></li>
+                <li><a href="/reference/cloudformation.html">CloudFormation</a></li>
+                <li><a href="/reference/cloudfront.html">CloudFront</a></li>
+                <li><a href="/reference/cloudwatch.html">CloudWatch</a></li>
+                <li><a href="/reference/dynamodb.html">DynamoDB</a></li>
+                <li><a href="/reference/ec2.html">EC2</a></li>
+                <li><a href="/reference/elasticloadbalancing.html">ELB</a></li>
+                <li><a href="/reference/glacier.html">Glacier</a></li>
+                <li><a href="/reference/iam.html">IAM</a></li>
+                <li><a href="/reference/rds.html">RDS</a></li>
+                <li><a href="/reference/s3.html">S3</a></li>
+                <li><a href="/reference/sns.html">SNS</a></li>
+                <li><a href="/reference/sqs.html">SQS</a></li>
+              </ul>
+            </li>
+            <li><a href="/global-conditions.html">Global Conditions</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/CONTRIBUTING.md" target="_blank">Contributing</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li style="padding-top: 14px;">
+              <script type="text/javascript">
+                reddit_title='Complete AWS IAM Reference'
+                reddit_target='aws'
+                reddit_url='https://iam.cloudonaut.io/'
+              </script>
+              <script type="text/javascript" src="https://www.redditstatic.com/button/button1.js"></script>
+            </li>
+            <li style="padding-top: 14px;">
+              <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="Complete AWS IAM Reference" data-url="https://iam.cloudonaut.io" data-count="horizontal">Vote on Hacker News</a>
+              <script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
+            </li>
+            <li style="padding-top: 14px;">
+              <div class="fb-share-button" data-href="https://iam.cloudonaut.io" data-layout="button_count" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fiam.cloudonaut.io%2F&amp;src=sdkpreparse">Teilen</a></div>
+            </li>
+            <li style="padding-top: 14px;">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://iam.cloudonaut.io" data-text="Complete #AWS #IAM Reference" data-via="hellomichibye">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+            <li>
+              <a href="https://cloudonaut.io" target="_blank">A cloudonaut Project</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    
+<div class="row">
+  <ol class="breadcrumb">
+    <li><a href="/reference/index.html">Complete AWS IAM Reference</a></li>
+    <li class="active">storagegateway</li>
+  </ol>
+
+  <div class="table-responsive">
+    <table class="table table-striped" style="table-layout: fixed;">
+      <thead>
+        <tr>
+          <th style="width: 25%;">
+            Action <a href="/reference/index.html#/storagegateway" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 25%;">
+            Description <a href="/reference/index.html#/storagegateway" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 20%;">
+            Resources <a href="/reference/index.html#/storagegateway" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 20%;">
+            Conditions <a href="/reference/index.html#/storagegateway" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 10%;">&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:ActivateGateway
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Activates the gateway you previously deployed on your host.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_ActivateGateway.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:AddCache
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Configures one or more gateway local disks as cache for a cached-volume gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_AddCache.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:AddTagsToResource
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Adds one or more tags to the specified resource.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;volume&#x2F;$volume-id</li>
+                <li>arn:aws:storagegateway:$region:$account-id:tape&#x2F;$tapebarcode</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_AddTagsToResource.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:AddUploadBuffer
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Configures one or more gateway local disks as upload buffer for a specified gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_AddUploadBuffer.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:AddWorkingStorage
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Configures one or more gateway local disks as working storage for a gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_AddWorkingStorage.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:CancelArchival
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Cancels archiving of a virtual tape to the virtual tape shelf (VTS) after the archiving process is initiated.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:tape&#x2F;$tapebarcode</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_CancelArchival.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:CancelRetrieval
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Cancels retrieval of a virtual tape from the virtual tape shelf (VTS) to a gateway after the retrieval process is initiated.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:tape&#x2F;$tapebarcode</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_CancelRetrieval.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:CreateCachediSCSIVolume
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Creates a cached volume on a specified cached gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_CreateCachediSCSIVolume.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:CreateSnapshot
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Initiates a snapshot of a volume.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;volume&#x2F;$volume-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_CreateSnapshot.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:CreateSnapshotFromVolumeRecoveryPoint
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Initiates a snapshot of a gateway from a volume recovery point.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;volume&#x2F;$volume-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_CreateSnapshotFromVolumeRecoveryPoint.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:CreateStorediSCSIVolume
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Creates a volume on a specified gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_CreateStorediSCSIVolume.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:CreateTapes
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Creates one or more virtual tapes.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_CreateTapes.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DeleteBandwidthRateLimit
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes the bandwidth rate limits of a gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteBandwidthRateLimit.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DeleteChapCredentials
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes Challenge-Handshake Authentication Protocol (CHAP) credentials for a specified iSCSI target and initiator pair.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;target&#x2F;$iSCSItarget</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteChapCredentials.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DeleteGateway
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes a gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteGateway.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DeleteSnapshotSchedule
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes a snapshot of a volume.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;volume&#x2F;$volume-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteSnapshotSchedule.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DeleteTape
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes the specified virtual tape.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteTape.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DeleteTapeArchive
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes the specified virtual tape from the virtual tape shelf (VTS).
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteTapeArchive.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DeleteVolume
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes the specified gateway volume that you previously created using the CreateCachediSCSIVolume or CreateStorediSCSIVolume API.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;volume&#x2F;$volume-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DeleteVolume.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DescribeBandwidthRateLimit
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns the bandwidth rate limits of a gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeBandwidthRateLimit.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DescribeCache
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns information about the cache of a gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeCache.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DescribeCachediSCSIVolumes
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns a description of the gateway volumes specified in the request.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;volume&#x2F;$volume-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeCachediSCSIVolumes.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DescribeChapCredentials
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns an array of Challenge-Handshake Authentication Protocol (CHAP) credentials information for a specified iSCSI target, one for each target-initiator pair.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;target&#x2F;$iSCSItarget</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeChapCredentials.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DescribeGatewayInformation
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns metadata about a gateway such as its name, network interfaces, configured time zone, and the state (whether the gateway is running or not).
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeGatewayInformation.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DescribeMaintenanceStartTime
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns your gateway&#39;s weekly maintenance start time including the day and time of the week.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeMaintenanceStartTime.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DescribeSnapshotSchedule
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Describes the snapshot schedule for the specified gateway volume.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;volume&#x2F;$volume-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeSnapshotSchedule.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DescribeStorediSCSIVolumes
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns the description of the gateway volumes specified in the request.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;volume&#x2F;$volume-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeStorediSCSIVolumes.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DescribeTapeArchives
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns a description of specified virtual tapes in the virtual tape shelf (VTS).
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeTapeArchives.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DescribeTapeRecoveryPoints
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns a list of virtual tape recovery points that are available for the specified gateway-VTL.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeTapeRecoveryPoints.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DescribeTapes
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns a description of the specified Amazon Resource Name (ARN) of virtual tapes.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeTapes.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DescribeUploadBuffer
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns information about the upload buffer of a gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeUploadBuffer.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DescribeVTLDevices
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns a description of virtual tape library (VTL) devices for the specified gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeVTLDevices.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DescribeWorkingStorage
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns information about the working storage of a gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DescribeWorkingStorage.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:DisableGateway
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Disables a gateway when the gateway is no longer functioning.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_DisableGateway.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:ListGateways
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Lists gateways owned by an AWS account in a region specified in the request.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_ListGateways.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:ListLocalDisks
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns a list of the gateway&#39;s local disks.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_ListLocalDisks.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:ListTagsForResource
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Lists the tags that have been added to the specified resource.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;volume&#x2F;$volume-id</li>
+                <li>arn:aws:storagegateway:$region:$account-id:tape&#x2F;$tapebarcode</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_ListTagsForResource.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:ListVolumeInitiators
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Lists iSCSI initiators that are connected to a volume.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;volume&#x2F;$volume-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_ListVolumeInitiators.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:ListVolumeRecoveryPoints
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Lists the recovery points for a specified gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_ListVolumeRecoveryPoints.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:ListVolumes
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Lists the iSCSI stored volumes of a gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_ListVolumes.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:RemoveTagsFromResource
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Removes one or more tags from the specified resource.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;volume&#x2F;$volume-id</li>
+                <li>arn:aws:storagegateway:$region:$account-id:tape&#x2F;$tapebarcode</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_RemoveTagsFromResource.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:ResetCache
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Resets all cache disks that have encountered a error and makes the disks available for reconfiguration as cache storage.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_ResetCache.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:RetrieveTapeArchive
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Retrieves an archived virtual tape from the virtual tape shelf (VTS) to a gateway-VTL.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_RetrieveTapeArchive.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:RetrieveTapeRecoveryPoint
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Retrieves the recovery point for the specified virtual tape.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_RetrieveTapeRecoveryPoint.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:ShutdownGateway
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Shuts down a gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_ShutdownGateway.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:StartGateway
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Starts a gateway that you previously shut down (see ShutdownGateway).
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_StartGateway.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:UpdateBandwidthRateLimit
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Updates the bandwidth rate limits of a gateway.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_UpdateBandwidthRateLimit.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:UpdateChapCredentials
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Updates the Challenge-Handshake Authentication Protocol (CHAP) credentials for a specified iSCSI target.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;target&#x2F;$iSCSItarget</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_UpdateChapCredentials.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:UpdateGatewayInformation
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Updates a gateway&#39;s metadata, which includes the gateway&#39;s name and time zone.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_UpdateGatewayInformation.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:UpdateGatewaySoftwareNow
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Updates the gateway virtual machine (VM) software.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_UpdateGatewaySoftwareNow.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:UpdateMaintenanceStartTime
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Updates a gateway&#39;s weekly maintenance start time information, including day and time of the week.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_UpdateMaintenanceStartTime.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:UpdateSnapshotSchedule
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Updates a snapshot schedule configured for a gateway volume.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;volume&#x2F;$volume-id</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_UpdateSnapshotSchedule.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              storagegateway:UpdateVTLDeviceType
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Updates the type of medium changer in a gateway-VTL.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:storagegateway:$region:$account-id:gateway&#x2F;$gateway-id&#x2F;device&#x2F;vtldevice</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="btn-group">
+              <a href="http:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;storagegateway&#x2F;latest&#x2F;APIReference&#x2F;API_UpdateVTLDeviceType.html" target="_blank" class="btn btn-primary btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i></a>
+              <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/storagegateway.md" target="_blank" class="visible-lg-inline btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i></a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+      </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">A <a href="https://cloudonaut.io" target="_blank">cloudonaut.io</a> Project - <a href="/about.html">About</a> - <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/CONTRIBUTING.md" target="_blank">Contributing</a> - Licensed Under  <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/LICENSE.md" target="_blank">CC BY-NC-SA 4.0</a></p>
+      </div>
+    </footer>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.7";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35685929-10', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

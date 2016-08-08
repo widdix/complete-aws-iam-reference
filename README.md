@@ -69,12 +69,12 @@
 - [x] [Amazon SimpleDB](services/sdb.md)
 - [x] [Amazon SNS](services/sns.md)
 - [x] [Amazon SQS](services/sqs.md)
-- [ ] Amazon Storage Gateway
+- [x] [Amazon Storage Gateway](services/storagegateway.md)
 - [x] [AWS Trusted Advisor](services/trustedadvisor.md)
 - [x] [AWS WAF](services/waf.md)
-- [ ] Amazon WorkDocs
-- [ ] Amazon WorkMail
-- [ ] Amazon WorkSpaces
+- [x] [Amazon WorkDocs](services/workdocs.md)
+- [x] [Amazon WorkMail](services/workmail.md)
+- [x] [Amazon WorkSpaces](services/workspaces.md)
 - [x] [AWS Support](services/support.md)
 
 ## TODO

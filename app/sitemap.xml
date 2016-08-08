@@ -148,6 +148,9 @@
     <loc>https://iam.cloudonaut.io/reference/sqs.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/storagegateway.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/sts.html</loc> 
   </url>
   <url>
@@ -161,5 +164,14 @@
   </url>
   <url>
     <loc>https://iam.cloudonaut.io/reference/waf.html</loc> 
+  </url>
+  <url>
+    <loc>https://iam.cloudonaut.io/reference/workdocs.html</loc> 
+  </url>
+  <url>
+    <loc>https://iam.cloudonaut.io/reference/workmail.html</loc> 
+  </url>
+  <url>
+    <loc>https://iam.cloudonaut.io/reference/workspaces.html</loc> 
   </url>
 </urlset>
