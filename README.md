@@ -18,7 +18,7 @@
 - [x] [Amazon CloudWatch](services/cloudwatch.md)
 - [x] [Amazon CloudWatch Events](services/events.md)
 - [x] [Amazon CloudWatch Logs](services/logs.md)
-- [ ] AWS CodeCommit
+- [x] [AWS CodeCommit](services/codecommit.md)
 - [ ] AWS CodeDeploy
 - [ ] AWS CodePipeline
 - [x] [Amazon Cognito Identity](services/cognito-identity.md)

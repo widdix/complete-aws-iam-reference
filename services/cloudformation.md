@@ -1,4 +1,5 @@
 | Action | Description | Resource | Condition |
+| --- | --- | --- | --- |
 | [cloudformation:CancelUpdateStack](http://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CancelUpdateStack.html) | Cancels an update on the specified stack. | arn:aws:cloudformation:$region:$account-id:stack/$stack-name/* | - |
 | [cloudformation:ContinueUpdateRollback](http://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ContinueUpdateRollback.html) | For a specified stack that is in the UPDATE_ROLLBACK_FAILED state, continues rolling it back to the UPDATE_ROLLBACK_COMPLETE state. | arn:aws:cloudformation:$region:$account-id:stack/$stack-name/* | - |
 | [cloudformation:CreateChangeSet](http://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateChangeSet.html) | Creates a list of changes for a stack. | arn:aws:cloudformation:$region:$account-id:stack/$stack-name/* | - |

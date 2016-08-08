@@ -49,6 +49,9 @@
     <loc>https://iam.cloudonaut.io/reference/cloudwatch.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/codecommit.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/cognito-identity.html</loc> 
   </url>
   <url>
