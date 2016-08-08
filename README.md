@@ -50,7 +50,7 @@
 - [x] [Amazon Kinesis](services/kinesis.md)
 - [x] [Amazon Kinesis Firehose](services/firehose.md)
 - [x] [AWS Lambda](services/lambda.md)
-- [ ] Amazon Machine Learning
+- [x] [Amazon Machine Learning](services/machinelearning.md)
 - [x] [AWS Marketplace](services/aws-marketplace.md)
 - [x] [AWS Marketplace Management Portal](services/aws-marketplace-management.md)
 - [ ] Amazon Mechanical Turk
@@ -64,7 +64,7 @@
 - [x] [Amazon S3](services/s3.md)
 - [x] [AWS Security Token Service](services/sts.md)
 - [x] [Amazon SES](services/ses.md)
-- [ ] Amazon Simple Systems Manager
+- [x] [Amazon Simple Systems Manager](services/ssm.md)
 - [x] [Amazon Simple Workflow Service](services/swf.md)
 - [x] [Amazon SimpleDB](services/sdb.md)
 - [x] [Amazon SNS](services/sns.md)

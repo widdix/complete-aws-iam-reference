@@ -118,6 +118,9 @@
     <loc>https://iam.cloudonaut.io/reference/logs.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/machinelearning.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/opsworks.html</loc> 
   </url>
   <url>
@@ -146,6 +149,9 @@
   </url>
   <url>
     <loc>https://iam.cloudonaut.io/reference/sqs.html</loc> 
+  </url>
+  <url>
+    <loc>https://iam.cloudonaut.io/reference/ssm.html</loc> 
   </url>
   <url>
     <loc>https://iam.cloudonaut.io/reference/storagegateway.html</loc> 
