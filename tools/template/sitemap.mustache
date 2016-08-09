@@ -14,4 +14,11 @@
     <loc>https://iam.cloudonaut.io/reference/{{.}}.html</loc> 
   </url>
   {{/services}}
+  {{#contents}}
+    {{#.}}
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/{{service}}/{{action}}.html</loc> 
+    </url>
+    {{/.}}
+  {{/contents}}
 </urlset>

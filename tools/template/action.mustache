@@ -1,0 +1,93 @@
+{{> header}}
+
+<div class="row">
+  <ol class="breadcrumb">
+    <li><a href="/reference/index.html">Complete AWS IAM Reference</a></li>
+    <li><a href="/reference/{{service}}.html">{{service}}</a></li>
+    <li class="active">{{action}}</li>
+  </ol>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{service}}:{{action}}</h3>
+    </div>
+    <div class="panel-body">
+      <p>{{description}}</p>
+    </div>
+    <div class="panel-footer">
+      <div class="btn-group pull-right">
+        <a href="{{doc}}" target="_blank" class="btn btn-default btn-sm" title="open AWS documentation"><i class="glyphicon glyphicon-book"></i> Open AWS documentation</a>
+        <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/{{service}}.md" target="_blank" class="btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i> Edit this page</a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Supported Resource-Level Permissions</h3>
+    </div>
+    <div class="panel-body">
+      <ul>
+        {{#resources}}
+        <li><code>{{.}}</code></li>
+        {{/resources}}
+      </ul>
+    </div>
+    <div class="panel-footer">
+      <div class="btn-group pull-right">
+        <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/{{service}}.md" target="_blank" class="btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i> Edit this page</a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Supported Service Specific Conditions</h3>
+    </div>
+    <div class="panel-body">
+      {{#conditions.0}}
+      <ul>
+        {{#conditions}}
+        <li><code>{{.}}</code></li>
+        {{/conditions}}
+      </ul>
+      {{/conditions.0}}
+      {{^conditions.0}}No supported Service Specific Conditions. <a href="/global-conditions.html">Global Conditions</a> still apply.{{/conditions.0}}
+    </div>
+    <div class="panel-footer">
+      <div class="btn-group pull-right">
+        <a href="/global-conditions.html" class="btn btn-default btn-sm" title="open Global Conditions"><i class="glyphicon glyphicon-globe"></i> Open Global Conditions</a>
+        <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/services/{{service}}.md" target="_blank" class="btn btn-warning btn-sm" title="edit this reference"><i class="glyphicon glyphicon-edit"></i> Edit this page</a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Comments & Examples</h3>
+    </div>
+    <div class="panel-body">
+      <div id="disqus_thread"></div>
+      <script>
+      var disqus_config = function () {
+          this.page.url = 'https://iam.cloudonaut.io/reference/{{service}}/{{action}}.html';
+          this.page.identifier = 'reference-{{service}}-{{action}}';
+      };
+      (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = '//complete-aws-iam-reference.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+  </div>
+
+</div>
+
+{{> footer}}

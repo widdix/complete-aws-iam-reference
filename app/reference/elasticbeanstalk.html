@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Complete AWS IAM Reference</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.min.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">IAM</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown" class="active">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/reference/index.html">Complete</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/reference/autoscaling.html">Auto Scaling</a></li>
+                <li><a href="/reference/cloudformation.html">CloudFormation</a></li>
+                <li><a href="/reference/cloudfront.html">CloudFront</a></li>
+                <li><a href="/reference/cloudwatch.html">CloudWatch</a></li>
+                <li><a href="/reference/dynamodb.html">DynamoDB</a></li>
+                <li><a href="/reference/ec2.html">EC2</a></li>
+                <li><a href="/reference/elasticloadbalancing.html">ELB</a></li>
+                <li><a href="/reference/glacier.html">Glacier</a></li>
+                <li><a href="/reference/iam.html">IAM</a></li>
+                <li><a href="/reference/rds.html">RDS</a></li>
+                <li><a href="/reference/s3.html">S3</a></li>
+                <li><a href="/reference/sns.html">SNS</a></li>
+                <li><a href="/reference/sqs.html">SQS</a></li>
+              </ul>
+            </li>
+            <li><a href="/global-conditions.html">Global Conditions</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/CONTRIBUTING.md" target="_blank">Contributing</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li style="padding-top: 14px;">
+              <script type="text/javascript">
+                reddit_title='Complete AWS IAM Reference'
+                reddit_target='aws'
+                reddit_url='https://iam.cloudonaut.io/'
+              </script>
+              <script type="text/javascript" src="https://www.redditstatic.com/button/button1.js"></script>
+            </li>
+            <li style="padding-top: 14px;">
+              <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="Complete AWS IAM Reference" data-url="https://iam.cloudonaut.io" data-count="horizontal">Vote on Hacker News</a>
+              <script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
+            </li>
+            <li style="padding-top: 14px;">
+              <div class="fb-share-button" data-href="https://iam.cloudonaut.io" data-layout="button_count" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fiam.cloudonaut.io%2F&amp;src=sdkpreparse">Teilen</a></div>
+            </li>
+            <li style="padding-top: 14px;">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://iam.cloudonaut.io" data-text="Complete #AWS #IAM Reference" data-via="hellomichibye">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+            <li>
+              <a href="https://cloudonaut.io" target="_blank">A cloudonaut Project</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    
+<div class="row">
+  <ol class="breadcrumb">
+    <li><a href="/reference/index.html">Complete AWS IAM Reference</a></li>
+    <li class="active">elasticbeanstalk</li>
+  </ol>
+
+  <div class="table-responsive">
+    <table class="table table-striped" style="table-layout: fixed;">
+      <thead>
+        <tr>
+          <th style="width: 25%;">
+            Action <a href="/reference/index.html#/elasticbeanstalk" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 25%;">
+            Description <a href="/reference/index.html#/elasticbeanstalk" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 25%;">
+            Resources <a href="/reference/index.html#/elasticbeanstalk" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 25%;">
+            Conditions <a href="/reference/index.html#/elasticbeanstalk" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/AbortEnvironmentUpdate.html">elasticbeanstalk:AbortEnvironmentUpdate</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Cancels in-progress environment configuration update or application version deployment.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:application&#x2F;$applicationname</li>
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/CheckDNSAvailability.html">elasticbeanstalk:CheckDNSAvailability</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Checks if the specified CNAME is available.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/ComposeEnvironments.html">elasticbeanstalk:ComposeEnvironments</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Create or update a group of environments that each run a separate component of a single application.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:application&#x2F;$applicationname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/CreateApplication.html">elasticbeanstalk:CreateApplication</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Creates an application that has one configuration template named default and no application versions.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:application&#x2F;$applicationname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/CreateApplicationVersion.html">elasticbeanstalk:CreateApplicationVersion</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Creates an application version for the specified application.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:applicationversion&#x2F;$applicationname&#x2F;$versionlabel</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/CreateConfigurationTemplate.html">elasticbeanstalk:CreateConfigurationTemplate</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Creates a configuration template.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:configurationtemplate&#x2F;$applicationname&#x2F;$templatename</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li>elasticbeanstalk:FromApplication</li>
+                <li>elasticbeanstalk:FromApplicationVersion</li>
+                <li>elasticbeanstalk:FromConfigurationTemplate</li>
+                <li>elasticbeanstalk:FromEnvironment</li>
+                <li>elasticbeanstalk:FromSolutionStack</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/CreateEnvironment.html">elasticbeanstalk:CreateEnvironment</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Launches an environment for the specified application using the specified configuration.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li>elasticbeanstalk:FromApplicationVersion</li>
+                <li>elasticbeanstalk:FromConfigurationTemplate</li>
+                <li>elasticbeanstalk:FromSolutionStack</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/CreateStorageLocation.html">elasticbeanstalk:CreateStorageLocation</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Creates the Amazon S3 storage location for the account.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/DeleteApplication.html">elasticbeanstalk:DeleteApplication</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes the specified application along with all associated versions and configurations.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:application&#x2F;$applicationname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/DeleteApplicationVersion.html">elasticbeanstalk:DeleteApplicationVersion</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes the specified version from the specified application.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:applicationversion&#x2F;$applicationname&#x2F;$versionlabel</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/DeleteConfigurationTemplate.html">elasticbeanstalk:DeleteConfigurationTemplate</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes the specified configuration template.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:configurationtemplate&#x2F;$applicationname&#x2F;$templatename</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/DeleteEnvironmentConfiguration.html">elasticbeanstalk:DeleteEnvironmentConfiguration</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes the draft configuration associated with the running environment.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/DescribeApplicationVersions.html">elasticbeanstalk:DescribeApplicationVersions</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Retrieve a list of application versions stored in your AWS Elastic Beanstalk storage bucket.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:applicationversion&#x2F;$applicationname&#x2F;$versionlabel</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/DescribeApplications.html">elasticbeanstalk:DescribeApplications</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns the descriptions of existing applications.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:application&#x2F;$applicationname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/DescribeConfigurationOptions.html">elasticbeanstalk:DescribeConfigurationOptions</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Describes the configuration options that are used in a particular configuration template or environment, or that a specified solution stack defines.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:configurationtemplate&#x2F;$applicationname&#x2F;$templatename</li>
+                <li>arn:aws:elasticbeanstalk:$region::solutionstack&#x2F;$solutionstackname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/DescribeConfigurationSettings.html">elasticbeanstalk:DescribeConfigurationSettings</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns a description of the settings for the specified configuration set, that is, either a configuration template or the configuration set associated with a running environment.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:configurationtemplate&#x2F;$applicationname&#x2F;$templatename</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/DescribeEnvironmentHealth.html">elasticbeanstalk:DescribeEnvironmentHealth</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns information about the overall health of the specified environment.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/DescribeEnvironmentResources.html">elasticbeanstalk:DescribeEnvironmentResources</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns AWS resources for this environment.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/DescribeEnvironments.html">elasticbeanstalk:DescribeEnvironments</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns descriptions for existing environments.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/DescribeEvents.html">elasticbeanstalk:DescribeEvents</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns list of event descriptions matching criteria up to the last 6 weeks.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:application&#x2F;$applicationname</li>
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:applicationversion&#x2F;$applicationname&#x2F;$versionlabel</li>
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:configurationtemplate&#x2F;$applicationname&#x2F;$templatename</li>
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/DescribeInstancesHealth.html">elasticbeanstalk:DescribeInstancesHealth</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns more detailed information about the health of the specified instances (for example, CPU utilization, load average, and causes).
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/ListAvailableSolutionStacks.html">elasticbeanstalk:ListAvailableSolutionStacks</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns a list of the available solution stack names.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region::solutionstack&#x2F;$solutionstackname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/RebuildEnvironment.html">elasticbeanstalk:RebuildEnvironment</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes and recreates all of the AWS resources (for example: the Auto Scaling group, load balancer, etc.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/RequestEnvironmentInfo.html">elasticbeanstalk:RequestEnvironmentInfo</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Initiates a request to compile the specified type of information of the deployed environment.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/RestartAppServer.html">elasticbeanstalk:RestartAppServer</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Causes the environment to restart the application container server running on each Amazon EC2 instance.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/RetrieveEnvironmentInfo.html">elasticbeanstalk:RetrieveEnvironmentInfo</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Retrieves the compiled information from a RequestEnvironmentInfo request.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/SwapEnvironmentCNAMEs.html">elasticbeanstalk:SwapEnvironmentCNAMEs</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Swaps the CNAMEs of two environments.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li>elasticbeanstalk:FromEnvironment</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/TerminateEnvironment.html">elasticbeanstalk:TerminateEnvironment</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Terminates the specified environment.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/UpdateApplication.html">elasticbeanstalk:UpdateApplication</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Updates the specified application to have the specified properties.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:application&#x2F;$applicationname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/UpdateApplicationVersion.html">elasticbeanstalk:UpdateApplicationVersion</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Updates the specified application version to have the specified properties.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:applicationversion&#x2F;$applicationname&#x2F;$versionlabel</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/UpdateConfigurationTemplate.html">elasticbeanstalk:UpdateConfigurationTemplate</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Updates the specified configuration template to have the specified properties or configuration option values.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:configurationtemplate&#x2F;$applicationname&#x2F;$templatename</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/UpdateEnvironment.html">elasticbeanstalk:UpdateEnvironment</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Updates the environment description, deploys a new application version, updates the configuration settings to an entirely new configuration template, or updates select configuration option values in the running environment.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li>elasticbeanstalk:FromApplicationVersion</li>
+                <li>elasticbeanstalk:FromConfigurationTemplate</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticbeanstalk/ValidateConfigurationSettings.html">elasticbeanstalk:ValidateConfigurationSettings</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Takes a set of configuration settings and either a configuration template or environment, and determines whether those values are valid.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:environment&#x2F;$applicationname&#x2F;$environmentname</li>
+                <li>arn:aws:elasticbeanstalk:$region:$account-id:configurationtemplate&#x2F;$applicationname&#x2F;$templatename</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>elasticbeanstalk:InApplication</li>
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+      </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">A <a href="https://cloudonaut.io" target="_blank">cloudonaut.io</a> Project - <a href="/about.html">About</a> - <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/CONTRIBUTING.md" target="_blank">Contributing</a> - Licensed Under  <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/LICENSE.md" target="_blank">CC BY-NC-SA 4.0</a></p>
+      </div>
+    </footer>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.7";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35685929-10', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

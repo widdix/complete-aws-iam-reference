@@ -1,0 +1,66 @@
+{{> header}}
+
+<div class="row">
+  <ol class="breadcrumb">
+    <li><a href="/reference/index.html">Complete AWS IAM Reference</a></li>
+    <li class="active">{{service}}</li>
+  </ol>
+
+  <div class="table-responsive">
+    <table class="table table-striped" style="table-layout: fixed;">
+      <thead>
+        <tr>
+          <th style="width: 25%;">
+            Action <a href="/reference/index.html#/{{service}}" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 25%;">
+            Description <a href="/reference/index.html#/{{service}}" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 25%;">
+            Resources <a href="/reference/index.html#/{{service}}" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 25%;">
+            Conditions <a href="/reference/index.html#/{{service}}" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#rows}}
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/{{service}}/{{action}}.html">{{service}}:{{action}}</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            {{description}}
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                {{#resources}}
+                <li>{{.}}</li>
+                {{/resources}}
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                {{#conditions}}
+                <li>{{.}}</li>
+                {{/conditions}}
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        {{/rows}}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{{> footer}}
