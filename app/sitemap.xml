@@ -52,6 +52,9 @@
     <loc>https://iam.cloudonaut.io/reference/codecommit.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/codedeploy.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/cognito-identity.html</loc> 
   </url>
   <url>
@@ -872,6 +875,102 @@
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/codecommit/TestRepositoryTriggers.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/AddTagsToOnPremisesInstances.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/BatchGetApplications.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/BatchGetDeployments.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/BatchGetOnPremisesInstances.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/CreateApplication.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/CreateDeployment.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/CreateDeploymentConfig.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/CreateDeploymentGroup.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/DeleteApplication.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/DeleteDeploymentConfig.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/DeleteDeploymentGroup.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/DeregisterOnPremisesInstance.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/GetApplication.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/GetApplicationRevision.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/GetDeployment.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/GetDeploymentConfig.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/GetDeploymentGroup.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/GetDeploymentInstance.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/GetOnPremisesInstance.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/ListApplicationRevisions.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/ListApplications.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/ListDeploymentConfigs.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/ListDeploymentGroups.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/ListDeploymentInstances.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/ListDeployments.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/ListOnPremisesInstances.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/RegisterApplicationRevision.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/RegisterOnPremisesInstance.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/RemoveTagsFromOnPremisesInstances.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/StopDeployment.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/UpdateApplication.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codedeploy/UpdateDeploymentGroup.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/cognito-identity/CreateIdentityPool.html</loc> 
