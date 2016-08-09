@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Complete AWS IAM Reference</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.min.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">IAM</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown" class="active">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reference <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/reference/index.html">Complete</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/reference/autoscaling.html">Auto Scaling</a></li>
+                <li><a href="/reference/cloudformation.html">CloudFormation</a></li>
+                <li><a href="/reference/cloudfront.html">CloudFront</a></li>
+                <li><a href="/reference/cloudwatch.html">CloudWatch</a></li>
+                <li><a href="/reference/dynamodb.html">DynamoDB</a></li>
+                <li><a href="/reference/ec2.html">EC2</a></li>
+                <li><a href="/reference/elasticloadbalancing.html">ELB</a></li>
+                <li><a href="/reference/glacier.html">Glacier</a></li>
+                <li><a href="/reference/iam.html">IAM</a></li>
+                <li><a href="/reference/rds.html">RDS</a></li>
+                <li><a href="/reference/s3.html">S3</a></li>
+                <li><a href="/reference/sns.html">SNS</a></li>
+                <li><a href="/reference/sqs.html">SQS</a></li>
+              </ul>
+            </li>
+            <li><a href="/global-conditions.html">Global Conditions</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/CONTRIBUTING.md" target="_blank">Contributing</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li style="padding-top: 14px;">
+              <script type="text/javascript">
+                reddit_title='Complete AWS IAM Reference'
+                reddit_target='aws'
+                reddit_url='https://iam.cloudonaut.io/'
+              </script>
+              <script type="text/javascript" src="https://www.redditstatic.com/button/button1.js"></script>
+            </li>
+            <li style="padding-top: 14px;">
+              <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="Complete AWS IAM Reference" data-url="https://iam.cloudonaut.io" data-count="horizontal">Vote on Hacker News</a>
+              <script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
+            </li>
+            <li style="padding-top: 14px;">
+              <div class="fb-share-button" data-href="https://iam.cloudonaut.io" data-layout="button_count" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fiam.cloudonaut.io%2F&amp;src=sdkpreparse">Teilen</a></div>
+            </li>
+            <li style="padding-top: 14px;">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://iam.cloudonaut.io" data-text="Complete #AWS #IAM Reference" data-via="hellomichibye">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+            <li>
+              <a href="https://cloudonaut.io" target="_blank">A cloudonaut Project</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    
+<div class="row">
+  <ol class="breadcrumb">
+    <li><a href="/reference/index.html">Complete AWS IAM Reference</a></li>
+    <li class="active">codepipeline</li>
+  </ol>
+
+  <div class="table-responsive">
+    <table class="table table-striped" style="table-layout: fixed;">
+      <thead>
+        <tr>
+          <th style="width: 25%;">
+            Action <a href="/reference/index.html#/codepipeline" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 25%;">
+            Description <a href="/reference/index.html#/codepipeline" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 25%;">
+            Resources <a href="/reference/index.html#/codepipeline" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+          <th style="width: 25%;">
+            Conditions <a href="/reference/index.html#/codepipeline" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/AcknowledgeJob.html">codepipeline:AcknowledgeJob</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns information about a specified job and whether that job has been received by the job worker.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/AcknowledgeThirdPartyJob.html">codepipeline:AcknowledgeThirdPartyJob</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Confirms a job worker has received the specified job.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/CreateCustomActionType.html">codepipeline:CreateCustomActionType</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Creates a new custom action that can be used in all pipelines associated with the AWS account.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:codepipeline:$region:$account-id:actiontype:$action-owner&#x2F;$action-type&#x2F;$action-name&#x2F;$action-version</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/CreatePipeline.html">codepipeline:CreatePipeline</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Creates a pipeline.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:codepipeline:$region:$account-id:$pipeline-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/DeleteCustomActionType.html">codepipeline:DeleteCustomActionType</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Marks a custom action as deleted.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:codepipeline:$region:$account-id:actiontype:$action-owner&#x2F;$action-type&#x2F;$action-name&#x2F;$action-version</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/DeletePipeline.html">codepipeline:DeletePipeline</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Deletes the specified pipeline.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:codepipeline:$region:$account-id:$pipeline-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/DisableStageTransition.html">codepipeline:DisableStageTransition</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Prevents artifacts in a pipeline from transitioning to the next stage in the pipeline.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:codepipeline:$region:$account-id:$pipeline-name&#x2F;$stage-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/EnableStageTransition.html">codepipeline:EnableStageTransition</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Enables artifacts in a pipeline to transition to a stage in a pipeline.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:codepipeline:$region:$account-id:$pipeline-name&#x2F;$stage-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/GetPipeline.html">codepipeline:GetPipeline</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns the metadata, structure, stages, and actions of a pipeline.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:codepipeline:$region:$account-id:$pipeline-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/GetPipelineState.html">codepipeline:GetPipelineState</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns information about the state of a pipeline, including the stages and actions.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:codepipeline:$region:$account-id:$pipeline-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/GetThirdPartyJobDetails.html">codepipeline:GetThirdPartyJobDetails</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Requests the details of a job for a third party action.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/ListActionTypes.html">codepipeline:ListActionTypes</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Gets a summary of all AWS CodePipeline action types associated with your account.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/ListPipelines.html">codepipeline:ListPipelines</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Gets a summary of all of the pipelines associated with your account.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/PollForJobs.html">codepipeline:PollForJobs</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Returns information about any jobs for AWS CodePipeline to act upon.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:codepipeline:$region:$account-id:actiontype:$action-owner&#x2F;$action-type&#x2F;$action-name&#x2F;$action-version</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/PollForThirdPartyJobs.html">codepipeline:PollForThirdPartyJobs</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Determines whether there are any third party jobs for a job worker to act on.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/PutActionRevision.html">codepipeline:PutActionRevision</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Provides information to AWS CodePipeline about new revisions to a source.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:codepipeline:$region:$account-id:$pipeline-name&#x2F;$stage-name&#x2F;$action-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/PutJobFailureResult.html">codepipeline:PutJobFailureResult</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Represents the failure of a job as returned to the pipeline by a job worker.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/PutJobSuccessResult.html">codepipeline:PutJobSuccessResult</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Represents the success of a job as returned to the pipeline by a job worker.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/PutThirdPartyJobFailureResult.html">codepipeline:PutThirdPartyJobFailureResult</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Represents the failure of a third party job as returned to the pipeline by a job worker.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/PutThirdPartyJobSuccessResult.html">codepipeline:PutThirdPartyJobSuccessResult</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Represents the success of a third party job as returned to the pipeline by a job worker.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>???</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/StartPipelineExecution.html">codepipeline:StartPipelineExecution</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Starts the specified pipeline.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:codepipeline:$region:$account-id:$pipeline-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/UpdatePipeline.html">codepipeline:UpdatePipeline</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Updates a specified pipeline with edits or changes to its structure.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:codepipeline:$region:$account-id:$pipeline-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/codepipeline/RetryStageExecution.html">codepipeline:RetryStageExecution</a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Resumes the pipeline execution by retrying the last failed actions in a stage.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:codepipeline:$region:$account-id:$pipeline-name&#x2F;$stage-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+      </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">A <a href="https://cloudonaut.io" target="_blank">cloudonaut.io</a> Project - <a href="/about.html">About</a> - <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/CONTRIBUTING.md" target="_blank">Contributing</a> - Licensed Under  <a href="https://github.com/widdix/complete-aws-iam-reference/blob/master/LICENSE.md" target="_blank">CC BY-NC-SA 4.0</a></p>
+      </div>
+    </footer>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.7";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-35685929-10', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

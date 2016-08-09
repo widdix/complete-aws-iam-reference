@@ -55,6 +55,9 @@
     <loc>https://iam.cloudonaut.io/reference/codedeploy.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/codepipeline.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/cognito-identity.html</loc> 
   </url>
   <url>
@@ -971,6 +974,75 @@
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/codedeploy/UpdateDeploymentGroup.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/AcknowledgeJob.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/AcknowledgeThirdPartyJob.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/CreateCustomActionType.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/CreatePipeline.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/DeleteCustomActionType.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/DeletePipeline.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/DisableStageTransition.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/EnableStageTransition.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/GetPipeline.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/GetPipelineState.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/GetThirdPartyJobDetails.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/ListActionTypes.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/ListPipelines.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/PollForJobs.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/PollForThirdPartyJobs.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/PutActionRevision.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/PutJobFailureResult.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/PutJobSuccessResult.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/PutThirdPartyJobFailureResult.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/PutThirdPartyJobSuccessResult.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/StartPipelineExecution.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/UpdatePipeline.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/codepipeline/RetryStageExecution.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/cognito-identity/CreateIdentityPool.html</loc> 

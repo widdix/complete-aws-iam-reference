@@ -32,4 +32,3 @@
 | [codedeploy:StopDeployment](http://docs.aws.amazon.com/codedeploy/latest/APIReference/API_StopDeployment.html) | Attempts to stop an ongoing deployment. | arn:aws:codedeploy:$region:$account-id:deploymentgroup:$application-name/$deployment-group-name | - |
 | [codedeploy:UpdateApplication](http://docs.aws.amazon.com/codedeploy/latest/APIReference/API_UpdateApplication.html) | Changes the name of an application. | arn:aws:codedeploy:$region:$account-id:application:$application-name | - |
 | [codedeploy:UpdateDeploymentGroup](http://docs.aws.amazon.com/codedeploy/latest/APIReference/API_UpdateDeploymentGroup.html) | Changes information about a deployment group. | arn:aws:codedeploy:$region:$account-id:deploymentgroup:$application-name/$deployment-group-name | - |
-

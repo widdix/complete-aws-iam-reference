@@ -20,7 +20,7 @@
 - [x] [Amazon CloudWatch Logs](services/logs.md)
 - [x] [AWS CodeCommit](services/codecommit.md)
 - [x] [AWS CodeDeploy](services/codedeploy.md)
-- [ ] AWS CodePipeline
+- [x] [AWS CodePipeline](services/codepipeline.md)
 - [x] [Amazon Cognito Identity](services/cognito-identity.md)
 - [x] [Amazon Cognito Sync](services/cognito-sync.md)
 - [ ] AWS Config
@@ -76,10 +76,6 @@
 - [x] [Amazon WorkMail](services/workmail.md)
 - [x] [Amazon WorkSpaces](services/workspaces.md)
 - [x] [AWS Support](services/support.md)
-
-## TODO
-
-- [ ] add examples for how conditions and resources can be used
 
 ## Contributing
 
