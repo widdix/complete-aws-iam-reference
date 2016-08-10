@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="app3" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -112,7 +112,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/events/DeleteRule.html">events:DeleteRule</a>
+              <a href="/reference/events/DeleteRule.html">events:DeleteRule</a> <a href ng-click="copy2clipboard('events:DeleteRule')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -139,7 +139,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/events/DescribeRule.html">events:DescribeRule</a>
+              <a href="/reference/events/DescribeRule.html">events:DescribeRule</a> <a href ng-click="copy2clipboard('events:DescribeRule')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -166,7 +166,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/events/DisableRule.html">events:DisableRule</a>
+              <a href="/reference/events/DisableRule.html">events:DisableRule</a> <a href ng-click="copy2clipboard('events:DisableRule')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -193,7 +193,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/events/EnableRule.html">events:EnableRule</a>
+              <a href="/reference/events/EnableRule.html">events:EnableRule</a> <a href ng-click="copy2clipboard('events:EnableRule')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -220,7 +220,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/events/ListRuleNamesByTarget.html">events:ListRuleNamesByTarget</a>
+              <a href="/reference/events/ListRuleNamesByTarget.html">events:ListRuleNamesByTarget</a> <a href ng-click="copy2clipboard('events:ListRuleNamesByTarget')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -247,7 +247,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/events/ListRules.html">events:ListRules</a>
+              <a href="/reference/events/ListRules.html">events:ListRules</a> <a href ng-click="copy2clipboard('events:ListRules')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -274,7 +274,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/events/ListTargetsByRule.html">events:ListTargetsByRule</a>
+              <a href="/reference/events/ListTargetsByRule.html">events:ListTargetsByRule</a> <a href ng-click="copy2clipboard('events:ListTargetsByRule')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -301,7 +301,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/events/PutEvents.html">events:PutEvents</a>
+              <a href="/reference/events/PutEvents.html">events:PutEvents</a> <a href ng-click="copy2clipboard('events:PutEvents')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -328,7 +328,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/events/PutRule.html">events:PutRule</a>
+              <a href="/reference/events/PutRule.html">events:PutRule</a> <a href ng-click="copy2clipboard('events:PutRule')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -358,7 +358,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/events/PutTargets.html">events:PutTargets</a>
+              <a href="/reference/events/PutTargets.html">events:PutTargets</a> <a href ng-click="copy2clipboard('events:PutTargets')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -385,7 +385,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/events/RemoveTargets.html">events:RemoveTargets</a>
+              <a href="/reference/events/RemoveTargets.html">events:RemoveTargets</a> <a href ng-click="copy2clipboard('events:RemoveTargets')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -412,7 +412,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/events/TestEventPattern.html">events:TestEventPattern</a>
+              <a href="/reference/events/TestEventPattern.html">events:TestEventPattern</a> <a href ng-click="copy2clipboard('events:TestEventPattern')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -451,6 +451,8 @@
 
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/app3.js"></script>
 
     <div id="fb-root"></div>
     <script>(function(d, s, id) {

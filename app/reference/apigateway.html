@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="app3" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -112,7 +112,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/apigateway/GET.html">apigateway:GET</a>
+              <a href="/reference/apigateway/GET.html">apigateway:GET</a> <a href ng-click="copy2clipboard('apigateway:GET')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -146,7 +146,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/apigateway/POST.html">apigateway:POST</a>
+              <a href="/reference/apigateway/POST.html">apigateway:POST</a> <a href ng-click="copy2clipboard('apigateway:POST')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -180,7 +180,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/apigateway/PUT.html">apigateway:PUT</a>
+              <a href="/reference/apigateway/PUT.html">apigateway:PUT</a> <a href ng-click="copy2clipboard('apigateway:PUT')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -214,7 +214,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/apigateway/DELETE.html">apigateway:DELETE</a>
+              <a href="/reference/apigateway/DELETE.html">apigateway:DELETE</a> <a href ng-click="copy2clipboard('apigateway:DELETE')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -248,7 +248,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/apigateway/PATCH.html">apigateway:PATCH</a>
+              <a href="/reference/apigateway/PATCH.html">apigateway:PATCH</a> <a href ng-click="copy2clipboard('apigateway:PATCH')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -282,7 +282,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/apigateway/HEAD.html">apigateway:HEAD</a>
+              <a href="/reference/apigateway/HEAD.html">apigateway:HEAD</a> <a href ng-click="copy2clipboard('apigateway:HEAD')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -316,7 +316,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/apigateway/OPTIONS.html">apigateway:OPTIONS</a>
+              <a href="/reference/apigateway/OPTIONS.html">apigateway:OPTIONS</a> <a href ng-click="copy2clipboard('apigateway:OPTIONS')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -362,6 +362,8 @@
 
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/app3.js"></script>
 
     <div id="fb-root"></div>
     <script>(function(d, s, id) {

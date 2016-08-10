@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="app3" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -112,7 +112,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/sts/AssumeRole.html">sts:AssumeRole</a>
+              <a href="/reference/sts/AssumeRole.html">sts:AssumeRole</a> <a href ng-click="copy2clipboard('sts:AssumeRole')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -138,7 +138,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/sts/AssumeRoleWithSAML.html">sts:AssumeRoleWithSAML</a>
+              <a href="/reference/sts/AssumeRoleWithSAML.html">sts:AssumeRoleWithSAML</a> <a href ng-click="copy2clipboard('sts:AssumeRoleWithSAML')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -164,7 +164,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/sts/AssumeRoleWithWebIdentity.html">sts:AssumeRoleWithWebIdentity</a>
+              <a href="/reference/sts/AssumeRoleWithWebIdentity.html">sts:AssumeRoleWithWebIdentity</a> <a href ng-click="copy2clipboard('sts:AssumeRoleWithWebIdentity')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -190,7 +190,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/sts/DecodeAuthorizationMessage.html">sts:DecodeAuthorizationMessage</a>
+              <a href="/reference/sts/DecodeAuthorizationMessage.html">sts:DecodeAuthorizationMessage</a> <a href ng-click="copy2clipboard('sts:DecodeAuthorizationMessage')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -216,7 +216,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/sts/GetFederationToken.html">sts:GetFederationToken</a>
+              <a href="/reference/sts/GetFederationToken.html">sts:GetFederationToken</a> <a href ng-click="copy2clipboard('sts:GetFederationToken')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -242,7 +242,7 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/sts/GetSessionToken.html">sts:GetSessionToken</a>
+              <a href="/reference/sts/GetSessionToken.html">sts:GetSessionToken</a> <a href ng-click="copy2clipboard('sts:GetSessionToken')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
@@ -280,6 +280,8 @@
 
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/app3.js"></script>
 
     <div id="fb-root"></div>
     <script>(function(d, s, id) {

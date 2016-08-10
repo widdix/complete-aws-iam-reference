@@ -175,6 +175,13 @@
 
   a.run(['$rootScope', '$route', function($rootScope, $route) {
     $rootScope.section = 'reference';
+    $rootScope.copy2clipboard = function(val) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(val).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
     $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
       if (current.$$route) {
         $rootScope.section = current.$$route.section;

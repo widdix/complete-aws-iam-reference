@@ -27,7 +27,7 @@
         <tr ng-repeat="row in rows | filter: search | orderBy: sort">
           <td>
             <div class="scrollable">
-              <a href="/reference/{{row.service}}/{{row.action}}.html">{{row.service}}:{{row.action}}</a>
+              <a href="/reference/{{row.service}}/{{row.action}}.html">{{row.service}}:{{row.action}}</a> <a href ng-click="copy2clipboard(row.service + ':' + row.action)" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
