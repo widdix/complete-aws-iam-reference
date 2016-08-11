@@ -45,7 +45,7 @@
 - [x] [AWS Identity and Access Management](services/iam.md)
 - [ ] AWS Import Export
 - [ ] Amazon Inspector
-- [ ] AWS IoT
+- [x] [AWS IoT](services/iot.md)
 - [x] [AWS Key Management Service](services/kms.md)
 - [x] [Amazon Kinesis](services/kinesis.md)
 - [x] [Amazon Kinesis Firehose](services/firehose.md)
