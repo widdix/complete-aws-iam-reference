@@ -109,6 +109,9 @@
     <loc>https://iam.cloudonaut.io/reference/firehose.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/gamelift.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/glacier.html</loc> 
   </url>
   <url>
@@ -2534,6 +2537,99 @@
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/firehose/UpdateDestination.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/CreateAlias.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/CreateBuild.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/CreateFleet.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/CreateGameSession.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/CreatePlayerSession.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/CreatePlayerSessions.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/DeleteAlias.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/DeleteBuild.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/DeleteFleet.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/DescribeAlias.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/DescribeBuild.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/DescribeEC2InstanceLimits.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/DescribeFleetAttributes.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/DescribeFleetCapacity.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/DescribeFleetEvents.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/DescribeFleetPortSettings.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/DescribeFleetUtilization.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/DescribeGameSessions.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/DescribePlayerSessions.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/GetGameSessionLogUrl.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/ListAliases.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/ListBuilds.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/ListFleets.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/RequestUploadCredentials.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/ResolveAlias.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/UpdateAlias.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/UpdateBuild.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/UpdateFleetAttributes.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/UpdateFleetCapacity.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/UpdateFleetPortSettings.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/gamelift/UpdateGameSession.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/glacier/AbortVaultLock.html</loc> 

@@ -40,7 +40,7 @@
 - [ ] Amazon Elastic Transcoder
 - [x] [Amazon ElastiCache](services/elasticache.md)
 - [x] [Amazon Elasticsearch Service](services/es.md)
-- [ ] Amazon GameLift
+- [x] [Amazon GameLift](services/gamelift.md)
 - [x] [Amazon Glacier](services/glacier.md)
 - [x] [AWS Identity and Access Management](services/iam.md)
 - [x] [AWS Import Export](services/importexport.md)
