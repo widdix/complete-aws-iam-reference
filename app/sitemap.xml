@@ -136,6 +136,9 @@
     <loc>https://iam.cloudonaut.io/reference/mobileanalytics.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/mobilehub.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/opsworks.html</loc> 
   </url>
   <url>
@@ -3473,6 +3476,39 @@
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/mobileanalytics/GetFinancialReports.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mobilehub/CreateProject.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mobilehub/CreateServiceRole.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mobilehub/DeleteProject.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mobilehub/GenerateProjectParameters.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mobilehub/GetProject.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mobilehub/ListAvailableFeatures.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mobilehub/ListAvailableRegions.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mobilehub/ListProjects.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mobilehub/UpdateProject.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mobilehub/ValidateProject.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mobilehub/VerifyServiceRole.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/opsworks/AssignVolume.html</loc> 
