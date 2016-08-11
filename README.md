@@ -43,8 +43,8 @@
 - [ ] Amazon GameLift
 - [x] [Amazon Glacier](services/glacier.md)
 - [x] [AWS Identity and Access Management](services/iam.md)
-- [ ] AWS Import Export
-- [ ] Amazon Inspector
+- [x] [AWS Import Export](services/importexport.md)
+- [x] [Amazon Inspector](services/inspector.md)
 - [x] [AWS IoT](services/iot.md)
 - [x] [AWS Key Management Service](services/kms.md)
 - [x] [Amazon Kinesis](services/kinesis.md)
