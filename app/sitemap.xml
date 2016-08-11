@@ -130,6 +130,9 @@
     <loc>https://iam.cloudonaut.io/reference/machinelearning.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/mechanicalturk.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/opsworks.html</loc> 
   </url>
   <url>
@@ -3329,6 +3332,135 @@
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/machinelearning/UpdateMLModel.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/ApproveAssignment.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/ApproveRejectedAssignment.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/AssignQualification.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/BlockWorker.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/ChangeHITTypeOfHIT.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/CreateHIT.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/CreateQualificationType.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/DisableHIT.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/DisposeHIT.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/DisposeQualificationType.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/ExtendHIT.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/ForceExpireHIT.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetAccountBalance.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetAssignment.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetAssignmentsForHIT.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetBlockedWorkers.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetBonusPayments.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetFileUploadURL.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetHIT.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetHITsForQualificationType.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetQualificationRequests.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetQualificationScore.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetQualificationType.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetQualificationsForQualificationType.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetRequesterStatistic.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetRequesterWorkerStatistic.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetReviewResultsForHIT.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GetReviewableHITs.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GrantBonus.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/GrantQualification.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/NotifyWorkers.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/RegisterHITType.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/RejectAssignment.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/RejectQualificationRequest.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/RevokeQualification.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/SearchHITs.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/SearchQualificationTypes.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/SendTestEventNotification.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/SetHITAsReviewing.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/SetHITTypeNotification.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/UnblockWorker.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/UpdateQualificationScore.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mechanicalturk/UpdateQualificationType.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/opsworks/AssignVolume.html</loc> 
