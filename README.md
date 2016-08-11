@@ -37,7 +37,7 @@
 - [x] [Amazon Elastic File System](services/elasticfilesystem.md)
 - [x] [Elastic Load Balancing](services/elasticloadbalancing.md)
 - [x] [Amazon Elastic MapReduce](services/elasticmapreduce.md)
-- [ ] Amazon Elastic Transcoder
+- [x] [Amazon Elastic Transcoder](services/elastictranscoder.md)
 - [x] [Amazon ElastiCache](services/elasticache.md)
 - [x] [Amazon Elasticsearch Service](services/es.md)
 - [x] [Amazon GameLift](services/gamelift.md)

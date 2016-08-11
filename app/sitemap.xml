@@ -97,6 +97,9 @@
     <loc>https://iam.cloudonaut.io/reference/elasticmapreduce.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/elastictranscoder.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/es.html</loc> 
   </url>
   <url>
@@ -2444,6 +2447,57 @@
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/elasticmapreduce/TerminateJobFlows.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/CancelJob.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/CreateJob.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/CreatePipeline.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/CreatePreset.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/DeletePipeline.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/DeletePreset.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/ListJobsByPipeline.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/ListJobsByStatus.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/ListPipelines.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/ListPresets.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/ReadJob.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/ReadPipeline.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/ReadPreset.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/TestRole.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/UpdatePipeline.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/UpdatePipelineNotifications.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elastictranscoder/UpdatePipelineStatus.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/es/AddTags.html</loc> 
