@@ -54,7 +54,7 @@
 - [x] [AWS Marketplace](services/aws-marketplace.md)
 - [x] [AWS Marketplace Management Portal](services/aws-marketplace-management.md)
 - [x] [Amazon Mechanical Turk](services/mechanicalturk.md)
-- [ ] Amazon Mobile Analytics
+- [x] [Amazon Mobile Analytics](services/mobileanalytics.md)
 - [ ] AWS Mobile Hub
 - [x] [AWS OpsWorks](services/opsworks.md)
 - [x] [Amazon RDS](services/rds.md)

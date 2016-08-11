@@ -133,6 +133,9 @@
     <loc>https://iam.cloudonaut.io/reference/mechanicalturk.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/mobileanalytics.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/opsworks.html</loc> 
   </url>
   <url>
@@ -3461,6 +3464,15 @@
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/mechanicalturk/UpdateQualificationType.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mobileanalytics/PutEvents.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mobileanalytics/GetReports.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/mobileanalytics/GetFinancialReports.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/opsworks/AssignVolume.html</loc> 
