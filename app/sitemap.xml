@@ -73,6 +73,9 @@
     <loc>https://iam.cloudonaut.io/reference/discovery.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/dms.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/dynamodb.html</loc> 
   </url>
   <url>
@@ -1334,6 +1337,93 @@
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/discovery/StopDataCollectionByAgentIds.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/AddTagsToResource.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/CreateEndpoint.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/CreateReplicationInstance.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/CreateReplicationSubnetGroup.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/CreateReplicationTask.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/DeleteEndpoint.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/DeleteReplicationInstance.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/DeleteReplicationSubnetGroup.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/DeleteReplicationTask.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/DescribeAccountAttributes.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/DescribeConnections.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/DescribeEndpointTypes.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/DescribeEndpoints.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/DescribeOrderableReplicationInstances.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/DescribeRefreshSchemasStatus.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/DescribeReplicationInstances.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/DescribeReplicationSubnetGroups.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/DescribeReplicationTasks.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/DescribeSchemas.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/DescribeTableStatistics.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/ListTagsForResource.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/ModifyEndpoint.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/ModifyReplicationInstance.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/ModifyReplicationSubnetGroup.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/RefreshSchemas.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/RemoveTagsFromResource.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/StartReplicationTask.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/StopReplicationTask.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/dms/TestConnection.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/dynamodb/BatchGetItem.html</loc> 
