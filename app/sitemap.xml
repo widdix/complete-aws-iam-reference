@@ -64,6 +64,9 @@
     <loc>https://iam.cloudonaut.io/reference/cognito-sync.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/config.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/discovery.html</loc> 
   </url>
   <url>
@@ -1160,6 +1163,81 @@
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/cognito-sync/UnsubscribeFromDataset.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/DeleteConfigRule.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/DeleteDeliveryChannel.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/DeliverConfigSnapshot.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/DescribeComplianceByConfigRule.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/DescribeComplianceByResource.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/DescribeConfigRuleEvaluationStatus.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/DescribeConfigRules.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/DescribeConfigurationRecorderStatus.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/DescribeConfigurationRecorders.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/DescribeDeliveryChannelStatus.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/DescribeDeliveryChannels.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/GetComplianceDetailsByConfigRule.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/GetComplianceDetailsByResource.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/GetComplianceSummaryByConfigRule.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/GetComplianceSummaryByResourceType.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/GetResourceConfigHistory.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/GetResources.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/GetTagKeys.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/ListDiscoveredResources.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/PutConfigRule.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/PutConfigurationRecorder.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/PutDeliveryChannel.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/PutEvaluations.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/StartConfigurationRecorder.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/config/StopConfigurationRecorder.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/discovery/CreateTags.html</loc> 
