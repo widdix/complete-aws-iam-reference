@@ -73,6 +73,9 @@
     <loc>https://iam.cloudonaut.io/reference/devicefarm.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/directconnect.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/discovery.html</loc> 
   </url>
   <url>
@@ -1382,6 +1385,63 @@
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/devicefarm/ScheduleRun.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/AllocateConnectionOnInterconnect.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/AllocatePrivateVirtualInterface.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/AllocatePublicVirtualInterface.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/ConfirmConnection.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/ConfirmPrivateVirtualInterface.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/ConfirmPublicVirtualInterface.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/CreateConnection.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/CreateInterconnect.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/CreatePrivateVirtualInterface.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/CreatePublicVirtualInterface.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/DeleteConnection.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/DeleteInterconnect.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/DeleteVirtualInterface.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/DescribeConnections.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/DescribeConnectionsOnInterconnect.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/DescribeInterconnects.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/DescribeLocations.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/DescribeVirtualGateways.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/directconnect/DescribeVirtualInterfaces.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/discovery/CreateTags.html</loc> 

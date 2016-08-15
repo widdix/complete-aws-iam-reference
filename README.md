@@ -27,7 +27,7 @@
 - [x] [Data Pipeline](services/datapipeline.md)
 - [x] [AWS Database Migration Service](services/dms.md)
 - [x] [AWS Device Farm](services/devicefarm.md)
-- [ ] AWS Direct Connect
+- [x] [AWS Direct Connect](services/directconnect.md)
 - [ ] AWS Directory Service
 - [x] [Amazon DynamoDB](services/dynamodb.md)
 - [x] [Amazon EC2](services/ec2.md) and [Reports](services/ec2-reports)
