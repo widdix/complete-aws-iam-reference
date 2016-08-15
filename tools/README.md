@@ -19,6 +19,12 @@ mv temp.md ../services/ec2.md
 node fetchActionsAndLinksFromDocs.js "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_iam.html"
 ```
 
+## Fetch Actions, Links & Resources from Actions, Resources, and Conditions Reference
+
+```
+node fetchPermissionsRef.js "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_iam.html"
+```
+
 ## Fetch Doc Links from Markdown
 
 ```

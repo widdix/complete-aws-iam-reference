@@ -28,9 +28,9 @@
 - [x] [AWS Database Migration Service](services/dms.md)
 - [x] [AWS Device Farm](services/devicefarm.md)
 - [x] [AWS Direct Connect](services/directconnect.md)
-- [ ] AWS Directory Service
+- [x] [AWS Directory Service](services/ds.md)
 - [x] [Amazon DynamoDB](services/dynamodb.md)
-- [x] [Amazon EC2](services/ec2.md) and [Reports](services/ec2-reports)
+- [x] [Amazon EC2](services/ec2.md) and [Reports](services/ec2-reports.md)
 - [x] [Amazon EC2 Container Registry](services/ecr.md)
 - [x] [Amazon EC2 Container Service](/services/ecs.md)
 - [x] [AWS Elastic Beanstalk](services/elasticbeanstalk.md)

@@ -82,6 +82,9 @@
     <loc>https://iam.cloudonaut.io/reference/dms.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/ds.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/dynamodb.html</loc> 
   </url>
   <url>
@@ -1559,6 +1562,93 @@
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/dms/TestConnection.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/ConnectDirectory.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/CreateAlias.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/CreateComputer.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/CreateConditionalForwarder.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/CreateDirectory.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/CreateMicrosoftAD.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/CreateSnapshot.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/CreateTrust.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/DeleteConditionalForwarder.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/DeleteDirectory.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/DeleteSnapshot.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/DeleteTrust.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/DeregisterEventTopic.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/DescribeConditionalForwarders.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/DescribeDirectories.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/DescribeEventTopics.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/DescribeSnapshots.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/DescribeTrusts.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/DisableRadius.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/DisableSso.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/EnableRadius.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/EnableSso.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/GetDirectoryLimits.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/GetSnapshotLimits.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/RegisterEventTopic.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/RestoreFromSnapshot.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/UpdateConditionalForwarder.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/UpdateRadius.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/ds/VerifyTrust.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/dynamodb/BatchGetItem.html</loc> 
