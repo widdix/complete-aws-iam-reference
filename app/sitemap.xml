@@ -70,6 +70,9 @@
     <loc>https://iam.cloudonaut.io/reference/datapipeline.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/devicefarm.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/discovery.html</loc> 
   </url>
   <url>
@@ -1307,6 +1310,78 @@
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/datapipeline/ValidatePipelineDefinition.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/CreateDevicePool.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/CreateProject.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/CreateUpload.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/GetDevice.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/GetDevicePool.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/GetDevicePoolCompatibility.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/GetJob.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/GetProject.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/GetRun.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/GetSuite.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/GetTest.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/GetUpload.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/ListArtifacts.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/ListDevicePools.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/ListDevices.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/ListJobs.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/ListProjects.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/ListRuns.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/ListSamples.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/ListSuites.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/ListTests.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/ListUniqueProblems.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/ListUploads.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/devicefarm/ScheduleRun.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/discovery/CreateTags.html</loc> 

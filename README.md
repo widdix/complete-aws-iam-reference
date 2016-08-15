@@ -26,7 +26,7 @@
 - [x] [AWS Config](services/config.md)
 - [x] [Data Pipeline](services/datapipeline.md)
 - [x] [AWS Database Migration Service](services/dms.md)
-- [ ] AWS Device Farm
+- [x] [AWS Device Farm](services/devicefarm.md)
 - [ ] AWS Direct Connect
 - [ ] AWS Directory Service
 - [x] [Amazon DynamoDB](services/dynamodb.md)
