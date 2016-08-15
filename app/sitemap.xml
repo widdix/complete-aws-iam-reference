@@ -67,6 +67,9 @@
     <loc>https://iam.cloudonaut.io/reference/config.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/datapipeline.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/discovery.html</loc> 
   </url>
   <url>
@@ -1238,6 +1241,69 @@
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/config/StopConfigurationRecorder.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/ActivatePipeline.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/AddTags.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/CreatePipeline.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/DeactivatePipeline.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/DeletePipeline.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/DescribeObjects.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/DescribePipelines.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/EvaluateExpression.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/GetAccountLimits.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/GetPipelineDefinition.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/ListPipelines.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/PollForTask.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/PutAccountLimits.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/PutPipelineDefinition.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/QueryObjects.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/RemoveTags.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/ReportTaskProgress.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/ReportTaskRunnerHeartbeat.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/SetStatus.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/SetTaskStatus.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/datapipeline/ValidatePipelineDefinition.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/discovery/CreateTags.html</loc> 

@@ -24,7 +24,7 @@
 - [x] [Amazon Cognito Identity](services/cognito-identity.md)
 - [x] [Amazon Cognito Sync](services/cognito-sync.md)
 - [x] [AWS Config](services/config.md)
-- [ ] Data Pipeline
+- [x] [Data Pipeline](services/datapipeline.md)
 - [ ] AWS Database Migration Service
 - [ ] AWS Device Farm
 - [ ] AWS Direct Connect
