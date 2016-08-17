@@ -20,8 +20,8 @@ To extend the information of a service, edit the file in the services folder. Ma
 ```
 
 * Separate multiple Resources or Conditions with a `,`.
-* If no resource-level constraints apply, use a `*`-
-* If no conditions apply, use a `-`.
+* If no resource-level permissions apply, use a `*`-
+* If no service specific conditions apply, use a `-`.
 
 ## Add a service
 
@@ -34,8 +34,8 @@ The add information about a new service, create a new file in the services folde
 ```
 
 * Separate multiple Resources or Conditions with a `,`.
-* If no resource-level constraints apply, use a `*`-
-* If no conditions apply, use a `-`.
+* If no resource-level permissions apply, use a `*`-
+* If no service specific conditions apply, use a `-`.
 
 Don't forget to link to the new service in the root's README.md file.
 

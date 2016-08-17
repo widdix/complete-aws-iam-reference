@@ -3,6 +3,17 @@ var parser = require('./lib/parser.js');
 var Mustache = require('mustache');
 var async = require('neo-async');
 
+var services = require("./serviceNames.json");
+
+function getServiceName(service) {
+  var name = services[service];
+  if (name !== undefined) {
+    return name;
+  } else {
+    return service;
+  }
+}
+
 var headerTemplate = fs.readFileSync('./template/header.mustache', {encoding: 'utf8'});
 var footerTemplate = fs.readFileSync('./template/footer.mustache', {encoding: 'utf8'});
 
@@ -14,7 +25,7 @@ function renderSitemap(data) {
 
 function renderIndex(services) {
    var template = fs.readFileSync('./template/index.mustache', {encoding: 'utf8'});
-   var output = Mustache.render(template, {services: services}, {
+   var output = Mustache.render(template, {services: services.map(function(service) {return {"service": service, "serviceName": getServiceName(service)}; })}, {
     header: headerTemplate,
     footer: footerTemplate
   });
@@ -24,7 +35,7 @@ function renderIndex(services) {
 function renderReferenceService(rows) {
   var service = rows[0].service;
   var template = fs.readFileSync('./template/service.mustache', {encoding: 'utf8'});
-  var output = Mustache.render(template, {service: service, rows: rows}, {
+  var output = Mustache.render(template, {title: getServiceName(service), service: service, serviceName: getServiceName(service), rows: rows}, {
     header: headerTemplate,
     footer: footerTemplate
   });
@@ -32,10 +43,11 @@ function renderReferenceService(rows) {
 }
 
 function renderReferenceAction(rows) {
+  var service = rows[0].service;
   var template = fs.readFileSync('./template/action.mustache', {encoding: 'utf8'});
   fs.mkdirSync('../app/reference/' + rows[0].service);
   rows.forEach(function(row) {
-    var output = Mustache.render(template, row, {
+    var output = Mustache.render(template, {title: row.service + ":" + row.action + " - " + getServiceName(row.service), service: service, serviceName: getServiceName(service), row: row}, {
       header: headerTemplate,
       footer: footerTemplate
     });
