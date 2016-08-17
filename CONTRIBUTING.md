@@ -1,4 +1,15 @@
-A good starting point in the AWS IAM documentation can be found here: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actionsconditions.html and the [IAM Policy Simulator](https://policysim.aws.amazon.com)
+# Complete AWS IAM Reference
+
+All information is stored in Markdown files in the `services` folder. Everything inside `app` is generated from the Markdown files.
+
+## Sources of truth
+
+A good starting point in the AWS IAM documentation can be:
+
+* http://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html
+* https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actionsconditions.html
+* https://policysim.aws.amazon.com
+* in the services documentation
 
 ## Extend a service
 
@@ -8,7 +19,9 @@ To extend the information of a service, edit the file in the services folder. Ma
 | Action | Description | Resource | Condition |
 ```
 
-Separate multiple Resources or Conditions with a `,`.
+* Separate multiple Resources or Conditions with a `,`.
+* If no resource-level constraints apply, use a `*`-
+* If no conditions apply, use a `-`.
 
 ## Add a service
 
@@ -16,10 +29,15 @@ The add information about a new service, create a new file in the services folde
 
 ```
 | Action | Description | Resource | Condition |
+| --- | --- | --- | --- |
+| [service:Action](http://docs.aws.amazon.com/Service/latest/APIReference/API_Action.html) | Some description. | * | - |
+```
 
-Separate multiple Resources or Conditions with a `,`.
+* Separate multiple Resources or Conditions with a `,`.
+* If no resource-level constraints apply, use a `*`-
+* If no conditions apply, use a `-`.
 
-Don't forget to link to the new service in the root README.md file.
+Don't forget to link to the new service in the root's README.md file.
 
 ## Publish to iam.cloudonaut.io
 
