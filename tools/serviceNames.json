@@ -57,7 +57,7 @@
   "rds": "Amazon Relational Database Service",
   "redshift": "Amazon Redshift",
   "route53": "Amazon Route 53",
-  "route53domains": "mazon Route 53 Domains",
+  "route53domains": "Amazon Route 53 Domains",
   "s3": "Amazon Simple Storage Service",
   "sdb": "Amazon SimpleDB",
   "ses": "Amazon SES",
