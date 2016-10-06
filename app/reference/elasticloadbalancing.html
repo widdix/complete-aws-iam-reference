@@ -59,18 +59,6 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li style="padding-top: 14px;">
-              <script type="text/javascript">
-                reddit_title='Complete AWS IAM Reference'
-                reddit_target='aws'
-                reddit_url='https://iam.cloudonaut.io/'
-              </script>
-              <script type="text/javascript" src="https://www.redditstatic.com/button/button1.js"></script>
-            </li>
-            <li style="padding-top: 14px;">
-              <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="Complete AWS IAM Reference" data-url="https://iam.cloudonaut.io" data-count="horizontal">Vote on Hacker News</a>
-              <script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
-            </li>
-            <li style="padding-top: 14px;">
               <div class="fb-share-button" data-href="https://iam.cloudonaut.io" data-layout="button_count" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fiam.cloudonaut.io%2F&amp;src=sdkpreparse">Teilen</a></div>
             </li>
             <li style="padding-top: 14px;">
@@ -122,7 +110,7 @@
           </td>
           <td>
             <div class="scrollable">
-            Adds the specified tags to the specified load balancer.
+            Classic Load Balancer: Adds the specified tags to the specified load balancer.
             </div>
           </td>
           <td>
@@ -143,12 +131,38 @@
         <tr>
           <td>
             <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/AddTags.html">elasticloadbalancing:AddTags</a> <a href ng-click="copy2clipboard('elasticloadbalancing:AddTags')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Adds the specified tags to the specified resource.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
               <a href="/reference/elasticloadbalancing/ApplySecurityGroupsToLoadBalancer.html">elasticloadbalancing:ApplySecurityGroupsToLoadBalancer</a> <a href ng-click="copy2clipboard('elasticloadbalancing:ApplySecurityGroupsToLoadBalancer')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Associates one or more security groups with your load balancer in a virtual private cloud (VPC).
+            Classic Load Balancer: Associates one or more security groups with your load balancer in a virtual private cloud (VPC).
             </div>
           </td>
           <td>
@@ -174,7 +188,7 @@
           </td>
           <td>
             <div class="scrollable">
-            Adds one or more subnets to the set of configured subnets for the specified load balancer.
+            Classic Load Balancer: Adds one or more subnets to the set of configured subnets for the specified load balancer.
             </div>
           </td>
           <td>
@@ -200,7 +214,7 @@
           </td>
           <td>
             <div class="scrollable">
-            Specifies the health check settings to use when evaluating the health state of your back-end instances.
+            Classic Load Balancer: Specifies the health check settings to use when evaluating the health state of your back-end instances.
             </div>
           </td>
           <td>
@@ -226,7 +240,7 @@
           </td>
           <td>
             <div class="scrollable">
-            Generates a stickiness policy with sticky session lifetimes that follow that of an application-generated cookie.
+            Classic Load Balancer: Generates a stickiness policy with sticky session lifetimes that follow that of an application-generated cookie.
             </div>
           </td>
           <td>
@@ -247,12 +261,38 @@
         <tr>
           <td>
             <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/CreateListener.html">elasticloadbalancing:CreateListener</a> <a href ng-click="copy2clipboard('elasticloadbalancing:CreateListener')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Creates a listener for the specified Application Load Balancer.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
               <a href="/reference/elasticloadbalancing/CreateLBCookieStickinessPolicy.html">elasticloadbalancing:CreateLBCookieStickinessPolicy</a> <a href ng-click="copy2clipboard('elasticloadbalancing:CreateLBCookieStickinessPolicy')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Generates a stickiness policy with sticky session lifetimes controlled by the lifetime of the browser (user-agent) or a specified expiration period.
+            Classic Load Balancer: Generates a stickiness policy with sticky session lifetimes controlled by the lifetime of the browser (user-agent) or a specified expiration period.
             </div>
           </td>
           <td>
@@ -278,7 +318,7 @@
           </td>
           <td>
             <div class="scrollable">
-            Creates a load balancer.
+            Classic Load Balancer: Creates a load balancer.
             </div>
           </td>
           <td>
@@ -299,12 +339,38 @@
         <tr>
           <td>
             <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/CreateLoadBalancer.html">elasticloadbalancing:CreateLoadBalancer</a> <a href ng-click="copy2clipboard('elasticloadbalancing:CreateLoadBalancer')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Creates an Application Load Balancer.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
               <a href="/reference/elasticloadbalancing/CreateLoadBalancerListeners.html">elasticloadbalancing:CreateLoadBalancerListeners</a> <a href ng-click="copy2clipboard('elasticloadbalancing:CreateLoadBalancerListeners')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Creates one or more listeners for the specified load balancer.
+            Classic Load Balancer: Creates one or more listeners for the specified load balancer.
             </div>
           </td>
           <td>
@@ -330,7 +396,111 @@
           </td>
           <td>
             <div class="scrollable">
-            Creates a policy with the specified attributes for the specified load balancer.
+            Classic Load Balancer: Creates a policy with the specified attributes for the specified load balancer.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticloadbalancing:$region:$account-id:loadbalancer&#x2F;$load-balancer-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/CreateRule.html">elasticloadbalancing:CreateRule</a> <a href ng-click="copy2clipboard('elasticloadbalancing:CreateRule')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Creates a rule for the specified listener.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/CreateTargetGroup.html">elasticloadbalancing:CreateTargetGroup</a> <a href ng-click="copy2clipboard('elasticloadbalancing:CreateTargetGroup')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Creates a target group.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/DeleteListener.html">elasticloadbalancing:DeleteListener</a> <a href ng-click="copy2clipboard('elasticloadbalancing:DeleteListener')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Deletes the specified listener.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/DeleteLoadBalancer.html">elasticloadbalancing:DeleteLoadBalancer</a> <a href ng-click="copy2clipboard('elasticloadbalancing:DeleteLoadBalancer')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Classic Load Balancer: Deletes the specified load balancer.
             </div>
           </td>
           <td>
@@ -356,13 +526,13 @@
           </td>
           <td>
             <div class="scrollable">
-            Deletes the specified load balancer.
+            Application Load Balancer: Deletes the specified Application Load Balancer and its attached listeners.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
-                <li>arn:aws:elasticloadbalancing:$region:$account-id:loadbalancer&#x2F;$load-balancer-name</li>
+                <li>*</li>
               </ul>
             </div>
           </td>
@@ -382,7 +552,7 @@
           </td>
           <td>
             <div class="scrollable">
-            Deletes the specified listeners from the specified load balancer.
+            Classic Load Balancer: Deletes the specified listeners from the specified load balancer.
             </div>
           </td>
           <td>
@@ -408,13 +578,65 @@
           </td>
           <td>
             <div class="scrollable">
-            Deletes the specified policy from the specified load balancer.
+            Classic Load Balancer: Deletes the specified policy from the specified load balancer.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
                 <li>arn:aws:elasticloadbalancing:$region:$account-id:loadbalancer&#x2F;$load-balancer-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/DeleteRule.html">elasticloadbalancing:DeleteRule</a> <a href ng-click="copy2clipboard('elasticloadbalancing:DeleteRule')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Deletes the specified rule.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/DeleteTargetGroup.html">elasticloadbalancing:DeleteTargetGroup</a> <a href ng-click="copy2clipboard('elasticloadbalancing:DeleteTargetGroup')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Deletes the specified target group.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
               </ul>
             </div>
           </td>
@@ -434,7 +656,7 @@
           </td>
           <td>
             <div class="scrollable">
-            Deregisters the specified instances from the specified load balancer.
+            Classic Load Balancer: Deregisters the specified instances from the specified load balancer.
             </div>
           </td>
           <td>
@@ -455,12 +677,64 @@
         <tr>
           <td>
             <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/DeregisterTargets.html">elasticloadbalancing:DeregisterTargets</a> <a href ng-click="copy2clipboard('elasticloadbalancing:DeregisterTargets')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Deregisters the specified targets from the specified target group.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
               <a href="/reference/elasticloadbalancing/DescribeInstanceHealth.html">elasticloadbalancing:DescribeInstanceHealth</a> <a href ng-click="copy2clipboard('elasticloadbalancing:DescribeInstanceHealth')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Describes the state of the specified instances with respect to the specified load balancer.
+            Classic Load Balancer: Describes the state of the specified instances with respect to the specified load balancer.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/DescribeListeners.html">elasticloadbalancing:DescribeListeners</a> <a href ng-click="copy2clipboard('elasticloadbalancing:DescribeListeners')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Describes the specified listeners or the listeners for the specified Application Load Balancer.
             </div>
           </td>
           <td>
@@ -486,7 +760,33 @@
           </td>
           <td>
             <div class="scrollable">
-            Describes the attributes for the specified load balancer.
+            Classic Load Balancer: Describes the attributes for the specified load balancer.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/DescribeLoadBalancerAttributes.html">elasticloadbalancing:DescribeLoadBalancerAttributes</a> <a href ng-click="copy2clipboard('elasticloadbalancing:DescribeLoadBalancerAttributes')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Describes the attributes for the specified Application Load Balancer.
             </div>
           </td>
           <td>
@@ -512,7 +812,7 @@
           </td>
           <td>
             <div class="scrollable">
-            Describes the specified load balancer policy types or all load balancer policy types.
+            Classic Load Balancer: Describes the specified load balancer policy types or all load balancer policy types.
             </div>
           </td>
           <td>
@@ -538,7 +838,7 @@
           </td>
           <td>
             <div class="scrollable">
-            Describes the specified policies.
+            Classic Load Balancer: Describes the specified policies.
             </div>
           </td>
           <td>
@@ -564,7 +864,85 @@
           </td>
           <td>
             <div class="scrollable">
-            Describes the specified the load balancers.
+            Classic Load Balancer: Describes the specified the load balancers.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/DescribeLoadBalancers.html">elasticloadbalancing:DescribeLoadBalancers</a> <a href ng-click="copy2clipboard('elasticloadbalancing:DescribeLoadBalancers')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Describes the specified Application Load Balancers or all of your Application Load Balancers.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/DescribeRules.html">elasticloadbalancing:DescribeRules</a> <a href ng-click="copy2clipboard('elasticloadbalancing:DescribeRules')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Describes the specified rules or the rules for the specified listener.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/DescribeSSLPolicies.html">elasticloadbalancing:DescribeSSLPolicies</a> <a href ng-click="copy2clipboard('elasticloadbalancing:DescribeSSLPolicies')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Describes the specified policies or all policies used for SSL negotiation.
             </div>
           </td>
           <td>
@@ -590,7 +968,111 @@
           </td>
           <td>
             <div class="scrollable">
-            Describes the tags associated with the specified load balancers.
+            Classic Load Balancer: Describes the tags associated with the specified load balancers.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/DescribeTags.html">elasticloadbalancing:DescribeTags</a> <a href ng-click="copy2clipboard('elasticloadbalancing:DescribeTags')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Describes the tags for the specified resources.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/DescribeTargetGroupAttributes.html">elasticloadbalancing:DescribeTargetGroupAttributes</a> <a href ng-click="copy2clipboard('elasticloadbalancing:DescribeTargetGroupAttributes')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Describes the attributes for the specified target group.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/DescribeTargetGroups.html">elasticloadbalancing:DescribeTargetGroups</a> <a href ng-click="copy2clipboard('elasticloadbalancing:DescribeTargetGroups')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Describes the specified target groups or all of your target groups.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/DescribeTargetHealth.html">elasticloadbalancing:DescribeTargetHealth</a> <a href ng-click="copy2clipboard('elasticloadbalancing:DescribeTargetHealth')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Describes the health of the specified targets or all of your targets.
             </div>
           </td>
           <td>
@@ -616,7 +1098,7 @@
           </td>
           <td>
             <div class="scrollable">
-            Removes the specified subnets from the set of configured subnets for the load balancer.
+            Classic Load Balancer: Removes the specified subnets from the set of configured subnets for the load balancer.
             </div>
           </td>
           <td>
@@ -642,7 +1124,7 @@
           </td>
           <td>
             <div class="scrollable">
-            Removes the specified Availability Zones from the set of Availability Zones for the specified load balancer.
+            Classic Load Balancer: Removes the specified Availability Zones from the set of Availability Zones for the specified load balancer.
             </div>
           </td>
           <td>
@@ -668,7 +1150,59 @@
           </td>
           <td>
             <div class="scrollable">
-            Adds the specified Availability Zones to the set of Availability Zones for the specified load balancer.
+            Classic Load Balancer: Adds the specified Availability Zones to the set of Availability Zones for the specified load balancer.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>arn:aws:elasticloadbalancing:$region:$account-id:loadbalancer&#x2F;$load-balancer-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/ModifyListener.html">elasticloadbalancing:ModifyListener</a> <a href ng-click="copy2clipboard('elasticloadbalancing:ModifyListener')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Modifies the specified properties of the specified listener.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/ModifyLoadBalancerAttributes.html">elasticloadbalancing:ModifyLoadBalancerAttributes</a> <a href ng-click="copy2clipboard('elasticloadbalancing:ModifyLoadBalancerAttributes')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Classic Load Balancer: Modifies the attributes of the specified load balancer.
             </div>
           </td>
           <td>
@@ -694,7 +1228,137 @@
           </td>
           <td>
             <div class="scrollable">
-            Modifies the attributes of the specified load balancer.
+            Application Load Balancer: Modifies the specified attributes of the specified Application Load Balancer.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/ModifyRule.html">elasticloadbalancing:ModifyRule</a> <a href ng-click="copy2clipboard('elasticloadbalancing:ModifyRule')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Modifies the specified rule.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/ModifyTargetGroup.html">elasticloadbalancing:ModifyTargetGroup</a> <a href ng-click="copy2clipboard('elasticloadbalancing:ModifyTargetGroup')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Modifies the health checks used when evaluating the health state of the targets in the specified target group.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/ModifyTargetGroupAttributes.html">elasticloadbalancing:ModifyTargetGroupAttributes</a> <a href ng-click="copy2clipboard('elasticloadbalancing:ModifyTargetGroupAttributes')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Modifies the specified attributes of the specified target group.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/RegisterTargets.html">elasticloadbalancing:RegisterTargets</a> <a href ng-click="copy2clipboard('elasticloadbalancing:RegisterTargets')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Registers the specified targets with the specified target group.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/RegisterInstancesWithLoadBalancer.html">elasticloadbalancing:RegisterInstancesWithLoadBalancer</a> <a href ng-click="copy2clipboard('elasticloadbalancing:RegisterInstancesWithLoadBalancer')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Classic Load Balancer: Adds the specified instances to the specified load balancer.
             </div>
           </td>
           <td>
@@ -720,7 +1384,7 @@
           </td>
           <td>
             <div class="scrollable">
-            Removes one or more tags from the specified load balancer.
+            Classic Load Balancer: Removes one or more tags from the specified load balancer.
             </div>
           </td>
           <td>
@@ -741,18 +1405,18 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/elasticloadbalancing/RegisterInstancesWithLoadBalancer.html">elasticloadbalancing:RegisterInstancesWithLoadBalancer</a> <a href ng-click="copy2clipboard('elasticloadbalancing:RegisterInstancesWithLoadBalancer')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+              <a href="/reference/elasticloadbalancing/RemoveTags.html">elasticloadbalancing:RemoveTags</a> <a href ng-click="copy2clipboard('elasticloadbalancing:RemoveTags')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Adds the specified instances to the specified load balancer.
+            Application Load Balancer: Removes the specified tags from the specified resource.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
-                <li>arn:aws:elasticloadbalancing:$region:$account-id:loadbalancer&#x2F;$load-balancer-name</li>
+                <li>*</li>
               </ul>
             </div>
           </td>
@@ -772,7 +1436,7 @@
           </td>
           <td>
             <div class="scrollable">
-            Sets the certificate that terminates the specified listener&#39;s SSL connections.
+            Classic Load Balancer: Sets the certificate that terminates the specified listener&#39;s SSL connections.
             </div>
           </td>
           <td>
@@ -798,7 +1462,7 @@
           </td>
           <td>
             <div class="scrollable">
-            Replaces the set of policies associated with the specified port on which the back-end server is listening with a new set of policies.
+            Classic Load Balancer: Replaces the set of policies associated with the specified port on which the back-end server is listening with a new set of policies.
             </div>
           </td>
           <td>
@@ -824,13 +1488,91 @@
           </td>
           <td>
             <div class="scrollable">
-            Replaces the current set of policies for the specified load balancer port with the specified set of policies.
+            Classic Load Balancer: Replaces the current set of policies for the specified load balancer port with the specified set of policies.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
                 <li>arn:aws:elasticloadbalancing:$region:$account-id:loadbalancer&#x2F;$load-balancer-name</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/SetRulePriorities.html">elasticloadbalancing:SetRulePriorities</a> <a href ng-click="copy2clipboard('elasticloadbalancing:SetRulePriorities')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Sets the priorities of the specified rules.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/SetSecurityGroups.html">elasticloadbalancing:SetSecurityGroups</a> <a href ng-click="copy2clipboard('elasticloadbalancing:SetSecurityGroups')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Associates the specified security groups with the specified load balancer.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li><a href="/global-conditions.html">Global Conditions</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="scrollable">
+              <a href="/reference/elasticloadbalancing/SetSubnets.html">elasticloadbalancing:SetSubnets</a> <a href ng-click="copy2clipboard('elasticloadbalancing:SetSubnets')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+            Application Load Balancer: Enables the Availability Zone for the specified subnets for the specified load balancer.
+            </div>
+          </td>
+          <td>
+            <div class="scrollable">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>*</li>
               </ul>
             </div>
           </td>

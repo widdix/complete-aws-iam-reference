@@ -2776,6 +2776,9 @@
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/AddTags.html</loc> 
     </url>
     <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/AddTags.html</loc> 
+    </url>
+    <url>
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/ApplySecurityGroupsToLoadBalancer.html</loc> 
     </url>
     <url>
@@ -2788,7 +2791,13 @@
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/CreateAppCookieStickinessPolicy.html</loc> 
     </url>
     <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/CreateListener.html</loc> 
+    </url>
+    <url>
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/CreateLBCookieStickinessPolicy.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/CreateLoadBalancer.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/CreateLoadBalancer.html</loc> 
@@ -2800,6 +2809,18 @@
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/CreateLoadBalancerPolicy.html</loc> 
     </url>
     <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/CreateRule.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/CreateTargetGroup.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DeleteListener.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DeleteLoadBalancer.html</loc> 
+    </url>
+    <url>
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DeleteLoadBalancer.html</loc> 
     </url>
     <url>
@@ -2809,10 +2830,25 @@
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DeleteLoadBalancerPolicy.html</loc> 
     </url>
     <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DeleteRule.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DeleteTargetGroup.html</loc> 
+    </url>
+    <url>
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DeregisterInstancesFromLoadBalancer.html</loc> 
     </url>
     <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DeregisterTargets.html</loc> 
+    </url>
+    <url>
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DescribeInstanceHealth.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DescribeListeners.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DescribeLoadBalancerAttributes.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DescribeLoadBalancerAttributes.html</loc> 
@@ -2827,7 +2863,28 @@
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DescribeLoadBalancers.html</loc> 
     </url>
     <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DescribeLoadBalancers.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DescribeRules.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DescribeSSLPolicies.html</loc> 
+    </url>
+    <url>
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DescribeTags.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DescribeTags.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DescribeTargetGroupAttributes.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DescribeTargetGroups.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DescribeTargetHealth.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/DetachLoadBalancerFromSubnets.html</loc> 
@@ -2839,13 +2896,34 @@
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/EnableAvailabilityZonesForLoadBalancer.html</loc> 
     </url>
     <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/ModifyListener.html</loc> 
+    </url>
+    <url>
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/ModifyLoadBalancerAttributes.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/ModifyLoadBalancerAttributes.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/ModifyRule.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/ModifyTargetGroup.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/ModifyTargetGroupAttributes.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/RegisterTargets.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/RegisterInstancesWithLoadBalancer.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/RemoveTags.html</loc> 
     </url>
     <url>
-      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/RegisterInstancesWithLoadBalancer.html</loc> 
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/RemoveTags.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/SetLoadBalancerListenerSSLCertificate.html</loc> 
@@ -2855,6 +2933,15 @@
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/SetLoadBalancerPoliciesOfListener.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/SetRulePriorities.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/SetSecurityGroups.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/elasticloadbalancing/SetSubnets.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/elasticmapreduce/AddInstanceGroups.html</loc> 
