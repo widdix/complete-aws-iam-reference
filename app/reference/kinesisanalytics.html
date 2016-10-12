@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- title above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Amazon Kinesis Streams - Complete AWS IAM Reference</title>
+    <title>Amazon Kinesis Analytics - Complete AWS IAM Reference</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
@@ -80,7 +80,7 @@
 <div class="row">
   <ol class="breadcrumb">
     <li><a href="/">Complete AWS IAM Reference</a></li>
-    <li class="active">Amazon Kinesis Streams</li>
+    <li class="active">Amazon Kinesis Analytics</li>
   </ol>
 
   <div class="table-responsive">
@@ -88,16 +88,16 @@
       <thead>
         <tr>
           <th style="width: 25%;">
-            Action <a href="/reference/index.html#/kinesis" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+            Action <a href="/reference/index.html#/kinesisanalytics" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
           </th>
           <th style="width: 25%;">
-            Description <a href="/reference/index.html#/kinesis" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+            Description <a href="/reference/index.html#/kinesisanalytics" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
           </th>
           <th style="width: 25%;">
-            Resources <a href="/reference/index.html#/kinesis" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+            Resources <a href="/reference/index.html#/kinesisanalytics" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
           </th>
           <th style="width: 25%;">
-            Conditions <a href="/reference/index.html#/kinesis" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
+            Conditions <a href="/reference/index.html#/kinesisanalytics" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></a>
           </th>
         </tr>
       </thead>
@@ -105,18 +105,18 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/kinesis/AddTagsToStream.html">kinesis:AddTagsToStream</a> <a href ng-click="copy2clipboard('kinesis:AddTagsToStream')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+              <a href="/reference/kinesisanalytics/AddApplicationInput.html">kinesisanalytics:AddApplicationInput</a> <a href ng-click="copy2clipboard('kinesisanalytics:AddApplicationInput')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Adds or updates tags for the specified Amazon Kinesis stream.
+            Adds a streaming source to your Amazon Kinesis application.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
-                <li>???</li>
+                <li>arn:aws:kinesisanalytics:$region:$account-id:application&#x2F;$application-name</li>
               </ul>
             </div>
           </td>
@@ -131,18 +131,18 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/kinesis/CreateStream.html">kinesis:CreateStream</a> <a href ng-click="copy2clipboard('kinesis:CreateStream')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+              <a href="/reference/kinesisanalytics/AddApplicationOutput.html">kinesisanalytics:AddApplicationOutput</a> <a href ng-click="copy2clipboard('kinesisanalytics:AddApplicationOutput')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Creates an Amazon Kinesis stream.
+            Adds an external destination to your Amazon Kinesis Analytics application.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
-                <li>???</li>
+                <li>arn:aws:kinesisanalytics:$region:$account-id:application&#x2F;$application-name</li>
               </ul>
             </div>
           </td>
@@ -157,18 +157,18 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/kinesis/DecreaseStreamRetentionPeriod.html">kinesis:DecreaseStreamRetentionPeriod</a> <a href ng-click="copy2clipboard('kinesis:DecreaseStreamRetentionPeriod')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+              <a href="/reference/kinesisanalytics/AddApplicationReferenceDataSource.html">kinesisanalytics:AddApplicationReferenceDataSource</a> <a href ng-click="copy2clipboard('kinesisanalytics:AddApplicationReferenceDataSource')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Decreases the Amazon Kinesis stream&#39;s retention period, which is the length of time data records are accessible after they are added to the stream.
+            Adds a reference data source to an existing application.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
-                <li>???</li>
+                <li>arn:aws:kinesisanalytics:$region:$account-id:application&#x2F;$application-name</li>
               </ul>
             </div>
           </td>
@@ -183,18 +183,18 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/kinesis/DeleteStream.html">kinesis:DeleteStream</a> <a href ng-click="copy2clipboard('kinesis:DeleteStream')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+              <a href="/reference/kinesisanalytics/CreateApplication.html">kinesisanalytics:CreateApplication</a> <a href ng-click="copy2clipboard('kinesisanalytics:CreateApplication')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Deletes an Amazon Kinesis stream and all its shards and data.
+            Creates an Amazon Kinesis Analytics application.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
-                <li>???</li>
+                <li>arn:aws:kinesisanalytics:$region:$account-id:application&#x2F;$application-name</li>
               </ul>
             </div>
           </td>
@@ -209,18 +209,18 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/kinesis/DescribeStream.html">kinesis:DescribeStream</a> <a href ng-click="copy2clipboard('kinesis:DescribeStream')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+              <a href="/reference/kinesisanalytics/DeleteApplication.html">kinesisanalytics:DeleteApplication</a> <a href ng-click="copy2clipboard('kinesisanalytics:DeleteApplication')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Describes the specified Amazon Kinesis stream.
+            Deletes the specified application.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
-                <li>arn:aws:kinesis:$region:$account-id:stream&#x2F;$stream-name</li>
+                <li>arn:aws:kinesisanalytics:$region:$account-id:application&#x2F;$application-name</li>
               </ul>
             </div>
           </td>
@@ -235,18 +235,18 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/kinesis/GetShardIterator.html">kinesis:GetShardIterator</a> <a href ng-click="copy2clipboard('kinesis:GetShardIterator')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+              <a href="/reference/kinesisanalytics/DeleteApplicationOutput.html">kinesisanalytics:DeleteApplicationOutput</a> <a href ng-click="copy2clipboard('kinesisanalytics:DeleteApplicationOutput')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Gets an Amazon Kinesis shard iterator.
+            Deletes output destination configuration from your application configuration.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
-                <li>arn:aws:kinesis:$region:$account-id:stream&#x2F;$stream-name</li>
+                <li>arn:aws:kinesisanalytics:$region:$account-id:application&#x2F;$application-name</li>
               </ul>
             </div>
           </td>
@@ -261,18 +261,18 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/kinesis/GetRecords.html">kinesis:GetRecords</a> <a href ng-click="copy2clipboard('kinesis:GetRecords')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+              <a href="/reference/kinesisanalytics/DeleteApplicationReferenceDataSource.html">kinesisanalytics:DeleteApplicationReferenceDataSource</a> <a href ng-click="copy2clipboard('kinesisanalytics:DeleteApplicationReferenceDataSource')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Gets data records from an Amazon Kinesis stream&#39;s shard.
+            Deletes a reference data source configuration from the specified application configuration.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
-                <li>arn:aws:kinesis:$region:$account-id:stream&#x2F;$stream-name</li>
+                <li>arn:aws:kinesisanalytics:$region:$account-id:application&#x2F;$application-name</li>
               </ul>
             </div>
           </td>
@@ -287,18 +287,18 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/kinesis/IncreaseStreamRetentionPeriod.html">kinesis:IncreaseStreamRetentionPeriod</a> <a href ng-click="copy2clipboard('kinesis:IncreaseStreamRetentionPeriod')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+              <a href="/reference/kinesisanalytics/DescribeApplication.html">kinesisanalytics:DescribeApplication</a> <a href ng-click="copy2clipboard('kinesisanalytics:DescribeApplication')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Increases the Amazon Kinesis stream&#39;s retention period, which is the length of time data records are accessible after they are added to the stream.
+            Returns information about a specific Amazon Kinesis Analytics application.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
-                <li>???</li>
+                <li>arn:aws:kinesisanalytics:$region:$account-id:application&#x2F;$application-name</li>
               </ul>
             </div>
           </td>
@@ -313,12 +313,12 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/kinesis/ListStreams.html">kinesis:ListStreams</a> <a href ng-click="copy2clipboard('kinesis:ListStreams')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+              <a href="/reference/kinesisanalytics/DiscoverInputSchema.html">kinesisanalytics:DiscoverInputSchema</a> <a href ng-click="copy2clipboard('kinesisanalytics:DiscoverInputSchema')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Lists your Amazon Kinesis streams.
+            Infers a schema by evaluating sample records on the specified streaming source (Amazon Kinesis stream or Amazon Kinesis Firehose delivery stream).
             </div>
           </td>
           <td>
@@ -339,18 +339,18 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/kinesis/ListTagsForStream.html">kinesis:ListTagsForStream</a> <a href ng-click="copy2clipboard('kinesis:ListTagsForStream')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+              <a href="/reference/kinesisanalytics/ListApplications.html">kinesisanalytics:ListApplications</a> <a href ng-click="copy2clipboard('kinesisanalytics:ListApplications')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Lists the tags for the specified Amazon Kinesis stream.
+            Returns a list of Amazon Kinesis Analytics applications in your account.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
-                <li>???</li>
+                <li>*</li>
               </ul>
             </div>
           </td>
@@ -365,18 +365,18 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/kinesis/MergeShards.html">kinesis:MergeShards</a> <a href ng-click="copy2clipboard('kinesis:MergeShards')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+              <a href="/reference/kinesisanalytics/StartApplication.html">kinesisanalytics:StartApplication</a> <a href ng-click="copy2clipboard('kinesisanalytics:StartApplication')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Merges two adjacent shards in an Amazon Kinesis stream and combines them into a single shard to reduce the stream&#39;s capacity to ingest and transport data.
+            Starts the specified Amazon Kinesis Analytics application.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
-                <li>???</li>
+                <li>arn:aws:kinesisanalytics:$region:$account-id:application&#x2F;$application-name</li>
               </ul>
             </div>
           </td>
@@ -391,18 +391,18 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/kinesis/PutRecord.html">kinesis:PutRecord</a> <a href ng-click="copy2clipboard('kinesis:PutRecord')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+              <a href="/reference/kinesisanalytics/StopApplication.html">kinesisanalytics:StopApplication</a> <a href ng-click="copy2clipboard('kinesisanalytics:StopApplication')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Writes a single data record into an Amazon Kinesis stream.
+            Stops the application from processing input data.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
-                <li>arn:aws:kinesis:$region:$account-id:stream&#x2F;$stream-name</li>
+                <li>arn:aws:kinesisanalytics:$region:$account-id:application&#x2F;$application-name</li>
               </ul>
             </div>
           </td>
@@ -417,70 +417,18 @@
         <tr>
           <td>
             <div class="scrollable">
-              <a href="/reference/kinesis/PutRecords.html">kinesis:PutRecords</a> <a href ng-click="copy2clipboard('kinesis:PutRecords')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
+              <a href="/reference/kinesisanalytics/UpdateApplication.html">kinesisanalytics:UpdateApplication</a> <a href ng-click="copy2clipboard('kinesisanalytics:UpdateApplication')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
             </div>
           </td>
           <td>
             <div class="scrollable">
-            Writes multiple data records into an Amazon Kinesis stream in a single call (also referred to as a PutRecords request).
-            </div>
-          </td>
-          <td>
-            <div class="scrollable">
-              <ul style="list-style-type: none; padding-left: 0;">
-                <li>arn:aws:kinesis:$region:$account-id:stream&#x2F;$stream-name</li>
-              </ul>
+            Updates an existing Amazon Kinesis Analytics application.
             </div>
           </td>
           <td>
             <div class="scrollable">
               <ul style="list-style-type: none; padding-left: 0;">
-                <li><a href="/global-conditions.html">Global Conditions</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="scrollable">
-              <a href="/reference/kinesis/RemoveTagsFromStream.html">kinesis:RemoveTagsFromStream</a> <a href ng-click="copy2clipboard('kinesis:RemoveTagsFromStream')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
-            </div>
-          </td>
-          <td>
-            <div class="scrollable">
-            Removes tags from the specified Amazon Kinesis stream.
-            </div>
-          </td>
-          <td>
-            <div class="scrollable">
-              <ul style="list-style-type: none; padding-left: 0;">
-                <li>???</li>
-              </ul>
-            </div>
-          </td>
-          <td>
-            <div class="scrollable">
-              <ul style="list-style-type: none; padding-left: 0;">
-                <li><a href="/global-conditions.html">Global Conditions</a></li>
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="scrollable">
-              <a href="/reference/kinesis/SplitShard.html">kinesis:SplitShard</a> <a href ng-click="copy2clipboard('kinesis:SplitShard')" class="btn btn-default btn-xs" title="copy to clipboard"><i class="glyphicon glyphicon-floppy-open"></i></a>
-            </div>
-          </td>
-          <td>
-            <div class="scrollable">
-            Splits a shard into two new shards in the Amazon Kinesis stream to increase the stream&#39;s capacity to ingest and transport data.
-            </div>
-          </td>
-          <td>
-            <div class="scrollable">
-              <ul style="list-style-type: none; padding-left: 0;">
-                <li>???</li>
+                <li>arn:aws:kinesisanalytics:$region:$account-id:application&#x2F;$application-name</li>
               </ul>
             </div>
           </td>

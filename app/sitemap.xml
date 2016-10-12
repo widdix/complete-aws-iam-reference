@@ -151,6 +151,9 @@
     <loc>https://iam.cloudonaut.io/reference/kinesis.html</loc> 
   </url>
   <url>
+    <loc>https://iam.cloudonaut.io/reference/kinesisanalytics.html</loc> 
+  </url>
+  <url>
     <loc>https://iam.cloudonaut.io/reference/kms.html</loc> 
   </url>
   <url>
@@ -3989,6 +3992,45 @@
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/kinesis/SplitShard.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/kinesisanalytics/AddApplicationInput.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/kinesisanalytics/AddApplicationOutput.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/kinesisanalytics/AddApplicationReferenceDataSource.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/kinesisanalytics/CreateApplication.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/kinesisanalytics/DeleteApplication.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/kinesisanalytics/DeleteApplicationOutput.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/kinesisanalytics/DeleteApplicationReferenceDataSource.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/kinesisanalytics/DescribeApplication.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/kinesisanalytics/DiscoverInputSchema.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/kinesisanalytics/ListApplications.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/kinesisanalytics/StartApplication.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/kinesisanalytics/StopApplication.html</loc> 
+    </url>
+    <url>
+      <loc>https://iam.cloudonaut.io/reference/kinesisanalytics/UpdateApplication.html</loc> 
     </url>
     <url>
       <loc>https://iam.cloudonaut.io/reference/kms/CancelKeyDeletion.html</loc> 
