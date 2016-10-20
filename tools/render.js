@@ -56,8 +56,6 @@ function renderReferenceAction(rows) {
   });
 }
 
-fs.emptyDirSync('../app/reference');
-fs.copySync('./static/index.html', '../app/reference/index.html');
 var files = fs.readdirSync('../services');
 var contents = files
   .map(function(file) {
