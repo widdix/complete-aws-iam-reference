@@ -1,6 +1,7 @@
 {
   "acm": "AWS Certificate Manager",
   "apigateway": "Amazon API Gateway",
+  "application-autoscaling": "Application Auto Scaling",
   "appstream": "Amazon AppStream",
   "autoscaling": "Auto Scaling",
   "aws-marketplace-management": "AWS Marketplace Management Portal",
