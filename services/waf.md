@@ -38,4 +38,3 @@
 | [waf:UpdateSqlInjectionMatchSet](http://docs.aws.amazon.com/waf/latest/APIReference/API_UpdateSqlInjectionMatchSet.html) | Inserts or deletes SqlInjectionMatchTuple objects (filters) in a SqlInjectionMatchSet. | arn:aws:waf:$region:$account-id:sqlinjectionmatchset/$entity-id | - |
 | [waf:UpdateWebACL](http://docs.aws.amazon.com/waf/latest/APIReference/API_UpdateWebACL.html) | Inserts or deletes ActivatedRule objects in a WebACL. | arn:aws:waf:$region:$account-id:webacl/$entity-id | - |
 | [waf:UpdateXssMatchSet](http://docs.aws.amazon.com/waf/latest/APIReference/API_UpdateXssMatchSet.html) | Inserts or deletes XssMatchTuple objects (filters) in an XssMatchSet. | arn:aws:waf:$region:$account-id:xssmatchset/$entity-id | - |
-
