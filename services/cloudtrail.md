@@ -9,6 +9,6 @@
 | [cloudtrail:ListTags](http://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_ListTags.html) | Lists the tags for the trail in the current region. | ??? | - |
 | [cloudtrail:LookupEvents](http://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_LookupEvents.html) | Looks up API activity events captured by CloudTrail that create, update, or delete resources in your account. | ??? | - |
 | [cloudtrail:RemoveTags](http://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_RemoveTags.html) | Removes the specified tags from a trail. | ??? | - |
-| [cloudtrail:StartLogging](http://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_StartLogging.html) | Starts the recording of AWS API calls and log file delivery for a trail. | arn:aws:cloudtrail:$region:$account-id:trail/$trailname | - |
-| [cloudtrail:StopLogging](http://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_StopLogging.html) | Suspends the recording of AWS API calls and log file delivery for the specified trail. | arn:aws:cloudtrail:$region:$account-id:trail/$trailname | - |
+| [cloudtrail:StartLogging](http://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_StartLogging.html) | Starts the recording of AWS API calls and log file delivery for a trail. | arn:aws:cloudtrail:$region:$account:trail/$trailname | - |
+| [cloudtrail:StopLogging](http://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_StopLogging.html) | Suspends the recording of AWS API calls and log file delivery for the specified trail. | arn:aws:cloudtrail:$region:$account:trail/$trailname | - |
 | [cloudtrail:UpdateTrail](http://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_UpdateTrail.html) | Updates the settings that specify delivery of log files. | ??? | - |

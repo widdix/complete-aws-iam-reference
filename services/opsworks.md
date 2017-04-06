@@ -44,7 +44,7 @@
 | [opsworks:SetTimeBasedAutoScaling](http://docs.aws.amazon.com/opsworks/latest/APIReference/API_SetTimeBasedAutoScaling.html) | Specify the time-based auto scaling configuration for a specified instance. | ??? | - |
 | [opsworks:StartInstance](http://docs.aws.amazon.com/opsworks/latest/APIReference/API_StartInstance.html) | Starts a specified instance. | ??? | - |
 | [opsworks:StartStack](http://docs.aws.amazon.com/opsworks/latest/APIReference/API_StartStack.html) | Starts a stack's instances. | ??? | - |
-| [opsworks:StopInstance](http://docs.aws.amazon.com/opsworks/latest/APIReference/API_StopInstance.html) | Stops a specified instance. | arn:aws:opsworks:$region:$account-id:stack/$stack_id/ | - |
+| [opsworks:StopInstance](http://docs.aws.amazon.com/opsworks/latest/APIReference/API_StopInstance.html) | Stops a specified instance. | arn:aws:opsworks:$region:$account:stack/$stack_id/ | - |
 | [opsworks:StopStack](http://docs.aws.amazon.com/opsworks/latest/APIReference/API_StopStack.html) | Stops a specified stack. | ??? | - |
 | [opsworks:UnassignVolume](http://docs.aws.amazon.com/opsworks/latest/APIReference/API_UnassignVolume.html) | Unassigns an assigned Amazon EBS volume. | ??? | - |
 | [opsworks:UpdateApp](http://docs.aws.amazon.com/opsworks/latest/APIReference/API_UpdateApp.html) | Updates a specified app. | ??? | - |

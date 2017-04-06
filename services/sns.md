@@ -17,7 +17,7 @@
 | [sns:ListSubscriptions](http://docs.aws.amazon.com/sns/latest/api/API_ListSubscriptions.html) | Returns a list of the requester's subscriptions. | ??? | ??? |
 | [sns:ListSubscriptionsByTopic](http://docs.aws.amazon.com/sns/latest/api/API_ListSubscriptionsByTopic.html) | Returns a list of the subscriptions to a specific topic. | ??? | ??? |
 | [sns:ListTopics](http://docs.aws.amazon.com/sns/latest/api/API_ListTopics.html) | Returns a list of the requester's topics. | ??? | ??? |
-| [sns:Publish](http://docs.aws.amazon.com/sns/latest/api/API_Publish.html) | Sends a message to all of a topic's subscribed endpoints. | arn:aws:sns:$region:$account-id:$topic-name | ??? |
+| [sns:Publish](http://docs.aws.amazon.com/sns/latest/api/API_Publish.html) | Sends a message to all of a topic's subscribed endpoints. | arn:aws:sns:$region:$account:$topic-name | ??? |
 | [sns:RemovePermission](http://docs.aws.amazon.com/sns/latest/api/API_RemovePermission.html) | Removes a statement from a topic's access control policy. | ??? | ??? |
 | [sns:SetEndpointAttributes](http://docs.aws.amazon.com/sns/latest/api/API_SetEndpointAttributes.html) | Sets the attributes for an endpoint for a device on one of the supported push notification services, such as GCM and APNS. | ??? | ??? |
 | [sns:SetPlatformApplicationAttributes](http://docs.aws.amazon.com/sns/latest/api/API_SetPlatformApplicationAttributes.html) | Sets the attributes of the platform application object for the supported push notification services, such as APNS and GCM. | ??? | ??? |
