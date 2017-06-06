@@ -4,6 +4,7 @@
 | [kinesis:CreateStream](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_CreateStream.html) | Creates an Amazon Kinesis stream. | ??? | - |
 | [kinesis:DecreaseStreamRetentionPeriod](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_DecreaseStreamRetentionPeriod.html) | Decreases the Amazon Kinesis stream's retention period, which is the length of time data records are accessible after they are added to the stream. | ??? | - |
 | [kinesis:DeleteStream](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_DeleteStream.html) | Deletes an Amazon Kinesis stream and all its shards and data. | ??? | - |
+| [kinesis:DescribeLimits](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeLimits.html) | Describes the shard limits and usage for the account. | * | - |
 | [kinesis:DescribeStream](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeStream.html) | Describes the specified Amazon Kinesis stream. | arn:aws:kinesis:$region:$account:stream/$stream-name | - |
 | [kinesis:GetShardIterator](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetShardIterator.html) | Gets an Amazon Kinesis shard iterator. | arn:aws:kinesis:$region:$account:stream/$stream-name | - |
 | [kinesis:GetRecords](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetRecords.html) | Gets data records from an Amazon Kinesis stream's shard. | arn:aws:kinesis:$region:$account:stream/$stream-name | - |
