@@ -5,7 +5,7 @@
 | [lambda:CreateEventSourceMapping](http://docs.aws.amazon.com/lambda/latest/dg/API_CreateEventSourceMapping.html) | Identifies a stream as an event source for a Lambda function. | * | - |
 | [lambda:CreateFunction](http://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html) | Creates a new Lambda function. | * | - |
 | [lambda:DeleteAlias](http://docs.aws.amazon.com/lambda/latest/dg/API_DeleteAlias.html) | Deletes the specified Lambda function alias. | arn:aws:lambda:$region:$account:function:$function-name | - |
-| [lambda:DeleteEventSourceMapping](http://docs.aws.amazon.com/lambda/latest/dg/API_DeleteEventSourceMapping.html) | Removes an event source mapping. | * | - |
+| [lambda:DeleteEventSourceMapping](http://docs.aws.amazon.com/lambda/latest/dg/API_DeleteEventSourceMapping.html) | Removes an event source mapping. | arn:aws:lambda:$region:$account:event-source-mapping:$event-source-mapping-uuid | - |
 | [lambda:DeleteFunction](http://docs.aws.amazon.com/lambda/latest/dg/API_DeleteFunction.html) | Deletes the specified Lambda function code and configuration. | arn:aws:lambda:$region:$account:function:$function-name | - |
 | [lambda:GetAlias](http://docs.aws.amazon.com/lambda/latest/dg/API_GetAlias.html) | Returns the specified alias information such as the alias ARN, description, and function version it is pointing to. | arn:aws:lambda:$region:$account:function:$function-name | - |
 | [lambda:GetEventSourceMapping](http://docs.aws.amazon.com/lambda/latest/dg/API_GetEventSourceMapping.html) | Returns configuration information for the specified event source mapping (see CreateEventSourceMapping). | * | - |
