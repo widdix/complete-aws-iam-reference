@@ -40,7 +40,7 @@
 | [iam:DeleteUserPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteUserPolicy.html) | Deletes the specified inline policy that is embedded in the specified IAM user. | arn:aws:iam::$account:user/$user-name | - |
 | [iam:DeleteVirtualMFADevice](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteVirtualMFADevice.html) | Deletes a virtual MFA device. | arn:aws:iam::$account:mfa/$virtual-device-name | - |
 | [iam:DetachGroupPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachGroupPolicy.html) | Removes the specified managed policy from the specified IAM group. | arn:aws:iam::$account:group/$group-name | iam:PolicyArn |
-| [iam:DetachRolePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachRolePolicy.html) | Removes the specified managed policy from the specified role. | arn:aws:iam::$account:group/$role-name | iam:PolicyArn |
+| [iam:DetachRolePolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachRolePolicy.html) | Removes the specified managed policy from the specified role. | arn:aws:iam::$account:role/$role-name | iam:PolicyArn |
 | [iam:DetachUserPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachUserPolicy.html) | Removes the specified managed policy from the specified user. | arn:aws:iam::$account:group/$user-name | iam:PolicyArn |
 | [iam:EnableMFADevice](http://docs.aws.amazon.com/IAM/latest/APIReference/API_EnableMFADevice.html) | Enables the specified MFA device and associates it with the specified IAM user. | arn:aws:iam::$account:user/$user-name | - |
 | [iam:GenerateCredentialReport](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GenerateCredentialReport.html) | Generates a credential report for the AWS account. | * | - |
