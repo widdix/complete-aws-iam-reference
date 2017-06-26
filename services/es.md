@@ -10,8 +10,8 @@
 | [es:ListTags](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-configuration-api.html#es-configuration-api-actions-listtags) | Displays all of the tags for an Amazon ES domain. | ??? | - |
 | [es:RemoveTags](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-configuration-api.html#es-configuration-api-actions-removetags) | Removes the specified resource tags from an Amazon ES domain. | ??? | - |
 | [es:UpdateElasticsearchDomainConfig](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-configuration-api.html#es-configuration-api-actions-updateelasticsearchdomainconfig) | Modifies the configuration of an Amazon ES domain, such as the instance type and the number of instances. | ??? | - |
-| es:ESHttpDelete | HTTP DELETE requests to ES API | arn:aws:es:$region:$account-id:domain/?domain/?path | - |
-| es:ESHttpGet | HTTP GET requests to ES API | arn:aws:es:$region:$account-id:domain/?domain/?path | - |
-| es:ESHttpHead | HTTP HEAD requests to ES API | arn:aws:es:$region:$account-id:domain/?domain/?path | - |
-| es:ESHttpPost | HTTP POST requests to ES API | arn:aws:es:$region:$account-id:domain/?domain/?path | - |
-| es:ESHttpPut | HTTP PUT requests to ES API | arn:aws:es:$region:$account-id:domain/?domain/?path | - |
+| es:ESHttpDelete | HTTP DELETE requests to ES API | arn:aws:es:$region:$account-id:domain/$domain/$path | - |
+| es:ESHttpGet | HTTP GET requests to ES API | arn:aws:es:$region:$account-id:domain/$domain/$path | - |
+| es:ESHttpHead | HTTP HEAD requests to ES API | arn:aws:es:$region:$account-id:domain/$domain/$path | - |
+| es:ESHttpPost | HTTP POST requests to ES API | arn:aws:es:$region:$account-id:domain/$domain/$path | - |
+| es:ESHttpPut | HTTP PUT requests to ES API | arn:aws:es:$region:$account-id:domain/$domain/$path | - |
