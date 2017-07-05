@@ -3,6 +3,7 @@
   "apigateway": "Amazon API Gateway",
   "application-autoscaling": "Application Auto Scaling",
   "appstream": "Amazon AppStream",
+  "athena": "Amazon Athena",
   "autoscaling": "Auto Scaling",
   "aws-marketplace-management": "AWS Marketplace Management Portal",
   "aws-marketplace": "AWS Marketplace",
