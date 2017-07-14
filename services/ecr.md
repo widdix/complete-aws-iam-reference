@@ -11,7 +11,6 @@
 | [ecr:DescribeRepositories](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeRepositories.html) | Describes image repositories in a registry. | arn:aws:ecr:$region:$account:repository/$repository-name | - |
 | [ecr:GetAuthorizationToken](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetAuthorizationToken.html) | Retrieves a token that is valid for a specified registry for 12 hours. | * | - |
 | [ecr:GetDownloadUrlForLayer](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetDownloadUrlForLayer.html) | Retrieves the pre-signed Amazon S3 download URL corresponding to an image layer. | arn:aws:ecr:$region:$account:repository/$repository-name | - |
-| [ecr:GetManifest](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetManifest.html) | ??? | * | - |
 | [ecr:GetRepositoryPolicy](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetRepositoryPolicy.html) | Retrieves the repository policy for a specified repository. | arn:aws:ecr:$region:$account:repository/$repository-name | - |
 | [ecr:InitiateLayerUpload](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_InitiateLayerUpload.html) | Notify Amazon ECR that you intend to upload an image layer. | arn:aws:ecr:$region:$account:repository/$repository-name | - |
 | [ecr:ListImages](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ListImages.html) | Lists all the image IDs for a given repository. | arn:aws:ecr:$region:$account:repository/$repository-name | - |
