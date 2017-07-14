@@ -7,6 +7,7 @@
 | [ecr:CreateRepository](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_CreateRepository.html) | Creates an image repository. | * | - |
 | [ecr:DeleteRepository](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DeleteRepository.html) | Deletes an existing image repository. | arn:aws:ecr:$region:$account:repository/$repository-name | - |
 | [ecr:DeleteRepositoryPolicy](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DeleteRepositoryPolicy.html) | Deletes the repository policy from a specified repository. | arn:aws:ecr:$region:$account:repository/$repository-name | - |
+| [ecr:DescribeImages](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeImages.html) | Describes images in a repository. | arn:aws:ecr:$region:$account:repository/$repository-name | - |
 | [ecr:DescribeRepositories](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeRepositories.html) | Describes image repositories in a registry. | arn:aws:ecr:$region:$account:repository/$repository-name | - |
 | [ecr:GetAuthorizationToken](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetAuthorizationToken.html) | Retrieves a token that is valid for a specified registry for 12 hours. | * | - |
 | [ecr:GetDownloadUrlForLayer](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetDownloadUrlForLayer.html) | Retrieves the pre-signed Amazon S3 download URL corresponding to an image layer. | arn:aws:ecr:$region:$account:repository/$repository-name | - |
