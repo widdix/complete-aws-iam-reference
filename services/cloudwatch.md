@@ -7,7 +7,7 @@
 | [cloudwatch:DescribeAlarmsForMetric](http://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_DescribeAlarmsForMetric.html) | Retrieves all alarms for a single metric. | * | - |
 | [cloudwatch:DisableAlarmActions](http://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_DisableAlarmActions.html) | Disables actions for the specified alarms. | * | - |
 | [cloudwatch:EnableAlarmActions](http://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_EnableAlarmActions.html) | Enables actions for the specified alarms. | * | - |
-| [cloudwatch:GetDashboard](http://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricData.html) | Displays the details of the dashboard that you specify.  | * | - |
+| [cloudwatch:GetDashboard](http://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetDashboard.html) | Displays the details of the dashboard that you specify.  | * | - |
 | [cloudwatch:GetMetricData](http://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricData.html) | ??? | * | - |
 | [cloudwatch:GetMetricStatistics](http://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricStatistics.html) | Gets statistics for the specified metric. | * | - |
 | [cloudwatch:ListDashboards](http://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_ListDashboards.html) | Returns a list of the dashboards for your account. | * | - |
