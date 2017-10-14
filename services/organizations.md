@@ -1,0 +1,42 @@
+| Action | Description | Resource | Condition |
+| --- | --- | --- | --- |
+| [organizations:AcceptHandshake](http://docs.aws.amazon.com/organizations/latest/APIReference//API_AcceptHandshake.html) | Sends a response to the originator of a handshake agreeing to the action proposed by the handshake request. | ??? | ??? |
+| [organizations:AttachPolicy](http://docs.aws.amazon.com/organizations/latest/APIReference//API_AttachPolicy.html) | Attaches a policy to a root, an organizational unit, or an individual account. | ??? | ??? |
+| [organizations:CancelHandshake](http://docs.aws.amazon.com/organizations/latest/APIReference//API_CancelHandshake.html) | Cancels a handshake. | ??? | ??? |
+| [organizations:CreateAccount](http://docs.aws.amazon.com/organizations/latest/APIReference//API_CreateAccount.html) | Creates an AWS account that is automatically a member of the organization whose credentials made the request. | ??? | ??? |
+| [organizations:CreateOrganization](http://docs.aws.amazon.com/organizations/latest/APIReference//API_CreateOrganization.html) | Creates an AWS organization. | ??? | ??? |
+| [organizations:CreateOrganizationalUnit](http://docs.aws.amazon.com/organizations/latest/APIReference//API_CreateOrganizationalUnit.html) | Creates an organizational unit (OU) within a root or parent OU. | ??? | ??? |
+| [organizations:CreatePolicy](http://docs.aws.amazon.com/organizations/latest/APIReference//API_CreatePolicy.html) | Creates a policy of a specified type that you can attach to a root, an organizational unit (OU), or an individual AWS account. | ??? | ??? |
+| [organizations:DeclineHandshake](http://docs.aws.amazon.com/organizations/latest/APIReference//API_DeclineHandshake.html) | Declines a handshake request. | ??? | ??? |
+| [organizations:DeleteOrganization](http://docs.aws.amazon.com/organizations/latest/APIReference//API_DeleteOrganization.html) | Deletes the organization. | ??? | ??? |
+| [organizations:DeleteOrganizationalUnit](http://docs.aws.amazon.com/organizations/latest/APIReference//API_DeleteOrganizationalUnit.html) | Deletes an organizational unit from a root or another OU. | ??? | ??? |
+| [organizations:DeletePolicy](http://docs.aws.amazon.com/organizations/latest/APIReference//API_DeletePolicy.html) | Deletes the specified policy from your organization. | ??? | ??? |
+| [organizations:DescribeAccount](http://docs.aws.amazon.com/organizations/latest/APIReference//API_DescribeAccount.html) | Retrieves Organizations-related information about the specified account. | ??? | ??? |
+| [organizations:DescribeCreateAccountStatus](http://docs.aws.amazon.com/organizations/latest/APIReference//API_DescribeCreateAccountStatus.html) | Retrieves the current status of an asynchronous request to create an account. | ??? | ??? |
+| [organizations:DescribeHandshake](http://docs.aws.amazon.com/organizations/latest/APIReference//API_DescribeHandshake.html) | Retrieves information about a previously requested handshake. | ??? | ??? |
+| [organizations:DescribeOrganization](http://docs.aws.amazon.com/organizations/latest/APIReference//API_DescribeOrganization.html) | Retrieves information about the organization that the user's account belongs to. | ??? | ??? |
+| [organizations:DescribeOrganizationalUnit](http://docs.aws.amazon.com/organizations/latest/APIReference//API_DescribeOrganizationalUnit.html) | Retrieves information about an organizational unit (OU). | ??? | ??? |
+| [organizations:DescribePolicy](http://docs.aws.amazon.com/organizations/latest/APIReference//API_DescribePolicy.html) | Retrieves information about a policy. | ??? | ??? |
+| [organizations:DetachPolicy](http://docs.aws.amazon.com/organizations/latest/APIReference//API_DetachPolicy.html) | Detaches a policy from a target root, organizational unit, or account. | ??? | ??? |
+| [organizations:DisablePolicyType](http://docs.aws.amazon.com/organizations/latest/APIReference//API_DisablePolicyType.html) | Disables an organizational control policy type in a root. | ??? | ??? |
+| [organizations:EnableAllFeatures](http://docs.aws.amazon.com/organizations/latest/APIReference//API_EnableAllFeatures.html) | Enables all features in an organization. | ??? | ??? |
+| [organizations:EnablePolicyType](http://docs.aws.amazon.com/organizations/latest/APIReference//API_EnablePolicyType.html) | Enables a policy type in a root. | ??? | ??? |
+| [organizations:InviteAccountToOrganization](http://docs.aws.amazon.com/organizations/latest/APIReference//API_InviteAccountToOrganization.html) | Sends an invitation to another account to join your organization as a member account. | ??? | ??? |
+| [organizations:LeaveOrganization](http://docs.aws.amazon.com/organizations/latest/APIReference//API_LeaveOrganization.html) | Removes a member account from its parent organization. | ??? | ??? |
+| [organizations:ListAccounts](http://docs.aws.amazon.com/organizations/latest/APIReference//API_ListAccounts.html) | Lists all the accounts in the organization. | ??? | ??? |
+| [organizations:ListAccountsForParent](http://docs.aws.amazon.com/organizations/latest/APIReference//API_ListAccountsForParent.html) | Lists the accounts in an organization that are contained by the specified target root or organizational unit (OU). | ??? | ??? |
+| [organizations:ListChildren](http://docs.aws.amazon.com/organizations/latest/APIReference//API_ListChildren.html) | Lists all of the OUs or accounts that are contained in the specified parent OU or root. | ??? | ??? |
+| [organizations:ListCreateAccountStatus](http://docs.aws.amazon.com/organizations/latest/APIReference//API_ListCreateAccountStatus.html) | Lists the account creation requests that match the specified status that is currently being tracked for the organization. | ??? | ??? |
+| [organizations:ListHandshakesForAccount](http://docs.aws.amazon.com/organizations/latest/APIReference//API_ListHandshakesForAccount.html) | Lists the current handshakes that are associated with the account of the requesting user. | ??? | ??? |
+| [organizations:ListHandshakesForOrganization](http://docs.aws.amazon.com/organizations/latest/APIReference//API_ListHandshakesForOrganization.html) | Lists the handshakes that are associated with the organization that the requesting user is part of. | ??? | ??? |
+| [organizations:ListOrganizationalUnitsForParent](http://docs.aws.amazon.com/organizations/latest/APIReference//API_ListOrganizationalUnitsForParent.html) | Lists the organizational units (OUs) in a parent organizational unit or root. | ??? | ??? |
+| [organizations:ListParents](http://docs.aws.amazon.com/organizations/latest/APIReference//API_ListParents.html) | Lists the root or organizational units (OUs) that serve as the immediate parent of the specified child OU or account. | ??? | ??? |
+| [organizations:ListPolicies](http://docs.aws.amazon.com/organizations/latest/APIReference//API_ListPolicies.html) | Retrieves the list of all policies in an organization of a specified type. | ??? | ??? |
+| [organizations:ListPoliciesForTarget](http://docs.aws.amazon.com/organizations/latest/APIReference//API_ListPoliciesForTarget.html) | Lists the policies that are directly attached to the specified target root, organizational unit (OU), or account. | ??? | ??? |
+| [organizations:ListRoots](http://docs.aws.amazon.com/organizations/latest/APIReference//API_ListRoots.html) | Lists the roots that are defined in the current organization. | ??? | ??? |
+| [organizations:ListTargetsForPolicy](http://docs.aws.amazon.com/organizations/latest/APIReference//API_ListTargetsForPolicy.html) | Lists all the roots, OUs, and accounts to which the specified policy is attached. | ??? | ??? |
+| [organizations:MoveAccount](http://docs.aws.amazon.com/organizations/latest/APIReference//API_MoveAccount.html) | Moves an account from its current source parent root or OU to the specified destination parent root or OU. | ??? | ??? |
+| [organizations:RemoveAccountFromOrganization](http://docs.aws.amazon.com/organizations/latest/APIReference//API_RemoveAccountFromOrganization.html) | Removes the specified account from the organization. | ??? | ??? |
+| [organizations:UpdateOrganizationalUnit](http://docs.aws.amazon.com/organizations/latest/APIReference//API_UpdateOrganizationalUnit.html) | Renames the specified organizational unit (OU). | ??? | ??? |
+| [organizations:UpdatePolicy](http://docs.aws.amazon.com/organizations/latest/APIReference//API_UpdatePolicy.html) | Updates an existing policy with a new name, description, or content. | ??? | ??? |
+
