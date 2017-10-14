@@ -80,6 +80,7 @@
   "sns": "Amazon Simple Notification Service",
   "sqs": "Amazon Simple Queue Service",
   "ssm": "Amazon EC2 Simple Systems Manager",
+  "states": "AWS Step Functions",
   "storagegateway": "AWS Storage Gateway",
   "sts": "AWS Security Token Service",
   "support": "AWS Support",
