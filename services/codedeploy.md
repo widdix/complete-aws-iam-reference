@@ -1,7 +1,10 @@
 | Action | Description | Resource | Condition |
 | --- | --- | --- | --- |
 | [codedeploy:AddTagsToOnPremisesInstances](http://docs.aws.amazon.com/codedeploy/latest/APIReference/API_AddTagsToOnPremisesInstances.html) | Adds tags to on-premises instances. | arn:aws:codedeploy:$region:$account:instance/$instance-id | - |
+| [codedeploy:BatchGetApplicationRevisions](http://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BatchGetApplicationRevisions.html) | Gets information about one or more application revisions. | arn:aws:codedeploy:$region:$account:application:$application-name | - |
 | [codedeploy:BatchGetApplications](http://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BatchGetApplications.html) | Gets information about one or more applications. | * | - |
+| [codedeploy:BatchGetDeploymentGroups](http://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BatchGetDeploymentGroups.html) | Gets information about one or more deployment groups. | arn:aws:codedeploy:$region:$account:deploymentgroup:$application-name/* | - |
+| [codedeploy:BatchGetDeploymentInstances](http://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BatchGetDeploymentInstances.html) | Gets information about one or more instance that are part of a deployment group. | arn:aws:codedeploy:$region:$account:deploymentgroup:$application-name/$deployment-group-name | - |
 | [codedeploy:BatchGetDeployments](http://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BatchGetDeployments.html) | Gets information about one or more deployments. | arn:aws:codedeploy:$region:$account:deploymentgroup:$application-name/$deployment-group-name | - |
 | [codedeploy:BatchGetOnPremisesInstances](http://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BatchGetOnPremisesInstances.html) | Gets information about one or more on-premises instances. | * | - |
 | [codedeploy:CreateApplication](http://docs.aws.amazon.com/codedeploy/latest/APIReference/API_CreateApplication.html) | Creates an application. | arn:aws:codedeploy:$region:$account:application:$application-name | - |
