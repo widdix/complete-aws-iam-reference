@@ -1,3 +1,5 @@
+**By opening a Pull Request, you agree that your contribution is licensed under CC0 1.0 Universell (CC0 1.0)**
+
 Please make sure to provide all the fields! Example below!
 
 * Service: 

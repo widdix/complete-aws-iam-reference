@@ -1,5 +1,7 @@
 # Complete AWS IAM Reference
 
+**By opening a Pull Request, you agree that your contribution is licensed under CC0 1.0 Universell (CC0 1.0)**
+
 All information is stored in Markdown files in the `services` folder. Everything inside `app` is generated from the Markdown files.
 
 ## Sources of truth
