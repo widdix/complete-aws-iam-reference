@@ -125,5 +125,5 @@
 | [iam:GetServiceLinkedRoleDeletionStatus](http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetServiceLinkedRoleDeletionStatus.html) | Retrieves the status of your service-linked role deletion. | ??? | ??? |
 | [iam:ListServiceSpecificCredentials](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListServiceSpecificCredentials.html) | Returns information about the service-specific credentials associated with the specified IAM user. | arn:aws:iam::$account:user/$user-name | - |
 | [iam:ResetServiceSpecificCredential](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ResetServiceSpecificCredential.html) | Resets the password for a service-specific credential. | arn:aws:iam::$account:user/$user-name | - |
-| [iam:UpdateRoleDescription](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateRoleDescription.html) | Modifies the description of a role. | ??? | ??? |
+| [iam:UpdateRoleDescription](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateRoleDescription.html) | Modifies the description of a role. | arn:aws:iam::$account:role/$role-name | ??? |
 | [iam:UpdateServiceSpecificCredential](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateServiceSpecificCredential.html) | Sets the status of a service-specific credential to Active or Inactive. | arn:aws:iam::$account:user/$user-name | - |
