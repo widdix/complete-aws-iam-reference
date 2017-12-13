@@ -16,3 +16,4 @@
 | [kinesis:PutRecords](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecords.html) | Writes multiple data records into an Amazon Kinesis stream in a single call (also referred to as a PutRecords request). | arn:aws:kinesis:$region:$account:stream/$stream-name | - |
 | [kinesis:RemoveTagsFromStream](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_RemoveTagsFromStream.html) | Removes tags from the specified Amazon Kinesis stream. | ??? | - |
 | [kinesis:SplitShard](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_SplitShard.html) | Splits a shard into two new shards in the Amazon Kinesis stream to increase the stream's capacity to ingest and transport data. | ??? | - |
+| [kinesis:UpdateShardCount](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_UpdateShardCount.html) | Update the shard count. | ??? | - |
