@@ -6,8 +6,11 @@
 | [kinesis:DeleteStream](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_DeleteStream.html) | Deletes an Amazon Kinesis stream and all its shards and data. | ??? | - |
 | [kinesis:DescribeLimits](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeLimits.html) | Describes the shard limits and usage for the account. | * | - |
 | [kinesis:DescribeStream](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeStream.html) | Describes the specified Amazon Kinesis stream. | arn:aws:kinesis:$region:$account:stream/$stream-name | - |
-| [kinesis:GetShardIterator](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetShardIterator.html) | Gets an Amazon Kinesis shard iterator. | arn:aws:kinesis:$region:$account:stream/$stream-name | - |
+| [kinesis:DescribeStreamSummary](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeStreamSummary.html) | Provides a summarized description of the specified Kinesis stream without the shard list. | ??? | - |
+| [kinesis:DisableEnhancedMonitoring](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_DisableEnhancedMonitoring.html) | Disables enhanced monitoring. | ??? | - |
+| [kinesis:EnableEnhancedMonitoring](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_EnableEnhancedMonitoring.html) | Enables enhanced Kinesis stream monitoring for shard-level metrics. | ??? | - |
 | [kinesis:GetRecords](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetRecords.html) | Gets data records from an Amazon Kinesis stream's shard. | arn:aws:kinesis:$region:$account:stream/$stream-name | - |
+| [kinesis:GetShardIterator](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetShardIterator.html) | Gets an Amazon Kinesis shard iterator. | arn:aws:kinesis:$region:$account:stream/$stream-name | - |
 | [kinesis:IncreaseStreamRetentionPeriod](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_IncreaseStreamRetentionPeriod.html) | Increases the Amazon Kinesis stream's retention period, which is the length of time data records are accessible after they are added to the stream. | ??? | - |
 | [kinesis:ListStreams](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListStreams.html) | Lists your Amazon Kinesis streams. | * | - |
 | [kinesis:ListTagsForStream](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListTagsForStream.html) | Lists the tags for the specified Amazon Kinesis stream. | ??? | - |
@@ -16,4 +19,6 @@
 | [kinesis:PutRecords](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecords.html) | Writes multiple data records into an Amazon Kinesis stream in a single call (also referred to as a PutRecords request). | arn:aws:kinesis:$region:$account:stream/$stream-name | - |
 | [kinesis:RemoveTagsFromStream](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_RemoveTagsFromStream.html) | Removes tags from the specified Amazon Kinesis stream. | ??? | - |
 | [kinesis:SplitShard](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_SplitShard.html) | Splits a shard into two new shards in the Amazon Kinesis stream to increase the stream's capacity to ingest and transport data. | ??? | - |
+| [kinesis:StartStreamEncryption](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_StartStreamEncryption.html) | Enables or updates server-side encryption using an AWS KMS key for a specified stream. | ??? | - |
+| [kinesis:StopStreamEncryption](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_StopStreamEncryption.html) | Disables server-side encryption for a specified stream. | ??? | - |
 | [kinesis:UpdateShardCount](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_UpdateShardCount.html) | Update the shard count. | ??? | - |
