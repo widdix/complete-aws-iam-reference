@@ -23,6 +23,7 @@
 | [kms:ListGrants](http://docs.aws.amazon.com/kms/latest/APIReference/API_ListGrants.html) | List the grants for a specified key. | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
 | [kms:ListKeyPolicies](http://docs.aws.amazon.com/kms/latest/APIReference/API_ListKeyPolicies.html) | Retrieves a list of policies attached to a key. | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
 | [kms:ListKeys](http://docs.aws.amazon.com/kms/latest/APIReference/API_ListKeys.html) | Lists the customer master keys. | * | - |
+| [kms:ListResourceTags](https://docs.aws.amazon.com/kms/latest/APIReference/API_ListResourceTags.html) | Returns a list of all tags for the specified customer master key (CMK). | arn:aws:kms:$region:$account:key/$key-id | ? |
 | [kms:ListRetirableGrants](http://docs.aws.amazon.com/kms/latest/APIReference/API_ListRetirableGrants.html) | Returns a list of all grants for which the grant's RetiringPrincipal matches the one specified. | * | - |
 | [kms:PutKeyPolicy](http://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html) | Attaches a key policy to the specified customer master key (CMK). | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
 | [kms:ReEncryptFrom](http://docs.aws.amazon.com/kms/latest/APIReference/API_ReEncrypt.html) | Encrypts data on the server side with a new customer master key without exposing the plaintext of the data on the client side. | arn:aws:kms:$region:$account:key/$key-id | kms:EncryptionContext:, kms:EncryptionContextKeys, kms:ReEncryptOnSameKey, kms:CallerAccount, kms:ViaService |
@@ -30,6 +31,8 @@
 | [kms:RetireGrant](http://docs.aws.amazon.com/kms/latest/APIReference/API_RetireGrant.html) | Retires a grant. | - | - |
 | [kms:RevokeGrant](http://docs.aws.amazon.com/kms/latest/APIReference/API_RevokeGrant.html) | Revokes a grant. | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
 | [kms:ScheduleKeyDeletion](http://docs.aws.amazon.com/kms/latest/APIReference/API_ScheduleKeyDeletion.html) | Schedules the deletion of a customer master key (CMK). | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
+| [kms:TagResource](https://docs.aws.amazon.com/kms/latest/APIReference/API_TagResource.html) | Adds or overwrites one or more tags for the specified customer master key (CMK). | arn:aws:kms:$region:$account:key/$key-id | ? |
+| [kms:UntagResource](https://docs.aws.amazon.com/kms/latest/APIReference/API_UntagResource.html) | Removes the specified tag or tags from the specified customer master key (CMK). | arn:aws:kms:$region:$account:key/$key-id | ? |
 | [kms:UpdateAlias](http://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateAlias.html) | Updates an alias to map it to a different key. | arn:aws:kms:$region:$account:alias/$alias-name | - |
 | [kms:UpdateAlias](http://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateAlias.html) | Updates an alias to map it to a different key. | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
 | [kms:UpdateKeyDescription](http://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateKeyDescription.html) | Updates the description of a key. | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
