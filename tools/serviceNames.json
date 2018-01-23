@@ -10,6 +10,7 @@
   "aws-portal": "Billing and Cost Management",
   "batch": "AWS Batch",
   "budgets": "AWS Budgets",
+  "ce": "AWS Cost Explorer Service",
   "clouddirectory": "Amazon Cloud Directory",
   "cloudformation": "AWS CloudFormation",
   "cloudfront": "Amazon CloudFront",
