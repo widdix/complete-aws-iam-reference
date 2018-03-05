@@ -15,6 +15,7 @@
 | [ssm:GetDocument](http://docs.aws.amazon.com/ssm/latest/APIReference/API_GetDocument.html) | Gets the contents of the specified SSM document. | ??? | - |
 | [ssm:GetParameterHistory](http://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameterHistory.html) | Query a list of all parameters used by the AWS account. | arn:aws:ssm:$region:$account:parameter/$name | - |
 | [ssm:GetParameters](http://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameters.html) | Get details of a parameter. | arn:aws:ssm:$region:$account:parameter/$name | - |
+| [ssm:GetParameter](http://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html) | Get information about a parameter by using the parameter name. | arn:aws:ssm:$region:$account:parameter/$name | - |
 | [ssm:ListAssociations](http://docs.aws.amazon.com/ssm/latest/APIReference/API_ListAssociations.html) | Lists the associations for the specified SSM document or instance. | ??? | - |
 | [ssm:ListCommandInvocations](http://docs.aws.amazon.com/ssm/latest/APIReference/API_ListCommandInvocations.html) | An invocation is copy of a command sent to a specific instance. | ??? | - |
 | [ssm:ListCommands](http://docs.aws.amazon.com/ssm/latest/APIReference/API_ListCommands.html) | Lists the commands requested by users of the AWS account. | ??? | - |
