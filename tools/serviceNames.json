@@ -73,6 +73,7 @@
   "opsworks": "AWS OpsWorks",
   "organizations": "AWS Organizations",
   "polly": "Amazon Polly",
+  "rds-db": "RDS IAM database authentication",
   "rds": "Amazon Relational Database Service",
   "redshift": "Amazon Redshift",
   "rekognition": "Amazon Rekognition",
