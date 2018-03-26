@@ -1,13 +1,13 @@
 | Action | Description | Resource | Condition |
 | --- | --- | --- | --- |
 | [kms:CancelKeyDeletion](http://docs.aws.amazon.com/kms/latest/APIReference/API_CancelKeyDeletion.html) | Cancels the deletion of a customer master key (CMK). | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
-| [kms:CreateAlias](http://docs.aws.amazon.com/kms/latest/APIReference/API_CreateAlias.html) | Creates a display name for a customer master key. | arn:aws:kms:$region:$account:alias/$alias-name | - |
-| [kms:CreateAlias](http://docs.aws.amazon.com/kms/latest/APIReference/API_CreateAlias.html) | Creates a display name for a customer master key. | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
+| [kms:CreateAlias](http://docs.aws.amazon.com/kms/latest/APIReference/API_CreateAlias.html) | Creates a display name for a customer master key (IAM Policy). | arn:aws:kms:$region:$account:alias/$alias-name | - |
+| [kms:CreateAlias](http://docs.aws.amazon.com/kms/latest/APIReference/API_CreateAlias.html) | Creates a display name for a customer master key (Key policy). | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
 | [kms:CreateGrant](http://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) | Adds a grant to a key to specify who can use the key and under what conditions. | arn:aws:kms:$region:$account:key/$key-id | kms:GrantConstraintType, kms:GrantIsForAWSResource, kms:GrantOperations, kms:CallerAccount, kms:ViaService |
 | [kms:CreateKey](http://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html) | Creates a customer master key (CMK). | * | kms:BypassPolicyLockoutSafetyCheck |
 | [kms:Decrypt](http://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) | Decrypts ciphertext. | arn:aws:kms:$region:$account:key/$key-id | kms:EncryptionContext:, kms:EncryptionContextKeys, kms:CallerAccount, kms:ViaService |
-| [kms:DeleteAlias](http://docs.aws.amazon.com/kms/latest/APIReference/API_DeleteAlias.html) | Deletes the specified alias. | arn:aws:kms:$region:$account:alias/$alias-name | - |
-| [kms:DeleteAlias](http://docs.aws.amazon.com/kms/latest/APIReference/API_DeleteAlias.html) | Deletes the specified alias. | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
+| [kms:DeleteAlias](http://docs.aws.amazon.com/kms/latest/APIReference/API_DeleteAlias.html) | Deletes the specified alias (IAM policy). | arn:aws:kms:$region:$account:alias/$alias-name | - |
+| [kms:DeleteAlias](http://docs.aws.amazon.com/kms/latest/APIReference/API_DeleteAlias.html) | Deletes the specified alias (Key policy). | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
 | [kms:DescribeKey](http://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) | Provides detailed information about the specified customer master key. | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
 | [kms:DisableKey](http://docs.aws.amazon.com/kms/latest/APIReference/API_DisableKey.html) | Sets the state of a customer master key (CMK) to disabled, thereby preventing its use for cryptographic operations. | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
 | [kms:DisableKeyRotation](http://docs.aws.amazon.com/kms/latest/APIReference/API_DisableKeyRotation.html) | Disables rotation of the specified key. | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
@@ -33,7 +33,7 @@
 | [kms:ScheduleKeyDeletion](http://docs.aws.amazon.com/kms/latest/APIReference/API_ScheduleKeyDeletion.html) | Schedules the deletion of a customer master key (CMK). | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
 | [kms:TagResource](https://docs.aws.amazon.com/kms/latest/APIReference/API_TagResource.html) | Adds or overwrites one or more tags for the specified customer master key (CMK). | arn:aws:kms:$region:$account:key/$key-id | ? |
 | [kms:UntagResource](https://docs.aws.amazon.com/kms/latest/APIReference/API_UntagResource.html) | Removes the specified tag or tags from the specified customer master key (CMK). | arn:aws:kms:$region:$account:key/$key-id | ? |
-| [kms:UpdateAlias](http://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateAlias.html) | Updates an alias to map it to a different key. | arn:aws:kms:$region:$account:alias/$alias-name | - |
-| [kms:UpdateAlias](http://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateAlias.html) | Updates an alias to map it to a different key. | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
+| [kms:UpdateAlias](http://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateAlias.html) | Updates an alias to map it to a different key (IAM policy). | arn:aws:kms:$region:$account:alias/$alias-name | - |
+| [kms:UpdateAlias](http://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateAlias.html) | Updates an alias to map it to a different key (Key policy). | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
 | [kms:UpdateKeyDescription](http://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateKeyDescription.html) | Updates the description of a key. | arn:aws:kms:$region:$account:key/$key-id | kms:CallerAccount, kms:ViaService |
 
