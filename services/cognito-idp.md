@@ -25,6 +25,7 @@
 | [cognito-idp:CreateUserImportJob](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserImportJob.html) | Creates the user import job. | ??? | - |
 | [cognito-idp:CreateUserPool](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPool.html) | Creates a new Amazon Cognito user pool and sets the password policy for the pool. | ??? | - |
 | [cognito-idp:CreateUserPoolClient](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPoolClient.html) | Creates the user pool client. | ??? | - |
+| [cognito-idp:CreateUserPoolDomain](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateUserPoolDomain.html) | Creates a new domain for a user pool. | ??? | - |
 | [cognito-idp:DeleteGroup](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DeleteGroup.html) | Deletes a group. | ??? | - |
 | [cognito-idp:DeleteUserPool](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DeleteUserPool.html) | Deletes the specified Amazon Cognito user pool. | ??? | - |
 | [cognito-idp:DeleteUserPoolClient](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DeleteUserPoolClient.html) | Allows the developer to delete the user pool client. | ??? | - |
@@ -39,6 +40,7 @@
 | [cognito-idp:ListUserPools](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ListUserPools.html) | Lists the user pools associated with an AWS account. | ??? | - |
 | [cognito-idp:ListUsers](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ListUsers.html) | Lists the users in the Amazon Cognito user pool. | ??? | - |
 | [cognito-idp:ListUsersInGroup](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ListUsersInGroup.html) | Lists the users in the specified group. | ??? | - |
+| [cognito-idp:SetUICustomization](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SetUICustomization.html) | Sets the UI customization information for a user pool's built-in app UI. | ??? | - |
 | [cognito-idp:StartUserImportJob](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_StartUserImportJob.html) | Starts the user import. | ??? | - |
 | [cognito-idp:StopUserImportJob](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_StopUserImportJob.html) | Stops the user import job. | ??? | - |
 | [cognito-idp:UpdateGroup](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateGroup.html) | Updates the specified group with the specified attributes. | ??? | - |
