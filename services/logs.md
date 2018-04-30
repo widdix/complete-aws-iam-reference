@@ -18,6 +18,7 @@
 | [logs:DescribeSubscriptionFilters](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DescribeSubscriptionFilters.html) | Returns all the subscription filters associated with the specified log group. | ??? | - |
 | [logs:FilterLogEvents](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_FilterLogEvents.html) | Retrieves log events, optionally filtered by a filter pattern from the specified log group. | ??? | - |
 | [logs:GetLogEvents](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_GetLogEvents.html) | Retrieves log events from the specified log stream. | ??? | - |
+| [logs:ListTagsLogGroup](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ListTagsLogGroup.html) | Lists the tags for the specified log group. | ??? | - |
 | [logs:PutDestination](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDestination.html) | Creates or updates a Destination. | ??? | - |
 | [logs:PutDestinationPolicy](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDestinationPolicy.html) | Creates or updates an access policy associated with an existing Destination. | ??? | - |
 | [logs:PutLogEvents](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html) | Uploads a batch of log events to the specified log stream. | ??? | - |
