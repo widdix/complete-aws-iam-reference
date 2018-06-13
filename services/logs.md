@@ -21,7 +21,7 @@
 | [logs:ListTagsLogGroup](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ListTagsLogGroup.html) | Lists the tags for the specified log group. | ??? | - |
 | [logs:PutDestination](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDestination.html) | Creates or updates a Destination. | ??? | - |
 | [logs:PutDestinationPolicy](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDestinationPolicy.html) | Creates or updates an access policy associated with an existing Destination. | ??? | - |
-| [logs:PutLogEvents](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html) | Uploads a batch of log events to the specified log stream. | ??? | - |
+| [logs:PutLogEvents](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html) | Uploads a batch of log events to the specified log stream. | arn:aws:logs:$region:$account_id:log-group:$log_group_name:log-stream:$log_stream_name | - |
 | [logs:PutMetricFilter](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutMetricFilter.html) | Creates or updates a metric filter and associates it with the specified log group. | ??? | - |
 | [logs:PutRetentionPolicy](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutRetentionPolicy.html) | Sets the retention of the specified log group. | ??? | - |
 | [logs:PutSubscriptionFilter](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutSubscriptionFilter.html) | Creates or updates a subscription filter and associates it with the specified log group. | ??? | - |
