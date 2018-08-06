@@ -25,4 +25,6 @@
 | [cloudformation:SignalResource](http://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SignalResource.html) | Sends a signal to the specified resource with a success or failure status. | arn:aws:cloudformation:$region:$account:stack/$stack-name/* | - |
 | [cloudformation:UpdateStack](http://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateStack.html) | Updates a stack as specified in the template. | arn:aws:cloudformation:$region:$account:stack/$stack-name/* | cloudformation:TemplateUrl, cloudformation:StackPolicyUrl, cloudformation:ResourceTypes |
 | [cloudformation:ValidateTemplate](http://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ValidateTemplate.html) | Validates a specified template. | * | - |
-
+| [cloudformation:ListTagsForResource](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListTagsForResource.html) | List tags for a CloudFront resource. | * | - |
+| [cloudformation:TagResource](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_TagResource.html) | Add tags to a CloudFront resource. | * | - |
+| [cloudformation:UntagResource](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UntagResource.html) | Remove tags from a CloudFront resource. | * | - |
