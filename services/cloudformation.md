@@ -25,3 +25,4 @@
 | [cloudformation:SignalResource](http://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SignalResource.html) | Sends a signal to the specified resource with a success or failure status. | arn:aws:cloudformation:$region:$account:stack/$stack-name/* | - |
 | [cloudformation:UpdateStack](http://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateStack.html) | Updates a stack as specified in the template. | arn:aws:cloudformation:$region:$account:stack/$stack-name/* | cloudformation:TemplateUrl, cloudformation:StackPolicyUrl, cloudformation:ResourceTypes |
 | [cloudformation:ValidateTemplate](http://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ValidateTemplate.html) | Validates a specified template. | * | - |
+
