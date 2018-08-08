@@ -22,3 +22,6 @@
 | [cloudfront:UpdateCloudFrontOriginAccessIdentity](http://docs.aws.amazon.com/AmazonCloudFront/latest/APIReference/PutOAIConfig.html) | This action sets the configuration for a CloudFront origin access identity. | * | - |
 | [cloudfront:UpdateDistribution](http://docs.aws.amazon.com/AmazonCloudFront/latest/APIReference/PutConfig.html) | This action updates the configuration for a web distribution. | * | - |
 | [cloudfront:UpdateStreamingDistribution](http://docs.aws.amazon.com/AmazonCloudFront/latest/APIReference/PutStreamingDistConfig.html) | This action updates the configuration for an RTMP distribution. | * | - |
+| [cloudfront:ListTagsForResource](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListTagsForResource.html) | List tags for a CloudFront resource. | * | - |
+| [cloudfront:TagResource](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_TagResource.html) | Add tags to a CloudFront resource. | * | - |
+| [cloudfront:UntagResource](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UntagResource.html) | Remove tags from a CloudFront resource. | * | - |
