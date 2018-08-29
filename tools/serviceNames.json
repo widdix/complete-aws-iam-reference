@@ -81,6 +81,7 @@
   "route53domains": "Amazon Route 53 Domains",
   "s3": "Amazon Simple Storage Service",
   "sdb": "Amazon SimpleDB",
+  "secretsmanager": "AWS Secrets Manager",
   "servicecatalog": "AWS Service Catalog",
   "ses": "Amazon SES",
   "shield": "AWS Shield Advanced",
