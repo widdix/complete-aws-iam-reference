@@ -39,8 +39,8 @@ The add information about a new service, create a new file in the services folde
 * If no resource-level permissions apply, use a `*`-
 * If no service specific conditions apply, use a `-`.
 
-Don't forget to link to the new service in the root's README.md file.
+Finally, add an entry to `tools/serviceNames.json` to map the service short name (e.g., `ec2`) to the full name (e.g., `Amazon Elastic Compute Cloud`).
 
 ## Publish to iam.cloudonaut.io
 
-We will publish your changes to https://iam.cloudonaut.io as soon as possible after merging your PR.
+A pipeline will publish your changes to https://iam.cloudonaut.io within 15 minutes after merging your PR.
