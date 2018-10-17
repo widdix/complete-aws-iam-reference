@@ -3,7 +3,10 @@
 | [elasticmapreduce:AddInstanceGroups](http://docs.aws.amazon.com/ElasticMapReduce/latest/API/API_AddInstanceGroups.html) | AddInstanceGroups adds an instance group to a running cluster. | ??? | - |
 | [elasticmapreduce:AddTags](http://docs.aws.amazon.com/ElasticMapReduce/latest/API/API_AddTags.html) | Adds tags to an Amazon EMR resource. | ??? | - |
 | [elasticmapreduce:AddJobFlowSteps](http://docs.aws.amazon.com/ElasticMapReduce/latest/API/API_AddJobFlowSteps.html) | AddJobFlowSteps adds new steps to a running job flow. | ??? | - |
+| [elasticmapreduce:CreateSecurityConfiguration](http://docs.aws.amazon.com/ElasticMapReduce/latest/API/API_CreateSecurityConfiguration.html) | Creates a security configuration, which is stored in the service and can be specified when a cluster is created. | ??? | - |
+| [elasticmapreduce:DeleteSecurityConfiguration](http://docs.aws.amazon.com/ElasticMapReduce/latest/API/API_DeleteSecurityConfiguration.html) | Deletes a security configuration. | ??? | - |
 | [elasticmapreduce:DescribeCluster](http://docs.aws.amazon.com/ElasticMapReduce/latest/API/API_DescribeCluster.html) | Provides cluster-level details including status, hardware and software configuration, VPC settings, and so on. | ??? | - |
+| [elasticmapreduce:DescribeSecurityConfiguration](http://docs.aws.amazon.com/ElasticMapReduce/latest/API/API_DescribeSecurityConfiguration.html) | Provides the details of a security configuration by returning the configuration JSON. | ??? | - |
 | [elasticmapreduce:DescribeJobFlows](http://docs.aws.amazon.com/ElasticMapReduce/latest/API/API_DescribeJobFlows.html) | This API is deprecated and will eventually be removed. | ??? | - |
 | [elasticmapreduce:DescribeStep](http://docs.aws.amazon.com/ElasticMapReduce/latest/API/API_DescribeStep.html) | Provides more detail about the cluster step. | ??? | - |
 | [elasticmapreduce:ListBootstrapActions](http://docs.aws.amazon.com/ElasticMapReduce/latest/API/API_ListBootstrapActions.html) | Provides information about the bootstrap actions associated with a cluster. | ??? | - |
