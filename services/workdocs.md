@@ -12,3 +12,4 @@
 | [workdocs:RegisterDirectory](http://docs.aws.amazon.com/workdocs/latest/adminguide/setting_up.html#iam_policies) | ??? | ??? | - |
 | [workdocs:RemoveUserFromGroup](http://docs.aws.amazon.com/workdocs/latest/adminguide/setting_up.html#iam_policies) | ??? | ??? | - |
 | [workdocs:UpdateInstanceAlias](http://docs.aws.amazon.com/workdocs/latest/adminguide/setting_up.html#iam_policies) | ??? | ??? | - |
+

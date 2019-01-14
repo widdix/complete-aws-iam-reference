@@ -35,3 +35,4 @@
 | [workmail:SetMailUserDetails](http://docs.aws.amazon.com/workmail/latest/adminguide/iam_users_groups.html) | ??? | ??? | - |
 | [workmail:SetMobilePolicyDetails](http://docs.aws.amazon.com/workmail/latest/adminguide/iam_users_groups.html) | ??? | ??? | - |
 | [workmail:WipeMobileDevice](http://docs.aws.amazon.com/workmail/latest/adminguide/iam_users_groups.html) | ??? | ??? | - |
+

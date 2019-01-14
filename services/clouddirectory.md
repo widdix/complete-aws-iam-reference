@@ -18,14 +18,14 @@
 | [clouddirectory:DeleteFacet](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_DeleteFacet.html) | Deletes a given Facet. | * | - |
 | [clouddirectory:DeleteObject](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_DeleteObject.html) | Deletes an object and its associated attributes. | * | - |
 | [clouddirectory:DeleteSchema](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_DeleteSchema.html) | Deletes a given schema. | * | - |
-| [clouddirectory:DeleteTypedLinkFacet](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_DeleteTypedLinkFacet.html) | Deletes a TypedLinkFacet. | * | - |
+| [clouddirectory:DeleteTypedLinkFacet](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_DeleteTypedLinkFacet.html) |  Deletes a TypedLinkFacet. | * | - |
 | [clouddirectory:DetachFromIndex](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_DetachFromIndex.html) | Detaches the specified object from the specified index. | * | - |
 | [clouddirectory:DetachObject](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_DetachObject.html) | Detaches a given object from the parent object. | * | - |
 | [clouddirectory:DetachPolicy](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_DetachPolicy.html) | Detaches a policy from an object. | * | - |
-| [clouddirectory:DetachTypedLink](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_DetachTypedLink.html) | Detaches a typed link from a specified source and target object. | * | - |
+| [clouddirectory:DetachTypedLink](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_DetachTypedLink.html) |  Detaches a typed link from a specified source and target object. | * | - |
 | [clouddirectory:DisableDirectory](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_DisableDirectory.html) | Disables the specified directory. | * | - |
 | [clouddirectory:EnableDirectory](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_EnableDirectory.html) | Enables the specified directory. | * | - |
-| [clouddirectory:GetAppliedSchemaVersion](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_GetAppliedSchemaVersion.html) | Returns current applied schema version ARN, including the minor version in use. | * | - |
+| [clouddirectory:GetAppliedSchemaVersion](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_GetAppliedSchemaVersion.html) |  Returns current applied schema version ARN, including the minor version in use. | * | - |
 | [clouddirectory:GetDirectory](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_GetDirectory.html) | Retrieves metadata about a directory. | * | - |
 | [clouddirectory:GetFacet](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_GetFacet.html) | Gets details of the Facet, such as facet name, attributes, Rules, or ObjectType. | * | - |
 | [clouddirectory:GetObjectAttributes](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_GetObjectAttributes.html) | Retrieves attributes within a facet that are associated with an object. | * | - |
@@ -38,7 +38,7 @@
 | [clouddirectory:ListDirectories](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListDirectories.html) | Lists directories created within an account. | * | - |
 | [clouddirectory:ListFacetAttributes](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListFacetAttributes.html) | Retrieves attributes attached to the facet. | * | - |
 | [clouddirectory:ListFacetNames](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListFacetNames.html) | Retrieves the names of facets that exist in a schema. | * | - |
-| [clouddirectory:ListIncomingTypedLinks](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListIncomingTypedLinks.html) | Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. | * | - |
+| [clouddirectory:ListIncomingTypedLinks](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListIncomingTypedLinks.html) |  Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. | * | - |
 | [clouddirectory:ListIndex](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListIndex.html) | Lists objects and indexed values attached to the index. | * | - |
 | [clouddirectory:ListObjectAttributes](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListObjectAttributes.html) | Lists all attributes that are associated with an object. | * | - |
 | [clouddirectory:ListObjectChildren](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListObjectChildren.html) | Returns a paginated list of child objects that are associated with a given object. | * | - |
@@ -49,7 +49,7 @@
 | [clouddirectory:ListPolicyAttachments](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListPolicyAttachments.html) | Returns all of the ObjectIdentifiers to which a given policy is attached. | * | - |
 | [clouddirectory:ListPublishedSchemaArns](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListPublishedSchemaArns.html) | Retrieves each published schema Amazon Resource Name (ARN). | * | - |
 | [clouddirectory:ListTagsForResource](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListTagsForResource.html) | Returns tags for a resource. | * | - |
-| [clouddirectory:ListTypedLinkFacetAttributes](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListTypedLinkFacetAttributes.html) | Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. | * | - |
+| [clouddirectory:ListTypedLinkFacetAttributes](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListTypedLinkFacetAttributes.html) |  Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. | * | - |
 | [clouddirectory:ListTypedLinkFacetNames](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListTypedLinkFacetNames.html) | Returns a paginated list of TypedLink facet names for a particular schema. | * | - |
 | [clouddirectory:LookupPolicy](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_LookupPolicy.html) | Lists all policies from the root of the Directory to the object specified. | * | - |
 | [clouddirectory:PublishSchema](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_PublishSchema.html) | Publishes a development schema with a version. | * | - |
@@ -61,5 +61,6 @@
 | [clouddirectory:UpdateObjectAttributes](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_UpdateObjectAttributes.html) | Updates a given object's attributes. | * | - |
 | [clouddirectory:UpdateSchema](http://docs.aws.amazon.com/directoryservice/latest/APIReference/API_UpdateSchema.html) | Updates the schema name with a new name. | * | - |
 | [clouddirectory:UpdateTypedLinkFacet](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_UpdateTypedLinkFacet.html) | Updates a TypedLinkFacet. | * | - |
-| [clouddirectory:UpgradeAppliedSchema](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_UpgradeAppliedSchema.html) | Upgrades a single directory in-place using the PublishedSchemaArn with schema updates found in MinorVersion. | * | - |
+| [clouddirectory:UpgradeAppliedSchema](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_UpgradeAppliedSchema.html) | Upgrades a single directory in-place using the PublishedSchemaArn with schema updates found in MinorVersion. | * | - |
 | [clouddirectory:UpgradePublishedSchema](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_UpgradePublishedSchema.html) | Upgrades a published schema under a new minor version revision using the current contents of DevelopmentSchemaArn. | * | - |
+

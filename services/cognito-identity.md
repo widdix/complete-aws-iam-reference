@@ -14,3 +14,4 @@
 | [cognito-identity:SetIdentityPoolRoles](http://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_SetIdentityPoolRoles.html) | Sets the roles for an identity pool. | * | - |
 | [cognito-identity:UnlinkDeveloperIdentity](http://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_UnlinkDeveloperIdentity.html) | Unlinks a DeveloperUserIdentifier from an existing identity. | arn:aws:cognito-sync:$region:$account:identitypool/$identity-pool-id | - |
 | [cognito-identity:UpdateIdentityPool](http://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_UpdateIdentityPool.html) | Updates a user pool. | arn:aws:cognito-sync:$region:$account:identitypool/$identity-pool-id | - |
+

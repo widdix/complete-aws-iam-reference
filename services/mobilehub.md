@@ -11,3 +11,4 @@
 | [mobilehub:UpdateProject](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_mobilehub.html) | ??? | ??? | - |
 | [mobilehub:ValidateProject](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_mobilehub.html) | ??? | ??? | - |
 | [mobilehub:VerifyServiceRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_mobilehub.html) | ??? | ??? | - |
+

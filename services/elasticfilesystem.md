@@ -11,3 +11,4 @@
 | [elasticfilesystem:DescribeMountTargets](http://docs.aws.amazon.com/efs/latest/ug/API_DescribeMountTargets.html) | Returns the descriptions of all the current mount targets, or a specific mount target, for a file system. | arn:aws:elasticfilesystem:$region:$account:file-system/$filesystem-id | - |
 | [elasticfilesystem:DeleteMountTarget](http://docs.aws.amazon.com/efs/latest/ug/API_DeleteMountTarget.html) | Deletes the specified mount target. | arn:aws:elasticfilesystem:$region:$account:file-system/$filesystem-id | - |
 | [elasticfilesystem:DeleteFileSystem](http://docs.aws.amazon.com/efs/latest/ug/API_DeleteFileSystem.html) | Deletes a file system, permanently severing access to its contents. | arn:aws:elasticfilesystem:$region:$account:file-system/$filesystem-id | - |
+

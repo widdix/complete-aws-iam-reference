@@ -31,3 +31,4 @@
 | [glacier:SetVaultNotifications](http://docs.aws.amazon.com/amazonglacier/latest/dev/api-vault-notifications-put.html) | Retrieving an archive and a vault inventory are asynchronous operations in Amazon Glacier for which you must first initiate a job and wait for the job to complete before you can download the job output. | arn:aws:glacier:$region:$account:vaults/$vault-name | glacier:ResourceTag/$tag-key |
 | [glacier:UploadArchive](http://docs.aws.amazon.com/amazonglacier/latest/dev/api-archive-post.html) | This operation adds an archive to a vault. | arn:aws:glacier:$region:$account:vaults/$vault-name | glacier:ResourceTag/$tag-key |
 | [glacier:UploadMultipartPart](http://docs.aws.amazon.com/amazonglacier/latest/dev/api-upload-part.html) | This multipart upload operation uploads a part of an archive. | arn:aws:glacier:$region:$account:vaults/$vault-name | glacier:ResourceTag/$tag-key |
+

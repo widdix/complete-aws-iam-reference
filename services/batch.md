@@ -16,3 +16,4 @@
 | [batch:TerminateJob](http://docs.aws.amazon.com/batch/latest/APIReference/API_TerminateJob.html) | Terminates jobs in a job queue. | ??? | - |
 | [batch:UpdateComputeEnvironment](http://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateComputeEnvironment.html) | Updates an AWS Batch compute environment. | ??? | - |
 | [batch:UpdateJobQueue](http://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateJobQueue.html) | Updates a job queue. | ??? | - |
+

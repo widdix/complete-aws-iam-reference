@@ -37,3 +37,4 @@
 | [inspector:StopDataCollection](http://docs.aws.amazon.com/inspector/latest/APIReference/API_StopDataCollection.html) | ??? | ??? | - |
 | [inspector:UpdateApplication](http://docs.aws.amazon.com/inspector/latest/APIReference/API_UpdateApplication.html) | ??? | ??? | - |
 | [inspector:UpdateAssessment](http://docs.aws.amazon.com/inspector/latest/APIReference/API_UpdateAssessment.html) | ??? | ??? | - |
+

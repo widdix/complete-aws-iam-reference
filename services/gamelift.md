@@ -31,3 +31,4 @@
 | [gamelift:UpdateFleetCapacity](http://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateFleetCapacity.html) | Updates capacity settings for a fleet. | ??? | - |
 | [gamelift:UpdateFleetPortSettings](http://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateFleetPortSettings.html) | Updates port settings for a fleet. | ??? | - |
 | [gamelift:UpdateGameSession](http://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateGameSession.html) | Updates game session properties. | ??? | - |
+

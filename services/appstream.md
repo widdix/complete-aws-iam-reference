@@ -15,3 +15,4 @@
 | [appstream:UpdateApplication](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_appstream.html) | ??? | * | - |
 | [appstream:UpdateApplicationState](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_appstream.html) | ??? | * | - |
 | [appstream:UpdateSessionState](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_appstream.html) | ??? | * | - |
+

@@ -46,3 +46,4 @@
 | [iot:UpdateCertificate](http://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCertificate.html) | Updates the status of the specified certificate. | ??? | - |
 | [iot:UpdateThing](http://docs.aws.amazon.com/iot/latest/apireference/API_UpdateThing.html) | Updates the data for a thing. | ??? | - |
 | [iot:UpdateThingShadow](http://docs.aws.amazon.com/iot/latest/apireference/API_UpdateThingShadow.html) | The UpdateThingShadow permission is checked every time a request is made to update the state of a thing shadow document. | arn:aws:iot:$region:$account:thing/$thing-name | - |
+

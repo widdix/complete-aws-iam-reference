@@ -55,3 +55,4 @@
 | [route53:UpdateTrafficPolicyInstance](https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateTrafficPolicyInstance.html) | Updates the resource record sets in a specified hosted zone that were created based on the settings in a specified traffic policy version. | * | - |
 | [route53:DisableDomainAutoRenew](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_route53.html) | This operation disables automatic renewal of your domain registration before the expiration date. (Deprecated in favor of route53domains:DisableDomainAutoRenew?) | * | - |
 | [route53:EnableDomainAutoRenew](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_route53.html) | This operation enables automatic renewal of your domain registration before the expiration date. (Deprecated in favor of route53domains:EnableDomainAutoRenew?) | * | - |
+

@@ -15,7 +15,7 @@
 | [lambda:InvokeFunction](http://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html) | Invokes a specific Lambda function. | arn:aws:lambda:$region:$account:function:$function-name | - |
 | [lambda:InvokeAsync](http://docs.aws.amazon.com/lambda/latest/dg/API_InvokeAsync.html) | This API is deprecated. We recommend you use Invoke API | arn:aws:lambda:$region:$account:function:$function-name | - |
 | [lambda:ListAliases](http://docs.aws.amazon.com/lambda/latest/dg/API_ListAliases.html) | Returns list of aliases created for a Lambda function. | arn:aws:lambda:$region:$account:function:$function-name | - |
-| [lambda:ListEventSourceMappings](http://docs.aws.amazon.com/lambda/latest/dg/API_ListEventSourceMappings.html) | Returns a list of event source mappings you created using the CreateEventSourceMapping (see CreateEventSourceMapping). |* | - |
+| [lambda:ListEventSourceMappings](http://docs.aws.amazon.com/lambda/latest/dg/API_ListEventSourceMappings.html) | Returns a list of event source mappings you created using the CreateEventSourceMapping (see CreateEventSourceMapping). | * | - |
 | [lambda:ListFunctions](http://docs.aws.amazon.com/lambda/latest/dg/API_ListFunctions.html) | Returns a list of your Lambda functions. | * | - |
 | [lambda:ListVersionsByFunction](http://docs.aws.amazon.com/lambda/latest/dg/API_ListVersionsByFunction.html) | List all versions of a function. | arn:aws:lambda:$region:$account:function:$function-name | - |
 | [lambda:PublishVersion](http://docs.aws.amazon.com/lambda/latest/dg/API_PublishVersion.html) | Publishes a version of your function from the current snapshot of $LATEST. | arn:aws:lambda:$region:$account:function:$function-name | - |
@@ -24,3 +24,4 @@
 | [lambda:UpdateEventSourceMapping](http://docs.aws.amazon.com/lambda/latest/dg/API_UpdateEventSourceMapping.html) | You can update an event source mapping. | arn:aws:lambda:$region:$account:event-source-mapping:$event-source-mapping-uuid | - |
 | [lambda:UpdateFunctionCode](http://docs.aws.amazon.com/lambda/latest/dg/API_UpdateFunctionCode.html) | Updates the code for the specified Lambda function. | arn:aws:lambda:$region:$account:function:$function-name | - |
 | [lambda:UpdateFunctionConfiguration](http://docs.aws.amazon.com/lambda/latest/dg/API_UpdateFunctionConfiguration.html) | Updates the configuration parameters for the specified Lambda function by using the values provided in the request. | arn:aws:lambda:$region:$account:function:$function-name | - |
+

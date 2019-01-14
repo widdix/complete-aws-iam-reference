@@ -38,5 +38,5 @@
 | [ses:VerifyDomainDkim](http://docs.aws.amazon.com/ses/latest/APIReference/API_VerifyDomainDkim.html) | Returns a set of DKIM tokens for a domain. | ??? | - |
 | [ses:VerifyDomainIdentity](http://docs.aws.amazon.com/ses/latest/APIReference/API_VerifyDomainIdentity.html) | Verifies a domain. | ??? | - |
 | [ses:VerifyEmailAddress](http://docs.aws.amazon.com/ses/latest/APIReference/API_VerifyEmailAddress.html) | Verifies an email address. | ??? | - |
-| [ses:VerifyEmailIdentity](http://docs.aws.amazon.com/ses/latest/APIReference/API_VerifyEmailIdentity.html) | Verifies an email address. | ??? | -|
+| [ses:VerifyEmailIdentity](http://docs.aws.amazon.com/ses/latest/APIReference/API_VerifyEmailIdentity.html) | Verifies an email address. | ??? | - |
 

@@ -24,3 +24,4 @@
 | [devicefarm:ListUniqueProblems](http://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListUniqueProblems.html) | Gets information about unique problems. | * | - |
 | [devicefarm:ListUploads](http://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListUploads.html) | Gets information about uploads. | * | - |
 | [devicefarm:ScheduleRun](http://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ScheduleRun.html) | Schedules a run. | * | - |
+

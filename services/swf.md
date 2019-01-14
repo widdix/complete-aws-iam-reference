@@ -43,3 +43,4 @@
 | [swf:StartTimer](http://docs.aws.amazon.com/amazonswf/latest/apireference/API_StartTimer.html) | ??? | arn:aws:swf:$region:$account:/domain/$domain_name | - |
 | [swf:StartWorkflowExecution](http://docs.aws.amazon.com/amazonswf/latest/apireference/API_StartWorkflowExecution.html) | Starts an execution of the workflow type in the specified domain using the provided workflowId and input data. | arn:aws:swf:$region:$account:/domain/$domain_name | swf:tagList.member.0, swf:tagList.member.1, swf:tagList.member.2, swf:tagList.member.3, swf:tagList.member.4, swf:taskList.name, swf:workflowType.name, swf:workflowType.version |
 | [swf:TerminateWorkflowExecution](http://docs.aws.amazon.com/amazonswf/latest/apireference/API_TerminateWorkflowExecution.html) | Records a WorkflowExecutionTerminated event and forces closure of the workflow execution identified by the given domain, runId, and workflowId. | arn:aws:swf:$region:$account:/domain/$domain_name | - |
+

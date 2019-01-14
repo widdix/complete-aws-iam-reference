@@ -6,3 +6,4 @@
 | [health:DescribeEvents](http://docs.aws.amazon.com/health/latest/APIReference/API_DescribeEvents.html) | Returns information about events that meet the specified filter criteria. | * | - |
 | [health:DescribeEventDetails](http://docs.aws.amazon.com/health/latest/APIReference/API_DescribeEventDetails.html) | Returns detailed information about one or more specified events. | * | - |
 | [health:DescribeEventTypes](http://docs.aws.amazon.com/health/latest/APIReference/API_DescribeEventTypes.html) | Returns the event types that meet the specified filter criteria. | * | - |
+

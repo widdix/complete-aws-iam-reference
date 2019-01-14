@@ -30,3 +30,4 @@
 | [ecs:UpdateContainerAgent](http://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateContainerAgent.html) | Updates the Amazon ECS container agent on a specified container instance. | arn:aws:ecs:$region:$account:container-instance/$container-instance-id | ecs:cluster |
 | [ecs:UpdateService](http://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateService.html) | Modifies the desired count, deployment configuration, or task definition used in a service. | * | - |
 | [ecs:UpdateContainerInstancesState](http://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateContainerInstancesState.html) | Modifies the status of an Amazon ECS container instance. | arn:aws:ecs:$region:$account:container-instance/$container-instance-id | ecs:cluster |
+

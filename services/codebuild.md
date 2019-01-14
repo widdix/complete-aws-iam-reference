@@ -14,3 +14,4 @@
 | [codebuild:StartBuild](http://docs.aws.amazon.com/codebuild/latest/APIReference/API_StartBuild.html) | Starts running a build. | arn:aws:codebuild:$region:$account:project/$project-name | - |
 | [codebuild:StopBuild](http://docs.aws.amazon.com/codebuild/latest/APIReference/API_StopBuild.html) | Attempts to stop running a build. | arn:aws:codebuild:$region:$account:project/$project-name | - |
 | [codebuild:UpdateProject](http://docs.aws.amazon.com/codebuild/latest/APIReference/API_UpdateProject.html) | Changes the settings of a build project. | arn:aws:codebuild:$region:$account:project/$project-name | - |
+

@@ -25,3 +25,4 @@
 | [cloudfront:ListTagsForResource](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListTagsForResource.html) | List tags for a CloudFront resource. | * | - |
 | [cloudfront:TagResource](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_TagResource.html) | Add tags to a CloudFront resource. | * | - |
 | [cloudfront:UntagResource](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_UntagResource.html) | Remove tags from a CloudFront resource. | * | - |
+

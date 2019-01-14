@@ -28,3 +28,4 @@
 | [cloudsearch:UpdateAvailabilityOptions](http://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_UpdateAvailabilityOptions.html) | Configures the availability options for a domain. | ??? | ??? |
 | [cloudsearch:UpdateScalingParameters](http://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_UpdateScalingParameters.html) | Configures scaling parameters for a domain. | ??? | ??? |
 | [cloudsearch:UpdateServiceAccessPolicies](http://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_UpdateServiceAccessPolicies.html) | Configures the access rules that control access to the domain's document and search endpoints. | ??? | ??? |
+

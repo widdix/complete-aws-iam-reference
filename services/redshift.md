@@ -60,8 +60,9 @@
 | [redshift:RebootCluster](http://docs.aws.amazon.com/redshift/latest/APIReference/API_RebootCluster.html) | ??? | arn:aws:redshift:$region:$account:cluster:$cluster-name | redshift:ResourceTag |
 | [redshift:ResetClusterParameterGroup](http://docs.aws.amazon.com/redshift/latest/APIReference/API_ResetClusterParameterGroup.html) | ??? | arn:aws:redshift:$region:$account:parametergroup:$parameter-group-name | redshift:ResourceTag |
 | [redshift:RestoreFromClusterSnapshot](http://docs.aws.amazon.com/redshift/latest/APIReference/API_RestoreFromClusterSnapshot.html) | ??? | arn:aws:redshift:$region:$account:cluster:$target-cluster-name, arn:aws:redshift:$region:$account:snapshot:$snapshot-cluster-name/$snapshot-name | redshift:ResourceTag |
-| [redshift:RestoreTableFromClusterSnapshot](http://docs.aws.amazon.com/redshift/latest/APIReference/API_RestoreTableFromClusterSnapshot.html) | arn:aws:redshift:$region:$account:snapshot:$cluster-name/$snapshot-name | redshift:ResourceTag |
+| [redshift:RestoreTableFromClusterSnapshot](http://docs.aws.amazon.com/redshift/latest/APIReference/API_RestoreTableFromClusterSnapshot.html) | ??? | arn:aws:redshift:$region:$account:snapshot:$cluster-name/$snapshot-name | redshift:ResourceTag |
 | [redshift:RevokeClusterSecurityGroupIngress](http://docs.aws.amazon.com/redshift/latest/APIReference/API_RevokeClusterSecurityGroupIngress.html) | ??? | arn:aws:redshift:$region:$account:securitygroup:$security-group-name | redshift:ResourceTag |
 | [redshift:RevokeSnapshotAccess](http://docs.aws.amazon.com/redshift/latest/APIReference/API_RevokeSnapshotAccess.html) | ??? | arn:aws:redshift:$region:$account:snapshot:$cluster-name/$snapshot-name | redshift:ResourceTag |
 | [redshift:RotateEncryptionKey](http://docs.aws.amazon.com/redshift/latest/APIReference/API_RotateEncryptionKey.html) | ??? | arn:aws:redshift:$region:$account:cluster:$cluster-name | redshift:ResourceTag |
 | [redshift:ViewQueriesInConsole](http://docs.aws.amazon.com/redshift/latest/APIReference/API_ViewQueriesInConsole.html) | ??? | ??? | ??? |
+

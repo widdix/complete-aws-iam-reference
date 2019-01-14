@@ -28,3 +28,4 @@
 | [route53domains:ListDnssec](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-configure-dnssec.html) | (console only) | arn:aws:route53domains:::* | - |
 | [route53domains:AddDnssec](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-configure-dnssec.html) | (console only) | arn:aws:route53domains:::* | - |
 | [route53domains:RemoveDnssec](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-configure-dnssec.html) | (console only) | arn:aws:route53domains:::* | - |
+
