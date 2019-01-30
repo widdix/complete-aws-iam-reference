@@ -7,3 +7,4 @@
 | [application-autoscaling:DescribeScalingPolicies](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_DescribeScalingPolicies.html) | Provides descriptive information about the scaling policies in the specified namespace. | * | - |
 | [application-autoscaling:PutScalingPolicy](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_PutScalingPolicy.html) | Creates or updates a policy for an Application Auto Scaling scalable target. | * | - |
 | [application-autoscaling:RegisterScalableTarget](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html) | Registers or updates a scalable target. | * | - |
+

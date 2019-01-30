@@ -17,3 +17,4 @@
 | [ecr:PutImage](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutImage.html) | Creates or updates the image manifest associated with an image. | arn:aws:ecr:$region:$account:repository/$repository-name | - |
 | [ecr:SetRepositoryPolicy](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_SetRepositoryPolicy.html) | Applies a repository policy on a specified repository to control access permissions. | arn:aws:ecr:$region:$account:repository/$repository-name | - |
 | [ecr:UploadLayerPart](http://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_UploadLayerPart.html) | Uploads an image layer part to Amazon ECR. | arn:aws:ecr:$region:$account:repository/$repository-name | - |
+

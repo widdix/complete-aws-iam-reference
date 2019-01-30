@@ -9,3 +9,4 @@
 | [shield:DescribeSubscription](http://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_DescribeSubscription.html) | Provides details about the AWS Shield Advanced subscription for an account. | ??? | - |
 | [shield:ListAttacks](http://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_ListAttacks.html) | Returns all ongoing DDoS attacks or all DDoS attacks during a specified time period. | ??? | - |
 | [shield:ListProtections](http://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_ListProtections.html) | Lists all Protection objects for the account. | ??? | - |
+

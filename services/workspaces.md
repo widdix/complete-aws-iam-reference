@@ -7,3 +7,4 @@
 | [workspaces:RebootWorkspaces](http://docs.aws.amazon.com/workspaces/latest/devguide/API_RebootWorkspaces.html) | Reboots the specified WorkSpaces. | ??? | - |
 | [workspaces:RebuildWorkspaces](http://docs.aws.amazon.com/workspaces/latest/devguide/API_RebuildWorkspaces.html) | Rebuilds the specified WorkSpaces. | ??? | - |
 | [workspaces:TerminateWorkspaces](http://docs.aws.amazon.com/workspaces/latest/devguide/API_TerminateWorkspaces.html) | Terminates the specified WorkSpaces. | ??? | - |
+

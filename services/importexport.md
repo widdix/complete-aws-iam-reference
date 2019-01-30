@@ -6,3 +6,4 @@
 | [importexport:ListJobs](http://docs.aws.amazon.com/AWSImportExport/latest/DG/WebListJobs.html) | This action returns the jobs associated with the requester. | * | - |
 | [importexport:GetStatus](http://docs.aws.amazon.com/AWSImportExport/latest/DG/WebGetStatus.html) | This action returns information about a job, including where the job is in the processing pipeline, the status of the results, and the signature value associated with the job. | * | - |
 | [importexport:GetShippingLabel](http://docs.aws.amazon.com/AWSImportExport/latest/DG/WebGetShippingLabel.html) | This action generates a pre-paid shipping label that you will use to ship your device to AWS for processing. | * | - |
+

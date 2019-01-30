@@ -25,3 +25,4 @@
 | [sns:SetTopicAttributes](http://docs.aws.amazon.com/sns/latest/api/API_SetTopicAttributes.html) | Allows a topic owner to set an attribute of the topic to a new value. | ??? | ??? |
 | [sns:Subscribe](http://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html) | Prepares to subscribe an endpoint by sending the endpoint a confirmation message. | ??? | sns:Endpoint, sns:Protocol |
 | [sns:Unsubscribe](http://docs.aws.amazon.com/sns/latest/api/API_Unsubscribe.html) | Deletes a subscription. | ??? | ??? |
+

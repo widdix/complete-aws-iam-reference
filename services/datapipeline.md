@@ -21,3 +21,4 @@
 | [datapipeline:SetStatus](http://docs.aws.amazon.com/datapipeline/latest/APIReference/API_SetStatus.html) | Requests that the status of the specified physical or logical pipeline objects be updated in the specified pipeline. | * | datapipeline:Tag/$tag-key, datapipeline:PipelineCreator |
 | [datapipeline:SetTaskStatus](http://docs.aws.amazon.com/datapipeline/latest/APIReference/API_SetTaskStatus.html) | Task runners call SetTaskStatus to notify AWS Data Pipeline that a task is completed and provide information about the final status. | * | datapipeline:Tag/$tag-key, datapipeline:PipelineCreator |
 | [datapipeline:ValidatePipelineDefinition](http://docs.aws.amazon.com/datapipeline/latest/APIReference/API_ValidatePipelineDefinition.html) | Validates the specified pipeline definition to ensure that it is well formed and can be run without error. | * | datapipeline:Tag/$tag-key, datapipeline:PipelineCreator |
+

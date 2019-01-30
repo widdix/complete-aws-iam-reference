@@ -10,3 +10,4 @@
 | [discovery:ListConfigurations](http://docs.aws.amazon.com/application-discovery/latest/APIReference/API_ListConfigurations.html) | Retrieves a list of configurations items according to the criteria you specify in a filter. | * | - |
 | [discovery:StartDataCollectionByAgentIds](http://docs.aws.amazon.com/application-discovery/latest/APIReference/API_StartDataCollectionByAgentIds.html) | Instructs the specified agents or Connectors to start collecting data. | * | - |
 | [discovery:StopDataCollectionByAgentIds](http://docs.aws.amazon.com/application-discovery/latest/APIReference/API_StopDataCollectionByAgentIds.html) | Instructs the specified agents or Connectors to stop collecting data. | * | - |
+

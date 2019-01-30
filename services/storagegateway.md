@@ -53,3 +53,4 @@
 | [storagegateway:UpdateMaintenanceStartTime](http://docs.aws.amazon.com/storagegateway/latest/APIReference/API_UpdateMaintenanceStartTime.html) | Updates a gateway's weekly maintenance start time information, including day and time of the week. | arn:aws:storagegateway:$region:$account:gateway/$gateway-id | - |
 | [storagegateway:UpdateSnapshotSchedule](http://docs.aws.amazon.com/storagegateway/latest/APIReference/API_UpdateSnapshotSchedule.html) | Updates a snapshot schedule configured for a gateway volume. | arn:aws:storagegateway:$region:$account:gateway/$gateway-id/volume/$volume-id | - |
 | [storagegateway:UpdateVTLDeviceType](http://docs.aws.amazon.com/storagegateway/latest/APIReference/API_UpdateVTLDeviceType.html) | Updates the type of medium changer in a gateway-VTL. | arn:aws:storagegateway:$region:$account:gateway/$gateway-id/device/vtldevice | - |
+

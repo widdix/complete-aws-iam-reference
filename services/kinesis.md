@@ -6,7 +6,7 @@
 | [kinesis:DeleteStream](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_DeleteStream.html) | Deletes an Amazon Kinesis stream and all its shards and data. | arn:aws:kinesis:$region:$account:stream/$stream-name | - |
 | [kinesis:DescribeLimits](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeLimits.html) | Describes the shard limits and usage for the account. | * | - |
 | [kinesis:DescribeStream](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeStream.html) | Describes the specified Amazon Kinesis stream. | arn:aws:kinesis:$region:$account:stream/$stream-name | - |
-| [kinesis:DescribeStreamSummary](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeStreamSummary.html) | Provides a summarized description of the specified Kinesis stream without the shard list. | ??? | - |
+| [kinesis:DescribeStreamSummary](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeStreamSummary.html) |  Provides a summarized description of the specified Kinesis stream without the shard list. | ??? | - |
 | [kinesis:DisableEnhancedMonitoring](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_DisableEnhancedMonitoring.html) | Disables enhanced monitoring. | * | - |
 | [kinesis:EnableEnhancedMonitoring](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_EnableEnhancedMonitoring.html) | Enables enhanced Kinesis stream monitoring for shard-level metrics. | * | - |
 | [kinesis:GetRecords](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetRecords.html) | Gets data records from an Amazon Kinesis stream's shard. | * | - |
@@ -22,3 +22,4 @@
 | [kinesis:StartStreamEncryption](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_StartStreamEncryption.html) | Enables or updates server-side encryption using an AWS KMS key for a specified stream. | ??? | - |
 | [kinesis:StopStreamEncryption](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_StopStreamEncryption.html) | Disables server-side encryption for a specified stream. | ??? | - |
 | [kinesis:UpdateShardCount](http://docs.aws.amazon.com/kinesis/latest/APIReference/API_UpdateShardCount.html) | Update the shard count. | * | - |
+

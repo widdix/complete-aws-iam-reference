@@ -29,3 +29,4 @@
 | [dms:StartReplicationTask](http://docs.aws.amazon.com/dms/latest/APIReference//API_StartReplicationTask.html) | Starts the replication task. | ??? | - |
 | [dms:StopReplicationTask](http://docs.aws.amazon.com/dms/latest/APIReference//API_StopReplicationTask.html) | Stops the replication task. | ??? | - |
 | [dms:TestConnection](http://docs.aws.amazon.com/dms/latest/APIReference//API_TestConnection.html) | Tests the connection between the replication instance and the endpoint. | ??? | - |
+

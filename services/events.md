@@ -12,3 +12,4 @@
 | [events:PutTargets](http://docs.aws.amazon.com/AmazonCloudWatchEvents/latest/APIReference/API_PutTargets.html) | Adds target(s) to a rule. | * | ??? |
 | [events:RemoveTargets](http://docs.aws.amazon.com/AmazonCloudWatchEvents/latest/APIReference/API_RemoveTargets.html) | Removes target(s) from a rule so that when the rule is triggered, those targets will no longer be invoked. | arn:$partition:events:$region:$account:rule/$rulename | ??? |
 | [events:TestEventPattern](http://docs.aws.amazon.com/AmazonCloudWatchEvents/latest/APIReference/API_TestEventPattern.html) | Tests whether an event pattern matches the provided event. | * | ??? |
+

@@ -12,3 +12,4 @@
 | [cloudtrail:StartLogging](http://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_StartLogging.html) | Starts the recording of AWS API calls and log file delivery for a trail. | arn:aws:cloudtrail:$region:$account:trail/$trailname | - |
 | [cloudtrail:StopLogging](http://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_StopLogging.html) | Suspends the recording of AWS API calls and log file delivery for the specified trail. | arn:aws:cloudtrail:$region:$account:trail/$trailname | - |
 | [cloudtrail:UpdateTrail](http://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_UpdateTrail.html) | Updates the settings that specify delivery of log files. | ??? | - |
+

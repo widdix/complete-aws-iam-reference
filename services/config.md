@@ -25,3 +25,4 @@
 | [config:PutEvaluations](http://docs.aws.amazon.com/config/latest/APIReference/API_PutEvaluations.html) | Used by an AWS Lambda function to deliver evaluation results to AWS Config. | ??? | - |
 | [config:StartConfigurationRecorder](http://docs.aws.amazon.com/config/latest/APIReference/API_StartConfigurationRecorder.html) | Starts recording configurations of the AWS resources you have selected to record in your AWS account. | ??? | - |
 | [config:StopConfigurationRecorder](http://docs.aws.amazon.com/config/latest/APIReference/API_StopConfigurationRecorder.html) | Stops recording configurations of the AWS resources you have selected to record in your AWS account. | ??? | - |
+

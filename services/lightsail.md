@@ -47,3 +47,4 @@
 | [lightsail:StopInstance](http://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_StopInstance.html) | Stops a specific Amazon Lightsail instance that is currently running. | ??? | - |
 | [lightsail:UnpeerVpc](http://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_UnpeerVpc.html) | Attempts to unpeer the Lightsail VPC from the user's default VPC. | ??? | - |
 | [lightsail:UpdateDomainEntry](http://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_UpdateDomainEntry.html) | Updates a domain recordset after it is created. | ??? | - |
+

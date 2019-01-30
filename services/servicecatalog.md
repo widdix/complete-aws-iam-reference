@@ -43,3 +43,4 @@
 | [servicecatalog:UpdateProduct](http://docs.aws.amazon.com/servicecatalog/latest/dg/API_UpdateProduct.html) | Updates an existing product. | ??? | ??? |
 | [servicecatalog:UpdateProvisionedProduct](http://docs.aws.amazon.com/servicecatalog/latest/dg/API_UpdateProvisionedProduct.html) | Requests updates to the configuration of an existing ProvisionedProduct object. | ??? | ??? |
 | [servicecatalog:UpdateProvisioningArtifact](http://docs.aws.amazon.com/servicecatalog/latest/dg/API_UpdateProvisioningArtifact.html) | Updates an existing provisioning artifact's information. | ??? | ??? |
+

@@ -6,3 +6,4 @@
 | [polly:ListLexicons](https://docs.aws.amazon.com/polly/latest/dg/API_ListLexicons.html) | Returns a list of pronunciation lexicons stored in an AWS Region. | * | - |
 | [polly:PutLexicon](https://docs.aws.amazon.com/polly/latest/dg/API_PutLexicon.html) | Stores a pronunciation lexicon in an AWS Region. | * | - |
 | [polly:SynthesizeSpeech](https://docs.aws.amazon.com/polly/latest/dg/API_SynthesizeSpeech.html) | Synthesizes UTF-8 input, plain text or SSML, to a stream of bytes. | * | - |
+

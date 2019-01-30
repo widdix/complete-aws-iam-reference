@@ -19,3 +19,4 @@
 | [directconnect:DescribeLocations](http://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLocations.html) | Returns the list of AWS Direct Connect locations in the current AWS region. | * | - |
 | [directconnect:DescribeVirtualGateways](http://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeVirtualGateways.html) | Returns a list of virtual private gateways owned by the AWS account. | * | - |
 | [directconnect:DescribeVirtualInterfaces](http://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeVirtualInterfaces.html) | Displays all virtual interfaces for an AWS account. | * | - |
+

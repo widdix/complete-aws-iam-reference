@@ -26,3 +26,4 @@
 | [logs:PutRetentionPolicy](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutRetentionPolicy.html) | Sets the retention of the specified log group. | ??? | - |
 | [logs:PutSubscriptionFilter](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutSubscriptionFilter.html) | Creates or updates a subscription filter and associates it with the specified log group. | ??? | - |
 | [logs:TestMetricFilter](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_TestMetricFilter.html) | Tests the filter pattern of a metric filter against a sample of log event messages. | ??? | - |
+

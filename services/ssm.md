@@ -2,7 +2,7 @@
 | --- | --- | --- | --- |
 | [ssm:AddTagsToResource](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_AddTagsToResource.html) | Adds or overwrites one or more tags for the specified resource. | arn:aws:ssm:$region:$account:document/$name | - |
 | [ssm:CancelCommand](https://docs.aws.amazon.com/ssm/latest/APIReference/API_CancelCommand.html) | Attempts to cancel the command specified by the Command ID. | ??? | - |
-| [ssm:CreateActivation](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_CreateActivation.html) | Registers your on-premises server or virtual machine with Amazon EC2 so that you can manage these resources using Run Command.  | ??? | - |
+| [ssm:CreateActivation](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_CreateActivation.html) | Registers your on-premises server or virtual machine with Amazon EC2 so that you can manage these resources using Run Command. | ??? | - |
 | [ssm:CreateAssociation](https://docs.aws.amazon.com/ssm/latest/APIReference/API_CreateAssociation.html) | Associates the specified SSM document with the specified instance. | arn:aws:ssm:$region:$account:document/$name | - |
 | [ssm:CreateAssociationBatch](https://docs.aws.amazon.com/ssm/latest/APIReference/API_CreateAssociationBatch.html) | Associates the specified SSM document with the specified instances. | arn:aws:ssm:$region:$account:document/$name | - |
 | [ssm:CreateDocument](https://docs.aws.amazon.com/ssm/latest/APIReference/API_CreateDocument.html) | Creates an SSM document. | ??? | - |
@@ -15,7 +15,7 @@
 | [ssm:DeleteMaintenanceWindow](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DeleteMaintenanceWindow.html) | Delete an SSM maintenance window. | arn:aws:ssm:$region:$account:maintenancewindow/$resource-id | - |
 | [ssm:DeleteParameter](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DeleteParameter.html) | Delete a parameter from the system. | arn:aws:ssm:$region:$account:parameter/$name | - |
 | [ssm:DeleteParameters](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DeleteParameters.html) | Delete a list of parameters. | arn:aws:ssm:$region:$account:parameter/$name | - |
-| [ssm:DeletePatchBaseline](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DeletePatchBaseline.html) | Delete a SSM patch baseline. |  arn:aws:ssm:$region:$account:patchbaseline/$resource-id | - |
+| [ssm:DeletePatchBaseline](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DeletePatchBaseline.html) | Delete a SSM patch baseline. | arn:aws:ssm:$region:$account:patchbaseline/$resource-id | - |
 | [ssm:DeleteResourceDataSync](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DeleteResourceDataSync.html) | Deletes a Resource Data Sync configuration. | ??? | - |
 | [ssm:DeregisterManagedInstance](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DeregisterManagedInstance.html) | Removes the server or virtual machine from the list of registered servers. | arn:aws:ssm:$region:$account:managed-instance/$managed-instance-name | - |
 | [ssm:DeregisterPatchBaselineForPatchGroup](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DeregisterPatchBaselineForPatchGroup.html) | Deregister a SSM patch baseline from a patch group. | arn:aws:ssm:$region:$account:patchbaseline/$resource-id | - |
@@ -32,10 +32,10 @@
 | [ssm:DescribeInstancePatchStates](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribeInstancePatchStates.html) | Describe one or more of your instance patch states. One per each instance ID. | ??? | - |
 | [ssm:DescribeInstancePatchStatesForPatchGroup](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribeInstancePatchStatesForPatchGroup.html) | Describe one or more of your instance patch states over all instances in given patch group. | ??? | - |
 | [ssm:DescribeInstancePatches](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribeInstancePatches.html) | Describe one or more of your instance patch states for a given instance ID. | ??? | - |
-| [ssm:DescribeInstanceProperties](-) | Describes one or more your instances. |  arn:aws:ssm:$region:$account:document/$name | - |
+| [ssm:DescribeInstanceProperties](-) | Describes one or more your instances. | arn:aws:ssm:$region:$account:document/$name | - |
 | [ssm:DescribeMaintenanceWindowExecutionTaskInvocations](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribeMaintenanceWindowExecutionTaskInvocations.html) | Describe one or more of your maintenance window execution task invocations history. | ??? | - |
 | [ssm:DescribeMaintenanceWindowExecutionTasks](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribeMaintenanceWindowExecutionTasks.html) | Describe one or more of your maintenance window execution tasks history. | ??? | - |
-| [ssm:DescribeMaintenanceWindowExecutions](https://docs.aws.amazon.com/systems-manager/latest/APIReference/PI_DescribeMaintenanceWindowExecutions.html) | Describe one or more of your maintenance window execution history. |  arn:aws:ssm:$region:$account:maintenancewindow/$resource-id | - |
+| [ssm:DescribeMaintenanceWindowExecutions](https://docs.aws.amazon.com/systems-manager/latest/APIReference/PI_DescribeMaintenanceWindowExecutions.html) | Describe one or more of your maintenance window execution history. | arn:aws:ssm:$region:$account:maintenancewindow/$resource-id | - |
 | [ssm:DescribeMaintenanceWindowTargets](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribeMaintenanceWindowTargets.html) | Describe one or more of your maintenance windows targets. | arn:aws:ssm:$region:$account:maintenancewindow/$resource-id | - |
 | [ssm:DescribeMaintenanceWindowTasks](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribeMaintenanceWindowTasks.html) | Describe one or more of your maintenance windows tasks. | arn:aws:ssm:$region:$account:maintenancewindow/$resource-id | - |
 | [ssm:DescribeMaintenanceWindows](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribeMaintenanceWindows.html) | Describe one or more of your maintenance windows. | ??? | - |
@@ -44,7 +44,7 @@
 | [ssm:DescribePatchGroupState](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribePatchGroupState.html) | Get a high level patch state report of given patch group. | ??? | - |
 | [ssm:DescribePatchGroups](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribePatchGroups.html) | Describes one or more patch group to SSM patch baseline mappings. | ??? | - |
 | [ssm:DescribeSessions](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribeSessions.html) | Describe one or more Session Manager sessions. | ??? | - |
-| [ssm:GetAutomationExecution](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_AutomationExecution.html) | | ??? | - |
+| [ssm:GetAutomationExecution](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_AutomationExecution.html) |  | ??? | - |
 | [ssm:GetConnectionStatus](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetConnectionStatus.html) | Get the connection status for an instance. | ??? | - |
 | [ssm:GetDefaultPatchBaseline](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetDefaultPatchBaseline.html) | Get the default SSM patch baseline. | arn:aws:ssm:$region:$account:patchbaseline/$resource-id | - |
 | [ssm:GetDeployablePatchSnapshotForInstance](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetDeployablePatchSnapshotForInstance.html) | Get the snapshot of patches to be installed for given instances. | ??? | - |
@@ -53,13 +53,13 @@
 | [ssm:GetMaintenanceWindowExecution](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetMaintenanceWindowExecution.html) | Get a SSM maintenance window execution. | ??? | - |
 | [ssm:GetMaintenanceWindowExecutionTask](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetMaintenanceWindowExecutionTask.html) | Get a SSM maintenance window execution task. | ??? | - |
 | [ssm:GetMaintenanceWindowExecutionTaskInvocation](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetMaintenanceWindowExecutionTaskInvocation.html) | Get a SSM maintenance window execution task invocation. | ??? | - |
-| [ssm:GetMaintenanceWindowTask](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetMaintenanceWindowTask.html) | Get a SSM maintenance window task. | arn:aws:ssm:$region:$account:maintenancewindow/$resource-id,arn:aws:ssm:$region:$account:windowtask/$resource-id  | - |
+| [ssm:GetMaintenanceWindowTask](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetMaintenanceWindowTask.html) | Get a SSM maintenance window task. | arn:aws:ssm:$region:$account:maintenancewindow/$resource-id,arn:aws:ssm:$region:$account:windowtask/$resource-id | - |
 | [ssm:GetManifest](-) | Fetches the installation description for a package. | ??? | - |
 | [ssm:GetParameter](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html) | Get information about a parameter by using the parameter name. | arn:aws:ssm:$region:$account:parameter/$name | ssm:resourceTag/tag-key |
 | [ssm:GetParameterHistory](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameterHistory.html) | Query a list of all parameters used by the AWS account. | arn:aws:ssm:$region:$account:parameter/$name | ssm:resourceTag/tag-key |
 | [ssm:GetParameters](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameters.html) | Get details of a parameter. | arn:aws:ssm:$region:$account:parameter/$name | ssm:resourceTag/tag-key |
 | [ssm:GetParametersByPath](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParametersByPath.html) | Retrieve parameters in a specific hierarchy. | arn:aws:ssm:$region:$account:parameter/$name | - |
-| [ssm:GetPatchBaseline](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetPatchBaseline.html) | Get a SSM patch baseline |  arn:aws:ssm:$region:$account:patchbaseline/$resource-id | - |
+| [ssm:GetPatchBaseline](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetPatchBaseline.html) | Get a SSM patch baseline | arn:aws:ssm:$region:$account:patchbaseline/$resource-id | - |
 | [ssm:GetPatchBaselineForPatchGroup](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetPatchBaselineForPatchGroup.html) | Get the SSM patch baseline associated to the given patch group. | arn:aws:ssm:$region:$account:patchbaseline/$resource-id | - |
 | [ssm:ListAssociationVersions](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_ListAssociationVersions.html) | Lists versions of the specified association. | ??? | - |
 | [ssm:ListAssociations](https://docs.aws.amazon.com/ssm/latest/APIReference/API_ListAssociations.html) | Lists the associations for the specified SSM document or instance. | ??? | - |
@@ -77,7 +77,7 @@
 | [ssm:RegisterTaskWithMaintenanceWindow](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_RegisterTaskWithMaintenanceWindow.html) | Register a SSM window task to a maintenance window. | arn:aws:ssm:$region:$account:maintenancewindow/$resource-id | - |
 | [ssm:RemoveTagsFromResource](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_RemoveTagsFromResource.html) | Removes all tags from the specified resource. | arn:aws:ssm:$region:$account:document/$name | - |
 | [ssm:ResumeSession](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_ResumeSession.html) | Resume a disconnected SSM session manager connection. | arn:aws:ssm:$region:$account:session/$resource-id | - |
-| [ssm:SendAutomationSignal](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_SendAutomationSignal.html) | | ??? | - |
+| [ssm:SendAutomationSignal](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_SendAutomationSignal.html) |  | ??? | - |
 | [ssm:SendCommand](https://docs.aws.amazon.com/ssm/latest/APIReference/API_SendCommand.html) | Executes commands on one or more remote instances. | arn:aws:ssm:$region:$account:document/$name | ssm:resourceTag/tag-key |
 | [ssm:StartAutomationExecution](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_StartAutomationExecution.html) | Initiates execution of an Automation document. | ??? | - |
 | [ssm:StartSession](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_StartSession.html) | Start a connection to an instance using SSM Session Manager. | ??? | - |
@@ -85,8 +85,9 @@
 | [ssm:TerminateSession](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_TerminateSession.html) | Terminate an ongoing SSM Session Manager connection. | arn:aws:ssm:$region:$account:session/$resource-id | - |
 | [ssm:UpdateAssociationStatus](https://docs.aws.amazon.com/ssm/latest/APIReference/API_UpdateAssociationStatus.html) | Updates the status of the SSM document associated with the specified instance. | arn:aws:ssm:$region:$account:document/$name | - |
 | [ssm:UpdateInstanceInformation](-) | Updates the status of the SSM document associated with the specified instance. | arn:aws:ssm:$region:$account:document/$name | - |
-| [ssm:UpdateMaintenanceWindow](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_UpdateMaintenanceWindow.html) | Update a SSM maintenance window. | arn:aws:ssm:$region:$account:maintenancewindow/$resource-id  | - |
+| [ssm:UpdateMaintenanceWindow](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_UpdateMaintenanceWindow.html) | Update a SSM maintenance window. | arn:aws:ssm:$region:$account:maintenancewindow/$resource-id | - |
 | [ssm:UpdateMaintenanceWindowTarget](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_UpdateMaintenanceWindowTarget.html) | Update a SSM maintenance window target. | arn:aws:ssm:$region:$account:maintenancewindow/$resource-id,arn:aws:ssm:$region:$account:windowtarget/$resource-id | - |
 | [ssm:UpdateMaintenanceWindowTask](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_UpdateMaintenanceWindowTask.html) | Update a SSM maintenance window task. | arn:aws:ssm:$region:$account:maintenancewindow/$resource-id,arn:aws:ssm:$region:$account:windowtarget/$resource-id | - |
-| [ssm:UpdateManagedInstanceRole](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_UpdateManagedInstanceRole.html) | Assigns or changes an Amazon Identity and Access Management (IAM) role to the managed instance. |  arn:aws:ssm:$region:$account:maintenancewindow/$resource-id | - |
+| [ssm:UpdateManagedInstanceRole](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_UpdateManagedInstanceRole.html) | Assigns or changes an Amazon Identity and Access Management (IAM) role to the managed instance. | arn:aws:ssm:$region:$account:maintenancewindow/$resource-id | - |
 | [ssm:UpdatePatchBaseline](-) | Update a SSM patch baseline. | arn:aws:ssm:$region:$account:patchbaseline/$resource-id | - |
+

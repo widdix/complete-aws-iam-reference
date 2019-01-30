@@ -42,3 +42,4 @@
 | [waf-regional:UpdateSqlInjectionMatchSet](http://docs.aws.amazon.com/waf/latest/APIReference/API_regional_UpdateSqlInjectionMatchSet.html) | Inserts or deletes SqlInjectionMatchTuple objects (filters) in a SqlInjectionMatchSet. | ??? | - |
 | [waf-regional:UpdateWebACL](http://docs.aws.amazon.com/waf/latest/APIReference/API_regional_UpdateWebACL.html) | Inserts or deletes ActivatedRule objects in a WebACL. | ??? | - |
 | [waf-regional:UpdateXssMatchSet](http://docs.aws.amazon.com/waf/latest/APIReference/API_regional_UpdateXssMatchSet.html) | Inserts or deletes XssMatchTuple objects (filters) in an XssMatchSet. | ??? | - |
+

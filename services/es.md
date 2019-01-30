@@ -1,7 +1,7 @@
 | Action | Description | Resource | Condition |
 | --- | --- | --- | --- |
-| [es:AddTags](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-configuration-api.html#es-configuration-api-actions-addtags) | Attaches resource tags to an Amazon ES domain.  | ??? | - |
-| [es:CreateElasticsearchDomain](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-configuration-api.html#es-configuration-api-actions-createelasticsearchdomain) | Creates a new Amazon ES domain.| ??? | - |
+| [es:AddTags](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-configuration-api.html#es-configuration-api-actions-addtags) | Attaches resource tags to an Amazon ES domain. | ??? | - |
+| [es:CreateElasticsearchDomain](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-configuration-api.html#es-configuration-api-actions-createelasticsearchdomain) | Creates a new Amazon ES domain. | ??? | - |
 | [es:DeleteElasticsearchDomain](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-configuration-api.html#es-configuration-api-actions-deleteelasticsearchdomain) | Deletes an Amazon ES domain and all of its data. | ??? | - |
 | [es:DescribeElasticsearchDomain](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-configuration-api.html#es-configuration-api-actions-describeelasticsearchdomain) | Describes the domain configuration for the specified Amazon ES domain, including the domain ID, domain service endpoint, and domain ARN. | ??? | - |
 | [es:DescribeElasticsearchDomains](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-configuration-api.html#es-configuration-api-actions-describeesdomains) | Describes the domain configuration for up to five specified Amazon ES domains. | ??? | - |
@@ -15,3 +15,4 @@
 | [es:ESHttpHead](#) | HTTP HEAD requests to ES API | arn:aws:es:$region:$account-id:domain/$domain/$path | - |
 | [es:ESHttpPost](#) | HTTP POST requests to ES API | arn:aws:es:$region:$account-id:domain/$domain/$path | - |
 | [es:ESHttpPut](#) | HTTP PUT requests to ES API | arn:aws:es:$region:$account-id:domain/$domain/$path | - |
+

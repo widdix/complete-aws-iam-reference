@@ -46,3 +46,4 @@
 | [cognito-idp:UpdateGroup](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateGroup.html) | Updates the specified group with the specified attributes. | ??? | - |
 | [cognito-idp:UpdateUserPool](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPool.html) | Updates the specified user pool with the specified attributes. | ??? | - |
 | [cognito-idp:UpdateUserPoolClient](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateUserPoolClient.html) | Allows the developer to update the specified user pool client and password policy. | ??? | - |
+

@@ -27,3 +27,4 @@
 | [elasticmapreduce:SetTerminationProtection](http://docs.aws.amazon.com/ElasticMapReduce/latest/API/API_SetTerminationProtection.html) | SetTerminationProtection locks a job flow so the Amazon EC2 instances in the cluster cannot be terminated by user intervention, an API call, or in the event of a job-flow error. | ??? | - |
 | [elasticmapreduce:SetVisibleToAllUsers](http://docs.aws.amazon.com/ElasticMapReduce/latest/API/API_SetVisibleToAllUsers.html) | Sets whether all AWS Identity and Access Management (IAM) users under your account can access the specified job flows. | ??? | - |
 | [elasticmapreduce:TerminateJobFlows](http://docs.aws.amazon.com/ElasticMapReduce/latest/API/API_TerminateJobFlows.html) | TerminateJobFlows shuts a list of job flows down. | ??? | - |
+

@@ -13,3 +13,4 @@
 | [kinesisanalytics:StartApplication](http://docs.aws.amazon.com/kinesisanalytics/latest/dev/API_StartApplication.html) | Starts the specified Amazon Kinesis Analytics application. | arn:aws:kinesisanalytics:$region:$account:application/$application-name | - |
 | [kinesisanalytics:StopApplication](http://docs.aws.amazon.com/kinesisanalytics/latest/dev/API_StopApplication.html) | Stops the application from processing input data. | arn:aws:kinesisanalytics:$region:$account:application/$application-name | - |
 | [kinesisanalytics:UpdateApplication](http://docs.aws.amazon.com/kinesisanalytics/latest/dev/API_UpdateApplication.html) | Updates an existing Amazon Kinesis Analytics application. | arn:aws:kinesisanalytics:$region:$account:application/$application-name | - |
+

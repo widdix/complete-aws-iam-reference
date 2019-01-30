@@ -6,3 +6,4 @@
 | [sts:DecodeAuthorizationMessage](http://docs.aws.amazon.com/STS/latest/APIReference/API_DecodeAuthorizationMessage.html) | Decodes additional information about the authorization status of a request from an encoded message returned in response to an AWS request. | ??? | - |
 | [sts:GetFederationToken](http://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html) | Returns a set of temporary security credentials (consisting of an access key ID, a secret access key, and a security token) for a federated user. | arn:aws:sts::$account:federated-user/$user-name | - |
 | [sts:GetSessionToken](http://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html) | Returns a set of temporary credentials for an AWS account or IAM user. | arn:aws:iam::$account:mfa/$virtual-device-name | - |
+

@@ -25,3 +25,4 @@
 | [machinelearning:UpdateDataSource](http://docs.aws.amazon.com/machine-learning/latest/APIReference/API_UpdateDataSource.html) | Updates the DataSourceName of a DataSource. | arn:aws:machinelearning:$region:$account:datasource/$datasource-id | - |
 | [machinelearning:UpdateEvaluation](http://docs.aws.amazon.com/machine-learning/latest/APIReference/API_UpdateEvaluation.html) | Updates the EvaluationName of an Evaluation. | arn:aws:machinelearning:$region:$account:evaluation/$evaluation-id | - |
 | [machinelearning:UpdateMLModel](http://docs.aws.amazon.com/machine-learning/latest/APIReference/API_UpdateMLModel.html) | Updates the MLModelName and the ScoreThreshold of an MLModel. | arn:aws:machinelearning:$region:$account:mlmodel/$mlmodel-id | - |
+

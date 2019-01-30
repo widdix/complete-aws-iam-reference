@@ -17,3 +17,4 @@
 | [elastictranscoder:UpdatePipeline](http://docs.aws.amazon.com/elastictranscoder/latest/developerguide/update-pipeline.html) | To update settings for a pipeline. | arn:aws:elastictranscoder:$region:$account:pipeline/$pipeline-id | - |
 | [elastictranscoder:UpdatePipelineNotifications](http://docs.aws.amazon.com/elastictranscoder/latest/developerguide/update-pipeline-notifications.html) | To update only Amazon Simple Notification Service (Amazon SNS) notifications for a pipeline. | arn:aws:elastictranscoder:$region:$account:pipeline/$pipeline-id | - |
 | [elastictranscoder:UpdatePipelineStatus](http://docs.aws.amazon.com/elastictranscoder/latest/developerguide/update-pipeline-status.html) | To pause or reactivate a pipeline, so the pipeline stops or restarts processing jobs, update the status for the pipeline. | arn:aws:elastictranscoder:$region:$account:pipeline/$pipeline-id | - |
+
