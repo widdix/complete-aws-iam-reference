@@ -127,4 +127,9 @@
 | [iam:ResetServiceSpecificCredential](http://docs.aws.amazon.com/IAM/latest/APIReference/API_ResetServiceSpecificCredential.html) | Resets the password for a service-specific credential. | arn:aws:iam::$account:user/$user-name | - |
 | [iam:UpdateRoleDescription](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateRoleDescription.html) | Modifies the description of a role. | arn:aws:iam::$account:role/$role-name | ??? |
 | [iam:UpdateServiceSpecificCredential](http://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateServiceSpecificCredential.html) | Sets the status of a service-specific credential to Active or Inactive. | arn:aws:iam::$account:user/$user-name | - |
-
+| [iam:TagUser](https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagUser.html) |	Creates or modifies the tags on an IAM user.	arn:aws:iam::$account:user/$user-name | aws:RequestTag, aws:TagKeys |
+| [iam:UntagUser](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UntagUser.html) |	Removes the tags on an IAM user.	arn:aws:iam::$account:user/$user-name | aws:RequestTag, aws:TagKeys |
+| [iam:ListUserTags](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListUserTags.html) |	Lists the tags on an IAM user.	arn:aws:iam::$account:user/$user-name | - |
+| [iam:TagRole](https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagRole.html) |	Creates or modifies the tags on an IAM role.	arn:aws:iam::$account:role/$role-name | aws:RequestTag, aws:TagKeys |
+| [iam:UntagRole](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UntagRole.html) |	Removes the tags on an IAM role.	arn:aws:iam::$account:role/$role-name | aws:RequestTag, aws:TagKeys |
+| [iam:ListRoleTags](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListRoleTags.html) |	Lists the tags on an IAM role.	arn:aws:iam::$account:role/$role-name | - |
