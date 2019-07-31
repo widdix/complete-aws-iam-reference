@@ -78,7 +78,7 @@
 | [ssm:RemoveTagsFromResource](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_RemoveTagsFromResource.html) | Removes all tags from the specified resource. | arn:aws:ssm:$region:$account:document/$name | - |
 | [ssm:ResumeSession](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_ResumeSession.html) | Resume a disconnected SSM session manager connection. | arn:aws:ssm:$region:$account:session/$resource-id | - |
 | [ssm:SendAutomationSignal](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_SendAutomationSignal.html) |  | ??? | - |
-| [ssm:SendCommand](https://docs.aws.amazon.com/ssm/latest/APIReference/API_SendCommand.html) | Executes commands on one or more remote instances. | arn:aws:ssm:$region:$account:document/$name | ssm:resourceTag/tag-key |
+| [ssm:SendCommand](https://docs.aws.amazon.com/ssm/latest/APIReference/API_SendCommand.html) | Executes commands (via command documents) on one or more remote instances. | arn:aws:ssm:$region:$account:document/$name,arn:aws:ec2:*:*:instance/* | ssm:resourceTag/tag-key |
 | [ssm:StartAutomationExecution](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_StartAutomationExecution.html) | Initiates execution of an Automation document. | ??? | - |
 | [ssm:StartSession](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_StartSession.html) | Start a connection to an instance using SSM Session Manager. | ??? | - |
 | [ssm:StopAutomationExecution](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_StopAutomationExecution.html) | Stop an Automation that is currently executing. | ??? | - |
