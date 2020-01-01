@@ -3,7 +3,7 @@
 | [lambda:AddPermission](http://docs.aws.amazon.com/lambda/latest/dg/API_AddPermission.html) | Adds a permission to the resource policy associated with the specified AWS Lambda function. | arn:aws:lambda:$region:$account:function:$function-name | - |
 | [lambda:CreateAlias](http://docs.aws.amazon.com/lambda/latest/dg/API_CreateAlias.html) | Creates an alias that points to the specified Lambda function version. | arn:aws:lambda:$region:$account:function:$function-name | - |
 | [lambda:CreateEventSourceMapping](http://docs.aws.amazon.com/lambda/latest/dg/API_CreateEventSourceMapping.html) | Identifies a stream as an event source for a Lambda function. | * | - |
-| [lambda:CreateFunction](http://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html) | Creates a new Lambda function. | * | - |
+| [lambda:CreateFunction](http://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html) | Creates a new Lambda function. | arn:aws:lambda:$region:$account:function:$function-name | - |
 | [lambda:DeleteAlias](http://docs.aws.amazon.com/lambda/latest/dg/API_DeleteAlias.html) | Deletes the specified Lambda function alias. | arn:aws:lambda:$region:$account:function:$function-name | - |
 | [lambda:DeleteEventSourceMapping](http://docs.aws.amazon.com/lambda/latest/dg/API_DeleteEventSourceMapping.html) | Removes an event source mapping. | arn:aws:lambda:$region:$account:event-source-mapping:$event-source-mapping-uuid | - |
 | [lambda:DeleteFunction](http://docs.aws.amazon.com/lambda/latest/dg/API_DeleteFunction.html) | Deletes the specified Lambda function code and configuration. | arn:aws:lambda:$region:$account:function:$function-name | - |
