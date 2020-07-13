@@ -17,4 +17,5 @@
 | [sqs:SendMessage](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) | Delivers a message to the specified queue. | arn:aws:sqs:$region:$account:$queuename | - |
 | [sqs:SendMessageBatch](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html) | Delivers up to ten messages to the specified queue. | arn:aws:sqs:$region:$account:$queuename | - |
 | [sqs:SetQueueAttributes](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SetQueueAttributes.html) | Sets the value of one or more queue attributes. | arn:aws:sqs:$region:$account:$queuename | - |
+| [sqs:TagQueue](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_TagQueue.html) | Add cost allocation tags to the specified Amazon SQS queue. | arn:aws:sqs:$region:$account:$queuename | - |
 
