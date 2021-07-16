@@ -8,6 +8,14 @@
     <li class="active">{{serviceName}}</li>
   </ol>
 
+  {{#cta}}
+  <div class="jumbotron">
+    <h1>{{title}}</h1>
+    <p>{{description}}</p>
+    <p><a class="btn btn-primary btn-lg" href="{{href}}" role="button">{{action}}</a></p>
+  </div>
+  {{/cta}}
+
   <div class="table-responsive">
     <table class="table table-striped" style="table-layout: fixed;">
       <thead>

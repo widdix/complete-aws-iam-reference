@@ -4,6 +4,7 @@ var Mustache = require('mustache');
 var async = require('neo-async');
 
 var services = require("./serviceNames.json");
+var ctas = require("./ctas.json");
 
 function getServiceName(service) {
   var name = services[service];
@@ -35,7 +36,7 @@ function renderIndex(services) {
 function renderReferenceService(rows) {
   var service = rows[0].service;
   var template = fs.readFileSync('./template/service.mustache', {encoding: 'utf8'});
-  var output = Mustache.render(template, {title: getServiceName(service), service: service, serviceName: getServiceName(service), rows: rows}, {
+  var output = Mustache.render(template, {title: getServiceName(service), service: service, serviceName: getServiceName(service), rows: rows, cta: ctas[service]}, {
     header: headerTemplate,
     footer: footerTemplate
   });

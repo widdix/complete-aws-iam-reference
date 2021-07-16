@@ -1,0 +1,26 @@
+{
+  "cloudwatch": {
+    "title": "Chatbot for AWS Monitoring",
+    "description": "Configure monitoring, receive alerts, solve incidents. Works with Slack and Microsoft Teams.",
+    "action": "Try for free",
+    "href": "https://marbot.io/"
+  },
+  "ec2": {
+    "title": "Amazon Web Services in Action",
+    "description": "A comprehensive introduction to computing, storing, and networking in the AWS cloud. You'll find clear, relevant coverage of all the essential AWS services you to know, emphasizing best practices for security, high availability and scalability.",
+    "action": "Learn more",
+    "href": "https://bit.ly/amazon-web-services-in-action-2nd-edition"
+  },
+  "ecr": {
+    "title": "Rapid Docker on AWS",
+    "description": "Rapid Docker on AWS is designed for DevOps engineers and web developers who want to run dockerized web applications on AWS. We lead you with many examples: From dockerizing your application to Continuous Deployment and Infrastructure as Code on AWS. No prior knowledge of Docker and AWS is required.",
+    "action": "Learn more",
+    "href": "https://cloudonaut.io/rapid-docker-on-aws/"
+  },
+  "ecs": {
+    "title": "Rapid Docker on AWS",
+    "description": "Rapid Docker on AWS is designed for DevOps engineers and web developers who want to run dockerized web applications on AWS. We lead you with many examples: From dockerizing your application to Continuous Deployment and Infrastructure as Code on AWS. No prior knowledge of Docker and AWS is required.",
+    "action": "Learn more",
+    "href": "https://cloudonaut.io/rapid-docker-on-aws/"
+  }
+}
