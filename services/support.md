@@ -3,7 +3,7 @@
 | [support:AddAttachmentsToSet](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_AddAttachmentsToSet.html) | Adds one or more attachments to an AWS Support case. | * | - |
 | [support:AddCommunicationToCase](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_AddCommunicationToCase.html) | Adds a customer communication to an AWS Support case. | * | - |
 | [support:CreateCase](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_CreateCase.html) | Creates a new AWS Support case. | * | - |
-| [support:DescribeAttachment](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeAttachment.html) | Returns the description for an attachment. | - |
+| [support:DescribeAttachment](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeAttachment.html) | Returns the description for an attachment. | * | - |
 | [support:DescribeCaseAttributes](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupport.html) | This is an internally managed function which allows secondary services to read AWS Support case attributes. | * | - |
 | [support:DescribeCases](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeCases.html) | Returns a list of AWS Support cases that matches the given inputs. | * | - |
 | [support:DescribeCommunications](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeCommunications.html) | Returns the communications and attachments for one or more AWS Support cases. | * | - |
