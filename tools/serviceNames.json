@@ -79,6 +79,7 @@
   "rekognition": "Amazon Rekognition",
   "route53": "Amazon Route 53",
   "route53domains": "Amazon Route 53 Domains",
+  "savingsplans": "Savings Plans",
   "s3": "Amazon Simple Storage Service",
   "sdb": "Amazon SimpleDB",
   "secretsmanager": "AWS Secrets Manager",
