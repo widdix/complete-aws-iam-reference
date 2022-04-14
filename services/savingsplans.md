@@ -1,0 +1,11 @@
+| Action | Description | Resource | Condition |
+| --- | --- | --- | --- |
+| [savingsplans:CreateSavingsPlan](https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_CreateSavingsPlan.html) | Creates a savings plan. | * | aws:RequestTag/${TagKey} |
+| [savingsplans:DeleteQueuedSavingsPlan](https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_DeleteQueuedSavingsPlan.html) | Deletes queued savings plan associated with customers account. | arn:aws:savingsplans::$account:savingsplan/$savings_plan_id | aws:RequestTag/${TagKey} |
+| [savingsplans:DescribeSavingsPlanRates](https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_DescribeSavingsPlanRates.html) | Describes the rates associated with customers savings plan. | arn:aws:savingsplans::$account:savingsplan/$savings_plan_id | aws:RequestTag/${TagKey} |
+| [savingsplans:DescribeSavingsPlans](https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_DescribeSavingsPlans.html) | Describes the rates assciated with savings plans. | arn:aws:savingsplans::$account:savingsplan/$savings_plan_id | aws:RequestTag/${TagKey} |
+| [savingsplans:DescribeSavingsPlansOfferingRates](https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_DescribeSavingsPlansOfferingRates.html) | Describes the rates assciated with savings plans. | arn:aws:savingsplans::$account:savingsplan/$savings_plan_id | aws:RequestTag/${TagKey} |
+| [savingsplans:DescribeSavingsPlansOfferings](https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_DescribeSavingsPlansOfferings.html) | Describe the savings plans offerings that customer is eligible to. | * | - |
+| [savingsplans:ListTagsForResource](https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_ListTagsForResource.html) | Lists tags for a savings plan. | arn:aws:savingsplans::$account:savingsplan/$savings_plan_id | - |
+| [savingsplans:TagResource](https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_TagResource.html) | Tags a savings plan. | arn:aws:savingsplans::$account:savingsplan/$savings_plan_id | aws:TagKeys, aws:RequestTag/${TagKey} |
+| [savingsplans:UntagResource](https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_UntagResource.html) | Untags a savings plan. | arn:aws:savingsplans::$account:savingsplan/$savings_plan_id | aws:TagKeys |
