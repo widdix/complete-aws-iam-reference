@@ -36,7 +36,7 @@ function renderIndex(services) {
 function renderReferenceService(rows) {
   var service = rows[0].service;
   var template = fs.readFileSync('./template/service.mustache', {encoding: 'utf8'});
-  var output = Mustache.render(template, {title: getServiceName(service), service: service, serviceName: getServiceName(service), rows: rows, cta: ctas[service]}, {
+  var output = Mustache.render(template, {title: getServiceName(service), service: service, serviceName: getServiceName(service), rows: rows, cta: ctas[service] || ctas._default}, {
     header: headerTemplate,
     footer: footerTemplate
   });
